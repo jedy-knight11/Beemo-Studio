@@ -17,20 +17,20 @@ export const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#0D0D0D]/90 backdrop-blur-md border-b border-white/10 h-[70px]' : 'bg-transparent h-[70px]'
+        isScrolled ? 'bg-[#0D0D0D]/90 backdrop-blur-md border-b border-white/10 h-[110px]' : 'bg-transparent h-[110px]'
       } flex items-center`}
     >
-      <div className="w-full max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a href="#" className="text-2xl font-black tracking-tighter text-white uppercase flex items-center gap-2">
-          BEEMO<span className="text-[#F5A623]">.</span>
+      <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 flex items-center justify-between">
+        <a href="#" className="flex items-center">
+          <img src="/logo.png" alt="Beemo Studio Logo" className="h-[72px] w-auto object-contain" />
         </a>
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-6">
           <div className="flex gap-6 text-[11px] uppercase tracking-[0.15em] font-semibold text-white/60">
-            <a href="#work" className="hover:text-[#F5A623] transition-colors cursor-pointer">Trabajo</a>
-            <a href="#services" className="hover:text-[#F5A623] transition-colors cursor-pointer">Servicios</a>
-            <a href="#process" className="hover:text-[#F5A623] transition-colors cursor-pointer">Equipo</a>
+            <a href="#work" className="hover:text-white transition-colors cursor-pointer">Trabajo</a>
+            <a href="#services" className="hover:text-white transition-colors cursor-pointer">Servicios</a>
+            <a href="#team" className="hover:text-white transition-colors cursor-pointer">Equipo</a>
           </div>
           
           <div className="text-[10px] uppercase font-bold tracking-widest text-white/40 ml-4">
@@ -38,7 +38,7 @@ export const Navbar = () => {
           </div>
           <a
             href="#contact"
-            className="bg-[#F5A623] text-black px-6 py-2.5 rounded-full text-[11px] font-bold uppercase tracking-wider hover:brightness-110 transition-all"
+            className="bg-[#083eeb] text-white px-6 py-2.5 rounded-full text-[11px] font-bold uppercase tracking-wider hover:bg-[#F5A623] hover:text-black transition-all"
           >
             Iniciar Proyecto
           </a>
@@ -64,12 +64,12 @@ export const Navbar = () => {
           >
             <a href="#work" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium text-white/90">Trabajo</a>
             <a href="#services" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium text-white/90">Servicios</a>
-            <a href="#process" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium text-white/90">Equipo</a>
+            <a href="#team" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium text-white/90">Equipo</a>
             <hr className="border-white/10" />
             <a
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="bg-[#F5A623] text-black text-center px-6 py-3 rounded-full text-base font-bold tracking-wide"
+              className="bg-[#083eeb] text-white text-center px-6 py-3 rounded-full text-base font-bold tracking-wide hover:bg-[#F5A623] hover:text-black transition-all"
             >
               Iniciar Proyecto
             </a>

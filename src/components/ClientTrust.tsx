@@ -1,30 +1,57 @@
 import { motion } from 'motion/react';
 
 export const ClientTrust = () => {
-  const clients = ['DURAGAS', 'RENAULT', 'TOYOCOSTA', 'UCG', 'BANCO BOLIVARIANO', 'CHRYSLER'];
+  const clients = [
+    '/logos/duragas.webp',
+    '/logos/toyocosta.webp',
+    '/logos/sambolon.webp',
+    '/logos/ucg.webp',
+    '/logos/renault_1.webp',
+    '/logos/ciudad.webp',
+    '/logos/ayn.webp',
+    '/logos/ya.webp',
+    '/logos/new_client.webp',
+    '/logos/peigo.webp',
+    '/logos/renault_2.webp'
+  ];
 
   return (
     <section className="py-16 bg-[#0D0D0D] border-b border-white/5 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 mb-8 text-center">
-        <p className="text-xs font-bold text-white/30 uppercase tracking-[0.2em]">Confiado por Líderes Empresariales</p>
+      <div className="w-full max-w-[1800px] mx-auto px-6 mb-12 text-center">
+        <p className="text-[#083eeb] text-xs font-bold uppercase tracking-[0.2em]">Confiado por Líderes Empresariales</p>
       </div>
       
       <div className="relative w-full flex overflow-x-hidden">
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0D0D0D] to-transparent z-10"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0D0D0D] to-transparent z-10"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-[#0D0D0D] to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-[#0D0D0D] to-transparent z-10 pointer-events-none"></div>
         
-        {/* Simple CSS marquee effect can also be used, but we'll use motion if preferred, or just a flex row for now */}
         <motion.div 
-          className="flex gap-16 md:gap-32 items-center whitespace-nowrap min-w-full px-8"
+          className="flex whitespace-nowrap"
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ ease: "linear", duration: 20, repeat: Infinity }}
+          transition={{ ease: "linear", duration: 25, repeat: Infinity }}
         >
-          {/* Double the list for infinite scroll illusion */}
-          {[...clients, ...clients, ...clients].map((client, idx) => (
-            <div key={idx} className="text-2xl md:text-3xl font-black text-white/20 tracking-tighter uppercase transition-colors hover:text-white/40 cursor-default">
-              {client}
-            </div>
-          ))}
+          {/* Group 1 */}
+          <div className="flex gap-16 md:gap-24 items-center px-8 md:px-12 min-w-max">
+            {clients.map((clientPath, idx) => {
+              const isJpg = clientPath.endsWith('.jpg') || clientPath.endsWith('.jpeg');
+              return (
+                <div key={`g1-${idx}`} className="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24">
+                  <img src={clientPath} alt="Client Logo" className={`w-full h-full object-contain transition-all duration-300 ${isJpg ? 'grayscale invert mix-blend-screen opacity-40 hover:opacity-100' : 'brightness-0 invert opacity-30 hover:opacity-100'}`} />
+                </div>
+              );
+            })}
+          </div>
+          {/* Group 2 */}
+          <div className="flex gap-16 md:gap-24 items-center px-8 md:px-12 min-w-max">
+            {clients.map((clientPath, idx) => {
+              const isJpg = clientPath.endsWith('.jpg') || clientPath.endsWith('.jpeg');
+              return (
+                <div key={`g2-${idx}`} className="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24">
+                  <img src={clientPath} alt="Client Logo" className={`w-full h-full object-contain transition-all duration-300 ${isJpg ? 'grayscale invert mix-blend-screen opacity-40 hover:opacity-100' : 'brightness-0 invert opacity-30 hover:opacity-100'}`} />
+                </div>
+              );
+            })}
+          </div>
         </motion.div>
       </div>
     </section>

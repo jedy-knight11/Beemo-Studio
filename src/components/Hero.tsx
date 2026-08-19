@@ -1,10 +1,25 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Play, Volume2, VolumeX } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 export const Hero = () => {
   const [isMuted, setIsMuted] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const videoSrc = "/hero-video.webm";
+
+  // Force play on mount to bypass autoplay restrictions or bugs
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(console.error);
+    }
+  }, []);
+
+  // Sync muted state via DOM to avoid React muted prop bugs
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = isMuted;
+    }
+  }, [isMuted]);
 
   return (
     <section className="relative w-full h-screen flex flex-col overflow-hidden bg-[#0D0D0D]">
@@ -17,16 +32,16 @@ export const Hero = () => {
         <div className={`absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/40 to-transparent z-10 transition-opacity duration-1000 ${isMuted ? 'opacity-0' : 'opacity-100'}`} />
         
         <video 
+          ref={videoRef}
           autoPlay 
           loop 
-          muted={isMuted} 
           playsInline
           className={`w-full h-full object-cover transition-opacity duration-1000 ${isMuted ? 'opacity-50' : 'opacity-80'}`}
           src={videoSrc} 
         />
       </div>
 
-      <div className={`relative z-20 w-full h-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col transition-all duration-700 ease-in-out pt-20 ${isMuted ? 'justify-center items-center' : 'justify-end items-start pb-24 md:pb-32'}`}>
+      <div className={`relative z-20 w-full h-full w-full max-w-[1800px] mx-auto px-6 md:px-12 flex flex-col transition-all duration-700 ease-in-out pt-20 ${isMuted ? 'justify-center items-center' : 'justify-end items-start pb-24 md:pb-32'}`}>
         <motion.div
           layout
           className={`flex flex-col w-full ${isMuted ? 'max-w-5xl items-center text-center' : 'max-w-3xl items-start text-left'}`}
@@ -42,14 +57,14 @@ export const Hero = () => {
                 exit={{ opacity: 0, height: 0, marginBottom: 0, overflow: 'hidden' }}
               >
                 <div className="inline-flex items-center gap-2 bg-black/40 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
-                  <div className="w-2 h-2 rounded-full bg-white/50"></div>
+                  <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
                   <span className="text-[10px] font-bold uppercase tracking-widest text-white">Reel 2024</span>
                 </div>
               </motion.div>
             )}
           </AnimatePresence>
           
-          <motion.h1 layout className={`font-black text-white tracking-tighter leading-[1.1] transition-all duration-700 ${isMuted ? 'text-5xl md:text-7xl lg:text-8xl mb-6' : 'text-2xl md:text-3xl lg:text-4xl whitespace-nowrap mb-6'}`}>
+          <motion.h1 layout className={`font-black text-white tracking-tighter heading-font leading-[1.1] transition-all duration-700 ${isMuted ? 'text-5xl md:text-7xl lg:text-8xl mb-6' : 'text-2xl md:text-3xl lg:text-4xl whitespace-nowrap mb-6'}`}>
             IMPACTO VISUAL {isMuted && <br className="hidden md:block" />}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/80 to-white/40">QUE DEFINE MARCAS.</span>
           </motion.h1>
@@ -75,7 +90,7 @@ export const Hero = () => {
                   animate={{ opacity: 1, width: 'auto', paddingLeft: 32, paddingRight: 32, scale: 1 }}
                   exit={{ opacity: 0, width: 0, paddingLeft: 0, paddingRight: 0, scale: 0.8, overflow: 'hidden' }}
                   href="#work"
-                  className="bg-white text-black py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-gray-200 transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
+                  className="bg-white text-black py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#F5A623] hover:text-black transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
                 >
                   <Play size={14} fill="currentColor" />
                   Ver Showreel

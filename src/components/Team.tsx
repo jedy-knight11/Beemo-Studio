@@ -49,10 +49,10 @@ export const Team = () => {
                 alt={member.name}
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-500" />
               
               <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end">
-                <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                <div className="translate-y-0 lg:translate-y-4 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out">
                   <span className="text-[#083eeb] text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-3 block">
                     {member.role}
                   </span>

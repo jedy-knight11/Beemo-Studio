@@ -64,7 +64,7 @@ export const Hero = () => {
             )}
           </AnimatePresence>
           
-          <motion.h1 layout className={`font-black text-white tracking-tighter heading-font leading-[1.1] transition-all duration-700 ${isMuted ? 'text-5xl md:text-7xl lg:text-8xl mb-6' : 'text-2xl md:text-3xl lg:text-4xl whitespace-nowrap mb-6'}`}>
+          <motion.h1 layout className={`font-black text-white tracking-tighter heading-font leading-[1.1] transition-all duration-700 ${isMuted ? 'text-4xl sm:text-5xl md:text-7xl lg:text-8xl mb-6' : 'text-2xl md:text-3xl lg:text-4xl whitespace-nowrap mb-6'}`}>
             IMPACTO VISUAL {isMuted && <br className="hidden md:block" />}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/80 to-white/40">QUE DEFINE MARCAS.</span>
           </motion.h1>
@@ -99,7 +99,7 @@ export const Hero = () => {
             </AnimatePresence>
             <motion.a
               layout
-              href="#contact"
+              href="/contacto"
               className="border border-white/20 hover:bg-white/5 px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-colors w-full sm:w-auto flex items-center justify-center whitespace-nowrap"
             >
               Cotizar

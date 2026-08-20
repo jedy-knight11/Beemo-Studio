@@ -101,24 +101,24 @@ const ProjectCard = ({ file, onClick }: { file: any, onClick: (f: any) => void }
       />
 
       {/* Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-300 pointer-events-none" />
       
       <div className="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none">
-        <div className="translate-y-6 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+        <div className="translate-y-0 lg:translate-y-6 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out">
           <span className="text-xs uppercase font-bold text-[#083eeb] tracking-[0.2em] mb-3 block">
             {file.category}
           </span>
           <h3 className="font-black text-2xl md:text-3xl text-white leading-tight mb-2 uppercase tracking-tighter heading-font">
             {file.name}
           </h3>
-          <p className="text-sm md:text-base text-white/60 line-clamp-2 max-w-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <p className="text-sm md:text-base text-white/60 line-clamp-2 max-w-xl opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">
             {file.description}
           </p>
         </div>
       </div>
 
       {/* Play Icon */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 scale-75 group-hover:scale-100 border border-white/20 pointer-events-none">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 scale-100 lg:scale-75 lg:group-hover:scale-100 border border-white/20 pointer-events-none">
         <Play size={24} className="text-white ml-1" fill="currentColor" />
       </div>
     </motion.div>

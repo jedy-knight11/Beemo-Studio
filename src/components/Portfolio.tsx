@@ -50,7 +50,7 @@ const portfolioItems = [
     name: 'Duragas Making Of',
     category: 'Coberturas',
     description: 'Detrás de cámaras de la campaña Duragas Express.',
-    video: '/portfolio/Coberturas/Duragas_MakingOf.mov'
+    video: '/portfolio/Coberturas/Duragas_MakingOf.mp4'
   },
   {
     id: '8',

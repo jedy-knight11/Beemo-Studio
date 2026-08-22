@@ -294,7 +294,7 @@ export const Footer = () => {
           {/* Logo */}
           <div className="w-full lg:w-auto flex items-start lg:justify-end">
             <div className="w-48 h-48 md:w-56 md:h-56 flex items-center justify-center">
-              <img src={import.meta.env.BASE_URL + '/logo.png'.substring(1)} alt="Beemo Studio Logo" className="w-full h-full object-contain" />
+              <img src={(import.meta as any).env.BASE_URL + '/logo.png'.substring(1)} alt="Beemo Studio Logo" className="w-full h-full object-contain" />
             </div>
           </div>
 

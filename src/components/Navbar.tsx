@@ -22,7 +22,7 @@ export const Navbar = () => {
     >
       <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 flex items-center justify-between">
         <a href="/" className="flex items-center">
-          <img src={import.meta.env.BASE_URL + '/logo_header.png'.substring(1)} alt="Beemo Studio Logo" className="h-[48px] md:h-[96px] w-auto object-contain" />
+          <img src={(import.meta as any).env.BASE_URL + '/logo_header.png'.substring(1)} alt="Beemo Studio Logo" className="h-[48px] md:h-[96px] w-auto object-contain" />
         </a>
 
         {/* Desktop Nav */}

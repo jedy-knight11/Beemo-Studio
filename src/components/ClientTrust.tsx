@@ -2,17 +2,17 @@ import { motion } from 'motion/react';
 
 export const ClientTrust = () => {
   const clients = [
-    '/logos/duragas.webp',
-    '/logos/toyocosta.webp',
-    '/logos/sambolon.webp',
-    '/logos/ucg.webp',
-    '/logos/renault_1.webp',
-    '/logos/ciudad.webp',
-    '/logos/ayn.webp',
-    '/logos/ya.webp',
-    '/logos/new_client.webp',
-    '/logos/peigo.webp',
-    '/logos/renault_2.webp'
+    (import.meta as any).env.BASE_URL + 'logos/duragas.webp',
+    (import.meta as any).env.BASE_URL + 'logos/toyocosta.webp',
+    (import.meta as any).env.BASE_URL + 'logos/sambolon.webp',
+    (import.meta as any).env.BASE_URL + 'logos/ucg.webp',
+    (import.meta as any).env.BASE_URL + 'logos/renault_1.webp',
+    (import.meta as any).env.BASE_URL + 'logos/ciudad.webp',
+    (import.meta as any).env.BASE_URL + 'logos/ayn.webp',
+    (import.meta as any).env.BASE_URL + 'logos/ya.webp',
+    (import.meta as any).env.BASE_URL + 'logos/new_client.webp',
+    (import.meta as any).env.BASE_URL + 'logos/peigo.webp',
+    (import.meta as any).env.BASE_URL + 'logos/renault_2.webp'
   ];
 
   return (

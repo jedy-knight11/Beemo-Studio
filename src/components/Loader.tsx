@@ -63,7 +63,7 @@ export const Loader = ({ onLoadingComplete }: { onLoadingComplete: () => void })
         }}
         className="w-32 md:w-48 h-auto"
       >
-        <img src="/logo.png" alt="Beemo Studio Loading" className="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(8,62,235,0.5)]" />
+        <img src={import.meta.env.BASE_URL + '/logo.png'.substring(1)} alt="Beemo Studio Loading" className="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(8,62,235,0.5)]" />
       </motion.div>
       
       <div className="h-8 relative flex items-center justify-center w-full max-w-sm overflow-hidden">

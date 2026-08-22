@@ -5,19 +5,19 @@ export const Team = () => {
     {
       name: "Colombia Cañarte",
       role: "Fundador & Productor General",
-      image: "/team/colombia.webp",
+      image: import.meta.env.BASE_URL + '/team/colombia.webp'.substring(1),
       span: "col-span-1",
     },
     {
       name: "Jonathan Miranda",
       role: "Director Creativo",
-      image: "/team/jonathan.webp",
+      image: import.meta.env.BASE_URL + '/team/jonathan.webp'.substring(1),
       span: "col-span-1",
     },
     {
       name: "Andrea Wong",
       role: "Camarógrafa",
-      image: "/team/andrea.webp",
+      image: import.meta.env.BASE_URL + '/team/andrea.webp'.substring(1),
       span: "col-span-1",
     }
   ];

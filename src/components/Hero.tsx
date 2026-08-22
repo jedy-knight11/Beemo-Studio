@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'motion/react';
 export const Hero = () => {
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const videoSrc = "/hero-video.webm";
+  const videoSrc = import.meta.env.BASE_URL + 'hero-video.webm';
 
   // Force play on mount to bypass autoplay restrictions or bugs
   useEffect(() => {

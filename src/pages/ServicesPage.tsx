@@ -14,7 +14,7 @@ const services = [
       'Product Films',
       'Branded Content'
     ],
-    video: '/portfolio/Comerciales/Mazda_CX90.mp4'
+    video: import.meta.env.BASE_URL + '/portfolio/Comerciales/Mazda_CX90.mp4'.substring(1)
   },
   {
     id: '02',
@@ -27,7 +27,7 @@ const services = [
       'Manifiestos de Marca',
       'Recorridos Industriales (Dron & FPV)'
     ],
-    video: '/portfolio/Institucionales/Duragas_Oficina.mp4'
+    video: import.meta.env.BASE_URL + '/portfolio/Institucionales/Duragas_Oficina.mp4'.substring(1)
   },
   {
     id: '03',
@@ -40,7 +40,7 @@ const services = [
       'Entrevistas en Sitio',
       'Fotografia Corporativa de Eventos'
     ],
-    video: '/portfolio/Coberturas/Sambolon.mp4'
+    video: import.meta.env.BASE_URL + '/portfolio/Coberturas/Sambolon.mp4'.substring(1)
   },
   {
     id: '04',
@@ -53,7 +53,7 @@ const services = [
       'Casos de Estudio B2B',
       'Micro-capsulas de clientes'
     ],
-    video: '/portfolio/Comerciales/Orocash_TVC.mp4'
+    video: import.meta.env.BASE_URL + '/portfolio/Comerciales/Orocash_TVC.mp4'.substring(1)
   }
 ];
 

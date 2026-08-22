@@ -8,28 +8,28 @@ const servicesData = [
     title: 'Institucionales & Corporativos',
     desc: 'Historias de marca, manifiestos y comunicación interna diseñados para generar confianza y comunicar la escala empresarial.',
     icon: <Video size={24} />,
-    image: '/services/institucional.webp'
+    image: import.meta.env.BASE_URL + '/services/institucional.webp'.substring(1)
   },
   {
     id: 'comerciales',
     title: 'Comerciales & Spots',
     desc: 'Campañas visuales de alto impacto creadas para digital y televisión. Dinámicas y enfocadas en conversión.',
     icon: <Megaphone size={24} />,
-    image: '/services/comercial.webp'
+    image: import.meta.env.BASE_URL + '/services/comercial.webp'.substring(1)
   },
   {
     id: 'cobertura',
     title: 'Cobertura de Eventos',
     desc: 'Resúmenes cinematográficos y cobertura en vivo de cumbres corporativas, festivales y lanzamientos.',
     icon: <CalendarDays size={24} />,
-    image: '/services/eventos.webp'
+    image: import.meta.env.BASE_URL + '/services/eventos.webp'.substring(1)
   },
   {
     id: 'casos',
     title: 'Casos de Éxito',
     desc: 'Testimoniales estilo documental que ofrecen validación social para marcas B2B y B2C.',
     icon: <TrendingUp size={24} />,
-    image: '/services/casos.webp'
+    image: import.meta.env.BASE_URL + '/services/casos.webp'.substring(1)
   }
 ];
 

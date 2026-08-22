@@ -8,56 +8,56 @@ const portfolioItems = [
     name: 'Orocash TVC',
     category: 'Comerciales',
     description: 'Comercial de televisión para Orocash.',
-    video: '/portfolio/Comerciales/Orocash_TVC.mp4'
+    video: import.meta.env.BASE_URL + '/portfolio/Comerciales/Orocash_TVC.mp4'.substring(1)
   },
   {
     id: '2',
     name: 'Mazda CX90',
     category: 'Comerciales',
     description: 'Spot comercial para el nuevo Mazda CX90.',
-    video: '/portfolio/Comerciales/Mazda_CX90.mp4'
+    video: import.meta.env.BASE_URL + '/portfolio/Comerciales/Mazda_CX90.mp4'.substring(1)
   },
   {
     id: '3',
     name: 'PedidosYa',
     category: 'Comerciales',
     description: 'Campaña digital para PedidosYa.',
-    video: '/portfolio/Comerciales/PedidosYa.mp4'
+    video: import.meta.env.BASE_URL + '/portfolio/Comerciales/PedidosYa.mp4'.substring(1)
   },
   {
     id: '4',
     name: 'PeiGo Madre',
     category: 'Comerciales',
     description: 'Spot del día de la madre para PeiGo.',
-    video: '/portfolio/Comerciales/PeiGo_Madre.mp4'
+    video: import.meta.env.BASE_URL + '/portfolio/Comerciales/PeiGo_Madre.mp4'.substring(1)
   },
   {
     id: '5',
     name: 'Duragas Express Oficina',
     category: 'Institucionales',
     description: 'Video institucional para Duragas Express.',
-    video: '/portfolio/Institucionales/Duragas_Oficina.mp4'
+    video: import.meta.env.BASE_URL + '/portfolio/Institucionales/Duragas_Oficina.mp4'.substring(1)
   },
   {
     id: '6',
     name: 'Blinseg',
     category: 'Institucionales',
     description: 'Video corporativo sobre procesos de blindaje.',
-    video: '/portfolio/Institucionales/Blinseg_Blindaje.mp4'
+    video: import.meta.env.BASE_URL + '/portfolio/Institucionales/Blinseg_Blindaje.mp4'.substring(1)
   },
   {
     id: '7',
     name: 'Duragas Making Of',
     category: 'Coberturas',
     description: 'Detrás de cámaras de la campaña Duragas Express.',
-    video: '/portfolio/Coberturas/Duragas_MakingOf.mp4'
+    video: import.meta.env.BASE_URL + '/portfolio/Coberturas/Duragas_MakingOf.mp4'.substring(1)
   },
   {
     id: '8',
     name: 'Sambolón Event',
     category: 'Coberturas',
     description: 'Cobertura oficial del evento Sambolón.',
-    video: '/portfolio/Coberturas/Sambolon.mp4'
+    video: import.meta.env.BASE_URL + '/portfolio/Coberturas/Sambolon.mp4'.substring(1)
   }
 ];
 

@@ -32,7 +32,7 @@ export const Contact = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 1 }}
-            className="xl:col-span-5 flex flex-col gap-8 lg:gap-12"
+            className="xl:col-span-5 flex flex-col gap-8 lg:gap-12 order-2 xl:order-1"
           >
             <div>
               <p className="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-[#083eeb] mb-4">NUESTRO EMAIL</p>
@@ -63,7 +63,7 @@ export const Contact = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="xl:col-span-7 xl:pl-24 flex flex-col min-h-[500px]"
+            className="xl:col-span-7 xl:pl-24 flex flex-col min-h-[500px] order-1 xl:order-2"
           >
             <div className="flex items-center gap-6 mb-12">
               <div className="flex-1 h-1 bg-white/10 rounded-full overflow-hidden">

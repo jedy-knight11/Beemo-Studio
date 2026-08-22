@@ -1,0 +1,511 @@
+{
+  "summary": {
+    "webAnimations": 9,
+    "cssDeclarations": 48,
+    "scrollTargets": 32,
+    "cdpAnimations": 11,
+    "canvases": 0
+  },
+  "namedAnimations": [
+    "plyr-fade-in",
+    "tmpl-anim-fade-scale-up"
+  ],
+  "scrollTriggeredElements": 32,
+  "representativeAnimations": [
+    {
+      "type": "CSSAnimation",
+      "playState": "finished",
+      "animationName": "tmpl-anim-fade-scale-up",
+      "targetSelector": "div.gallery-grid-item-wrapper",
+      "targetRect": {
+        "x": 57.59375,
+        "y": 2935.328125,
+        "width": 300.796875,
+        "height": 200.515625,
+        "top": 2935.328125,
+        "right": 358.390625,
+        "bottom": 3135.84375,
+        "left": 57.59375
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 0
+        },
+        {
+          "offset": 0,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+          "opacity": "0",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 1
+        },
+        {
+          "offset": 1,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 800,
+        "delay": 0,
+        "iterations": 1,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "finished",
+      "animationName": "tmpl-anim-fade-scale-up",
+      "targetSelector": "div.gallery-grid-item-wrapper",
+      "targetRect": {
+        "x": 358.390625,
+        "y": 2935.328125,
+        "width": 300.796875,
+        "height": 200.515625,
+        "top": 2935.328125,
+        "right": 659.1875,
+        "bottom": 3135.84375,
+        "left": 358.390625
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 0
+        },
+        {
+          "offset": 0,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+          "opacity": "0",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 1
+        },
+        {
+          "offset": 1,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 800,
+        "delay": 0,
+        "iterations": 1,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "finished",
+      "animationName": "tmpl-anim-fade-scale-up",
+      "targetSelector": "div.gallery-grid-item-wrapper",
+      "targetRect": {
+        "x": 659.1875,
+        "y": 2935.328125,
+        "width": 300.8125,
+        "height": 200.53125,
+        "top": 2935.328125,
+        "right": 960,
+        "bottom": 3135.859375,
+        "left": 659.1875
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 0
+        },
+        {
+          "offset": 0,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+          "opacity": "0",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 1
+        },
+        {
+          "offset": 1,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 800,
+        "delay": 0,
+        "iterations": 1,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "finished",
+      "animationName": "tmpl-anim-fade-scale-up",
+      "targetSelector": "div.gallery-grid-item-wrapper",
+      "targetRect": {
+        "x": 960,
+        "y": 2935.328125,
+        "width": 300.796875,
+        "height": 200.515625,
+        "top": 2935.328125,
+        "right": 1260.796875,
+        "bottom": 3135.84375,
+        "left": 960
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 0
+        },
+        {
+          "offset": 0,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+          "opacity": "0",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 1
+        },
+        {
+          "offset": 1,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 800,
+        "delay": 0,
+        "iterations": 1,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "finished",
+      "animationName": "tmpl-anim-fade-scale-up",
+      "targetSelector": "div.gallery-grid-item-wrapper",
+      "targetRect": {
+        "x": 1260.796875,
+        "y": 2935.328125,
+        "width": 300.796875,
+        "height": 200.515625,
+        "top": 2935.328125,
+        "right": 1561.59375,
+        "bottom": 3135.84375,
+        "left": 1260.796875
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 0
+        },
+        {
+          "offset": 0,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+          "opacity": "0",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 1
+        },
+        {
+          "offset": 1,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 800,
+        "delay": 0,
+        "iterations": 1,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "finished",
+      "animationName": "tmpl-anim-fade-scale-up",
+      "targetSelector": "div.gallery-grid-item-wrapper",
+      "targetRect": {
+        "x": 1561.59375,
+        "y": 2935.328125,
+        "width": 300.8125,
+        "height": 200.53125,
+        "top": 2935.328125,
+        "right": 1862.40625,
+        "bottom": 3135.859375,
+        "left": 1561.59375
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 0
+        },
+        {
+          "offset": 0,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+          "opacity": "0",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 1
+        },
+        {
+          "offset": 1,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 800,
+        "delay": 0,
+        "iterations": 1,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "finished",
+      "animationName": "tmpl-anim-fade-scale-up",
+      "targetSelector": "div.gallery-grid-item-wrapper",
+      "targetRect": {
+        "x": 57.59375,
+        "y": 3135.859375,
+        "width": 300.796875,
+        "height": 200.515625,
+        "top": 3135.859375,
+        "right": 358.390625,
+        "bottom": 3336.375,
+        "left": 57.59375
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 0
+        },
+        {
+          "offset": 0,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+          "opacity": "0",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 1
+        },
+        {
+          "offset": 1,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 800,
+        "delay": 0,
+        "iterations": 1,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "finished",
+      "animationName": "tmpl-anim-fade-scale-up",
+      "targetSelector": "div.gallery-grid-item-wrapper",
+      "targetRect": {
+        "x": 358.390625,
+        "y": 3135.859375,
+        "width": 300.796875,
+        "height": 200.515625,
+        "top": 3135.859375,
+        "right": 659.1875,
+        "bottom": 3336.375,
+        "left": 358.390625
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 0
+        },
+        {
+          "offset": 0,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+          "opacity": "0",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 1
+        },
+        {
+          "offset": 1,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 800,
+        "delay": 0,
+        "iterations": 1,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "finished",
+      "animationName": "tmpl-anim-fade-scale-up",
+      "targetSelector": "div.gallery-grid-item-wrapper",
+      "targetRect": {
+        "x": 659.1875,
+        "y": 3135.859375,
+        "width": 300.8125,
+        "height": 200.53125,
+        "top": 3135.859375,
+        "right": 960,
+        "bottom": 3336.390625,
+        "left": 659.1875
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 0
+        },
+        {
+          "offset": 0,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+          "opacity": "0",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "composite": "auto",
+          "transformOrigin": "50% 50%",
+          "computedOffset": 1
+        },
+        {
+          "offset": 1,
+          "easing": "ease",
+          "composite": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 800,
+        "delay": 0,
+        "iterations": 1,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    }
+  ]
+}

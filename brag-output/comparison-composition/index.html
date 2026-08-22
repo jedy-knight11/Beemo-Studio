@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        margin: 0; width: 1920px; height: 1080px; overflow: hidden;
+        background: #050505; color: #ffffff;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      .heading-font { font-family: "Syncopate", sans-serif; }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+      .clip { position: absolute; inset: 0; display: grid; place-items: center; }
+      
+      .screenshot { position: absolute; width: 1920px; height: auto; min-height: 1080px; top: 0; left: 0; object-fit: cover; }
+      
+      .label { position: absolute; bottom: 50px; right: 50px; font-size: 36px; font-weight: 800; padding: 15px 40px; text-transform: uppercase; letter-spacing: 0.1em; z-index: 10; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+      .label-before { background: #e53935; color: white; }
+      .label-after { background: #43a047; color: white; }
+      
+      /* Scenes */
+      .before-img { z-index: 1; }
+      .after-img { z-index: 2; }
+      
+      #after-1 { clip-path: inset(0 100% 0 0); }
+      #after-2 { clip-path: inset(100% 0 0 0); }
+      #after-3 { clip-path: circle(0% at 50% 50%); }
+
+      #outro-scene { background: #050505; flex-direction: column; gap: 20px; }
+      .outro-text { font-size: 70px; letter-spacing: -0.02em; opacity: 0; }
+      .outro-brand { font-size: 100px; color: #476ff0; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="30" data-width="1920" data-height="1080">
+      <audio id="bg-music" src="assets/track.mp3" data-start="0" data-track-index="0" data-volume="1"></audio>
+
+      <!-- Scene 1: Hero (0 - 9s) -->
+      <section id="scene-1" class="clip" data-start="0" data-duration="9" data-track-index="1">
+        <img id="before-1" class="screenshot before-img" src="assets/before-1.png" />
+        <img id="after-1" class="screenshot after-img" src="assets/after-1.png" />
+        
+        <div id="label-before-1" class="label label-before">BEFORE - Hero</div>
+        <div id="label-after-1" class="label label-after" style="opacity:0;">AFTER - Hero</div>
+      </section>
+
+      <!-- Scene 2: Portfolio (9 - 18s) -->
+      <section id="scene-2" class="clip" data-start="9" data-duration="9" data-track-index="2">
+        <img id="before-2" class="screenshot before-img" src="assets/before-2.png" />
+        <img id="after-2" class="screenshot after-img" src="assets/after-2.png" />
+        
+        <div id="label-before-2" class="label label-before">BEFORE - Portfolio</div>
+        <div id="label-after-2" class="label label-after" style="opacity:0;">AFTER - Portfolio</div>
+      </section>
+
+      <!-- Scene 3: Middle (18 - 27s) -->
+      <section id="scene-3" class="clip" data-start="18" data-duration="9" data-track-index="3">
+        <img id="before-3" class="screenshot before-img" src="assets/before-3.png" />
+        <img id="after-3" class="screenshot after-img" src="assets/after-3.png" />
+        
+        <div id="label-before-3" class="label label-before">BEFORE - Details</div>
+        <div id="label-after-3" class="label label-after" style="opacity:0;">AFTER - Details</div>
+      </section>
+
+      <!-- Scene 4: Outro (27 - 30s) -->
+      <section id="outro-scene" class="clip" data-start="27" data-duration="3" data-track-index="4" style="display:flex; justify-content:center; align-items:center;">
+        <h2 class="heading-font outro-text" id="outro-1">A complete redesign.</h2>
+        <h1 class="heading-font outro-brand" id="outro-2">BEEMO STUDIO</h1>
+      </section>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      
+      // Scene 1: Hero
+      tl.to("#before-1", { y: -100, duration: 4.5, ease: "none" }, 0); // pan down
+      tl.to("#after-1", { clipPath: "inset(0 0% 0 0)", duration: 1.2, ease: "power3.inOut" }, 3); // wipe right
+      tl.to("#label-before-1", { opacity: 0, duration: 0.2 }, 3.4);
+      tl.to("#label-after-1", { opacity: 1, duration: 0.4 }, 3.6);
+      tl.fromTo("#after-1", { y: -100 }, { y: -200, duration: 4.5, ease: "none" }, 4.5); // continue pan down
+
+      // Scene 2: Portfolio
+      tl.to("#before-2", { y: -100, duration: 4.5, ease: "none" }, 9); // pan down
+      tl.to("#after-2", { clipPath: "inset(0% 0 0 0)", duration: 1.2, ease: "power3.inOut" }, 12); // wipe up
+      tl.to("#label-before-2", { opacity: 0, duration: 0.2 }, 12.4);
+      tl.to("#label-after-2", { opacity: 1, duration: 0.4 }, 12.6);
+      tl.fromTo("#after-2", { y: -100 }, { y: -200, duration: 4.5, ease: "none" }, 13.5);
+
+      // Scene 3: Details
+      tl.to("#before-3", { scale: 1.05, duration: 4.5, ease: "none" }, 18); // slow zoom
+      tl.to("#after-3", { clipPath: "circle(150% at 50% 50%)", duration: 1.2, ease: "power3.inOut" }, 21); // circle reveal
+      tl.to("#label-before-3", { opacity: 0, duration: 0.2 }, 21.4);
+      tl.to("#label-after-3", { opacity: 1, duration: 0.4 }, 21.6);
+      tl.fromTo("#after-3", { scale: 1.05 }, { scale: 1.1, duration: 4.5, ease: "none" }, 22.5);
+
+      // Scene 4: Outro
+      tl.to("#outro-1", { opacity: 1, y: -20, duration: 0.8, ease: "power3.out" }, 27.2);
+      tl.to("#outro-2", { opacity: 1, y: -20, duration: 0.8, ease: "power3.out" }, 27.6);
+      
+      tl.to("#bg-music", { volume: 0, duration: 2 }, 28);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

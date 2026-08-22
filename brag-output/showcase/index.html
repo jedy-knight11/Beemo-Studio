@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        margin: 0; width: 1920px; height: 1080px; overflow: hidden;
+        background: #050505; color: #ffffff;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      #root {
+        position: relative;
+        width: 1920px; height: 1080px;
+        overflow: hidden;
+      }
+      .clip {
+        position: absolute; inset: 0;
+        overflow: hidden;
+      }
+
+      /* ── Scene 1: Cold open ── */
+      #cold-open { display: flex; align-items: center; justify-content: center; }
+      #cold-open .bg { position: absolute; inset: 0; background: #050505; }
+      .brand-mark {
+        font-family: "Syncopate", sans-serif;
+        font-weight: 700; font-size: 28px; letter-spacing: 0.3em;
+        text-transform: uppercase; opacity: 0;
+      }
+      .tagline {
+        font-size: 22px; font-weight: 300; letter-spacing: 0.15em;
+        color: rgba(255,255,255,0.5); opacity: 0;
+        margin-top: 12px;
+      }
+
+      /* ── Scene 2: Hero reveal ── */
+      #hero-reveal { display: flex; align-items: center; justify-content: center; }
+      .site-frame {
+        position: relative;
+        width: 1600px; height: 900px;
+        border-radius: 16px; overflow: hidden;
+        box-shadow: 0 40px 120px rgba(0,0,0,0.8);
+        transform: scale(0.85);
+        opacity: 0;
+      }
+      .site-frame img {
+        width: 100%; height: auto;
+        display: block; position: absolute; top: 0; left: 0;
+      }
+      .frame-glow {
+        position: absolute; inset: -2px;
+        border-radius: 18px;
+        border: 2px solid rgba(71,111,240,0.4);
+        pointer-events: none;
+      }
+
+      /* ── Scene 3: Portfolio scroll ── */
+      #portfolio-scroll { display: flex; align-items: center; justify-content: center; }
+
+      /* ── Scene 4: Specialties ── */
+      #specialties-scene { display: flex; align-items: center; justify-content: center; }
+
+      /* ── Scene 5: Team ── */
+      #team-scene { display: flex; align-items: center; justify-content: center; }
+
+      /* ── Scene 6: Contact & Footer ── */
+      #contact-scene { display: flex; align-items: center; justify-content: center; }
+
+      /* ── Scene 7: Outro ── */
+      #outro { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; }
+      #outro .bg { position: absolute; inset: 0; background: #050505; }
+      .outro-line {
+        font-family: "Syncopate", sans-serif;
+        font-weight: 700; font-size: 64px;
+        letter-spacing: 0.05em; text-transform: uppercase;
+        opacity: 0; position: relative; z-index: 1;
+      }
+      .outro-sub {
+        font-size: 20px; font-weight: 300;
+        letter-spacing: 0.2em; color: rgba(255,255,255,0.5);
+        opacity: 0; position: relative; z-index: 1;
+      }
+      .outro-accent {
+        color: #6b8cff;
+      }
+
+      /* ── Shared: section label ── */
+      .section-label {
+        position: absolute; top: 40px; left: 60px;
+        font-family: "Syncopate", sans-serif;
+        font-size: 14px; font-weight: 700;
+        letter-spacing: 0.25em; text-transform: uppercase;
+        color: #6b8cff; opacity: 0; z-index: 10;
+      }
+      .section-count {
+        position: absolute; top: 40px; right: 60px;
+        font-family: "Syncopate", sans-serif;
+        font-size: 14px; font-weight: 400;
+        letter-spacing: 0.15em;
+        color: rgba(255,255,255,0.55); opacity: 0; z-index: 10;
+      }
+
+      /* ── Flash overlay ── */
+      #flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 100; pointer-events: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="25" data-width="1920" data-height="1080">
+      <audio id="bg-music" src="assets/music/track.mp3" data-start="0" data-track-index="0" data-volume="1"></audio>
+
+      <!-- Flash overlay for transitions -->
+      <div id="flash"></div>
+
+      <!-- Scene 1: Cold open (0 – 3s) -->
+      <section id="cold-open" class="clip" data-start="0" data-duration="3" data-track-index="1">
+        <div class="bg"></div>
+        <div style="text-align:center; position:relative; z-index:1;">
+          <div id="co-brand" class="brand-mark">BEEMO STUDIO</div>
+          <div id="co-tag" class="tagline">Website Redesign 2024</div>
+        </div>
+      </section>
+
+      <!-- Scene 2: Hero reveal (3 – 7.5s) -->
+      <section id="hero-reveal" class="clip" data-start="3" data-duration="4.5" data-track-index="2">
+        <div class="bg" style="background: #050505;"></div>
+        <span id="lbl-hero" class="section-label">HERO</span>
+        <span id="cnt-hero" class="section-count">01 / 05</span>
+        <div id="hero-frame" class="site-frame">
+          <img src="assets/hero.png" alt="Hero" />
+          <div class="frame-glow"></div>
+        </div>
+      </section>
+
+      <!-- Scene 3: Portfolio (7.5 – 12s) -->
+      <section id="portfolio-scroll" class="clip" data-start="7.5" data-duration="4.5" data-track-index="3">
+        <div class="bg" style="background: #050505;"></div>
+        <span id="lbl-port" class="section-label">PORTAFOLIO</span>
+        <span id="cnt-port" class="section-count">02 / 05</span>
+        <div id="port-frame" class="site-frame">
+          <img id="port-img" src="assets/portfolio.png" alt="Portfolio" />
+          <div class="frame-glow"></div>
+        </div>
+      </section>
+
+      <!-- Scene 4: Specialties (12 – 16s) -->
+      <section id="specialties-scene" class="clip" data-start="12" data-duration="4" data-track-index="4">
+        <div class="bg" style="background: #050505;"></div>
+        <span id="lbl-spec" class="section-label">ESPECIALIDADES</span>
+        <span id="cnt-spec" class="section-count">03 / 05</span>
+        <div id="spec-frame" class="site-frame">
+          <img src="assets/specialties.png" alt="Specialties" />
+          <div class="frame-glow"></div>
+        </div>
+      </section>
+
+      <!-- Scene 5: Team (16 – 19.5s) -->
+      <section id="team-scene" class="clip" data-start="16" data-duration="3.5" data-track-index="5">
+        <div class="bg" style="background: #050505;"></div>
+        <span id="lbl-team" class="section-label">EQUIPO</span>
+        <span id="cnt-team" class="section-count">04 / 05</span>
+        <div id="team-frame" class="site-frame">
+          <img src="assets/team.png" alt="Team" />
+          <div class="frame-glow"></div>
+        </div>
+      </section>
+
+      <!-- Scene 6: Contact (19.5 – 22s) -->
+      <section id="contact-scene" class="clip" data-start="19.5" data-duration="2.5" data-track-index="6">
+        <div class="bg" style="background: #050505;"></div>
+        <span id="lbl-cta" class="section-label">CONTACTO</span>
+        <span id="cnt-cta" class="section-count">05 / 05</span>
+        <div id="cta-frame" class="site-frame">
+          <img src="assets/contact.png" alt="Contact" />
+          <div class="frame-glow"></div>
+        </div>
+      </section>
+
+      <!-- Scene 7: Outro (22 – 25s) -->
+      <section id="outro" class="clip" data-start="22" data-duration="3" data-track-index="7">
+        <div class="bg"></div>
+        <div id="outro-1" class="outro-line">BEEMO <span class="outro-accent">STUDIO</span></div>
+        <div id="outro-2" class="outro-sub">beemostudio.com</div>
+      </section>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      /* ── Scene 1: Cold open ── */
+      tl.to("#co-brand", { opacity: 1, duration: 0.6, ease: "power2.out" }, 0.3);
+      tl.to("#co-tag", { opacity: 1, y: -5, duration: 0.5, ease: "power2.out" }, 0.8);
+      tl.to("#co-brand", { opacity: 0, duration: 0.3 }, 2.4);
+      tl.to("#co-tag", { opacity: 0, duration: 0.3 }, 2.4);
+
+      /* ── Scene 2: Hero reveal ── */
+      // Flash transition into hero
+      tl.to("#flash", { opacity: 0.9, duration: 0.08 }, 3.0); // beat-locked: 3.0s
+      tl.to("#flash", { opacity: 0, duration: 0.3, ease: "power2.out" }, 3.08);
+      // Frame scales in
+      tl.to("#hero-frame", { opacity: 1, scale: 1, duration: 0.8, ease: "power3.out" }, 3.1);
+      tl.to("#lbl-hero", { opacity: 1, duration: 0.4 }, 3.4);
+      tl.to("#cnt-hero", { opacity: 1, duration: 0.4 }, 3.4);
+      // Slow zoom in
+      tl.to("#hero-frame", { scale: 1.08, duration: 3.5, ease: "none" }, 4.0);
+
+      /* ── Scene 3: Portfolio ── */
+      tl.to("#flash", { opacity: 0.7, duration: 0.06 }, 7.5);
+      tl.to("#flash", { opacity: 0, duration: 0.25, ease: "power2.out" }, 7.56);
+      tl.fromTo("#port-frame", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.7, ease: "power3.out" }, 7.6);
+      tl.to("#lbl-port", { opacity: 1, duration: 0.4 }, 7.9);
+      tl.to("#cnt-port", { opacity: 1, duration: 0.4 }, 7.9);
+      // Slow pan the portfolio image upward to show cards
+      tl.to("#port-img", { y: -120, duration: 3.5, ease: "none" }, 8.5);
+
+      /* ── Scene 4: Specialties ── */
+      tl.to("#flash", { opacity: 0.5, duration: 0.06 }, 12.0);
+      tl.to("#flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 12.06);
+      tl.fromTo("#spec-frame", { opacity: 0, x: 80 }, { opacity: 1, x: 0, duration: 0.7, ease: "power3.out" }, 12.1);
+      tl.to("#lbl-spec", { opacity: 1, duration: 0.4 }, 12.3);
+      tl.to("#cnt-spec", { opacity: 1, duration: 0.4 }, 12.3);
+      tl.to("#spec-frame", { scale: 1.04, duration: 3.5, ease: "none" }, 12.5);
+
+      /* ── Scene 5: Team ── */
+      tl.to("#flash", { opacity: 0.5, duration: 0.06 }, 16.0);
+      tl.to("#flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 16.06);
+      tl.fromTo("#team-frame", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 16.1);
+      tl.to("#lbl-team", { opacity: 1, duration: 0.4 }, 16.3);
+      tl.to("#cnt-team", { opacity: 1, duration: 0.4 }, 16.3);
+      tl.to("#team-frame", { scale: 1.05, duration: 3, ease: "none" }, 16.5);
+
+      /* ── Scene 6: Contact ── */
+      tl.to("#flash", { opacity: 0.4, duration: 0.06 }, 19.5);
+      tl.to("#flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 19.56);
+      tl.fromTo("#cta-frame", { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.6, ease: "power3.out" }, 19.6);
+      tl.to("#lbl-cta", { opacity: 1, duration: 0.3 }, 19.8);
+      tl.to("#cnt-cta", { opacity: 1, duration: 0.3 }, 19.8);
+      tl.to("#cta-frame", { scale: 1.03, duration: 1.7, ease: "none" }, 20.3);
+
+      /* ── Scene 7: Outro ── */
+      tl.to("#outro-1", { opacity: 1, duration: 0.6, ease: "power2.out" }, 22.3);
+      tl.to("#outro-2", { opacity: 1, duration: 0.5, ease: "power2.out" }, 22.8);
+
+      // Music fade
+      tl.to("#bg-music", { volume: 0, duration: 2 }, 23);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

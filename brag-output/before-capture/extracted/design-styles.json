@@ -1,0 +1,185 @@
+{
+  "typography": [
+    {
+      "role": "heading",
+      "fontFamily": "Poppins",
+      "fontSize": "44.8px",
+      "fontWeight": "500",
+      "lineHeight": "58.2042px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": "Beemo Reel"
+    },
+    {
+      "role": "heading-3",
+      "fontFamily": "Poppins",
+      "fontSize": "35.2px",
+      "fontWeight": "500",
+      "lineHeight": "46.9146px",
+      "letterSpacing": "normal",
+      "color": "#083EEB",
+      "sampleText": "Entregamos una experiencia audiovisual creativa y rentable, "
+    },
+    {
+      "role": "body",
+      "fontFamily": "Poppins",
+      "fontSize": "22.4px",
+      "fontWeight": "300",
+      "lineHeight": "40.32px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": "Beemo"
+    },
+    {
+      "role": "heading-4",
+      "fontFamily": "Poppins",
+      "fontSize": "19.2px",
+      "fontWeight": "500",
+      "lineHeight": "26.665px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": "Videos Institucionales"
+    },
+    {
+      "role": "label",
+      "fontFamily": "sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "color": "#000000",
+      "sampleText": "0 Saltar al contenido @supports (-webkit-backdrop-filter: no"
+    },
+    {
+      "role": "link",
+      "fontFamily": "Poppins",
+      "fontSize": "0px",
+      "fontWeight": "300",
+      "lineHeight": "0px",
+      "letterSpacing": "normal",
+      "color": "#000000",
+      "sampleText": ""
+    }
+  ],
+  "spacing": {
+    "observed": [
+      2,
+      17,
+      31,
+      58,
+      192
+    ],
+    "baseUnit": 8
+  },
+  "radius": [
+    "300px"
+  ],
+  "shadows": [],
+  "buttons": [
+    {
+      "label": "0\n              \n            \n          ",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#000000",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "3755.7px"
+    },
+    {
+      "label": "Saltar al contenido",
+      "background": "#083EEB",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "16px 26.72px",
+      "borderRadius": "300px",
+      "border": "2px solid rgb(8, 62, 235)",
+      "boxShadow": "none",
+      "fontSize": "13.696px",
+      "fontWeight": "500",
+      "height": "56px"
+    },
+    {
+      "label": "Ver más\n  \n  \n\n\n\n\n\n    \n  \n    \n    \n   ",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(255, 255, 255)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "300",
+      "height": "62.5938px"
+    },
+    {
+      "label": "Ver más",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#083EEB",
+      "padding": "16px 26.72px",
+      "borderRadius": "300px",
+      "border": "2px solid rgb(8, 62, 235)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "height": "25px"
+    }
+  ],
+  "cards": [
+    {
+      "label": "card",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#000000",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "3755.7px"
+    },
+    {
+      "label": "card",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#000000",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "3755.7px"
+    }
+  ],
+  "nav": {
+    "label": "navigation",
+    "background": "#FFFFFF",
+    "backgroundImage": "",
+    "backdropFilter": "",
+    "color": "#000000",
+    "padding": "0px",
+    "borderRadius": "0px",
+    "border": "0px none rgb(0, 0, 0)",
+    "boxShadow": "none",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": "3755.7px"
+  },
+  "chips": [],
+  "statCells": [],
+  "tabs": [],
+  "backgrounds": [],
+  "glass": []
+}

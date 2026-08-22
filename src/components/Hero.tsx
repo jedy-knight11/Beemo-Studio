@@ -86,11 +86,11 @@ export const Hero = () => {
             <AnimatePresence>
               {isMuted && (
                 <motion.a
-                  initial={{ opacity: 0, width: 0, paddingLeft: 0, paddingRight: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, width: 'auto', paddingLeft: 32, paddingRight: 32, scale: 1 }}
-                  exit={{ opacity: 0, width: 0, paddingLeft: 0, paddingRight: 0, scale: 0.8, overflow: 'hidden' }}
-                  href="#work"
-                  className="bg-white text-black py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#F5A623] hover:text-black transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.8, overflow: 'hidden' }}
+                  href="/portafolio"
+                  className="bg-white text-black px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#F5A623] hover:text-black transition-colors flex items-center justify-center gap-2 whitespace-nowrap w-full sm:w-auto"
                 >
                   <Play size={14} fill="currentColor" />
                   Ver Showreel

@@ -1,0 +1,96 @@
+{
+  "files": [
+    {
+      "file": "devanagari.woff2",
+      "family": "Poppins",
+      "rawFamily": "Poppins",
+      "subfamily": "Regular",
+      "postscript": "Poppins-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "latin-ext.woff2",
+      "family": "Poppins",
+      "rawFamily": "Poppins",
+      "subfamily": "Regular",
+      "postscript": "Poppins-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "latin.woff2",
+      "family": "Poppins",
+      "rawFamily": "Poppins",
+      "subfamily": "Regular",
+      "postscript": "Poppins-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "squarespace-ui-font.ttf",
+      "family": "squarespace-ui-font",
+      "rawFamily": "squarespace-ui-font",
+      "subfamily": "ui-font",
+      "postscript": "squarespace-ui-font",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": true
+    },
+    {
+      "file": "squarespace-ui-font.woff",
+      "family": "squarespace-ui-font",
+      "rawFamily": "squarespace-ui-font",
+      "subfamily": "ui-font",
+      "postscript": "squarespace-ui-font",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": true
+    }
+  ],
+  "families": [
+    {
+      "family": "Poppins",
+      "weights": [
+        400
+      ],
+      "variable": false,
+      "fileCount": 3,
+      "files": [
+        "devanagari.woff2",
+        "latin-ext.woff2",
+        "latin.woff2"
+      ]
+    },
+    {
+      "family": "squarespace-ui-font",
+      "weights": [
+        400
+      ],
+      "variable": false,
+      "fileCount": 2,
+      "files": [
+        "squarespace-ui-font.ttf",
+        "squarespace-ui-font.woff"
+      ]
+    }
+  ],
+  "unidentified": [],
+  "meta": {
+    "generatedAt": "2026-08-21T15:06:30.080Z",
+    "tool": "fontkit"
+  }
+}

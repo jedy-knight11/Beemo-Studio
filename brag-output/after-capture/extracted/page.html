@@ -1,0 +1,2483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6, .heading-font {
+        font-family: 'Syncopate', sans-serif;
+      }
+    </style>
+<style type="text/css" data-vite-dev-id="C:/Users/JEDY/antigravity/Beemo-Studio/node_modules/@fontsource/open-sauce-sans/index.css">/* open-sauce-sans-latin-400-normal */
+@font-face {
+  font-family: 'Open Sauce Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(/node_modules/@fontsource/open-sauce-sans/files/open-sauce-sans-latin-400-normal.woff2) format('woff2'), url(/node_modules/@fontsource/open-sauce-sans/files/open-sauce-sans-latin-400-normal.woff) format('woff');
+}</style>
+<style type="text/css" data-vite-dev-id="C:/Users/JEDY/antigravity/Beemo-Studio/src/index.css">/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-xs: 20rem;
+    --container-sm: 24rem;
+    --container-md: 28rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --container-3xl: 48rem;
+    --container-5xl: 64rem;
+    --container-7xl: 80rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    --tracking-tighter: -0.05em;
+    --tracking-tight: -0.025em;
+    --tracking-wide: 0.025em;
+    --tracking-wider: 0.05em;
+    --tracking-widest: 0.1em;
+    --leading-tight: 1.25;
+    --leading-relaxed: 1.625;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --blur-md: 12px;
+    --blur-xl: 24px;
+    --aspect-video: 16 / 9;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring:where(:not(iframe)) {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
+  .visible {
+    visibility: visible;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .static {
+    position: static;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .inset-0 {
+    inset: 0px;
+  }
+  .top-0 {
+    top: 0px;
+  }
+  .top-1\/2 {
+    top: calc(1 / 2 * 100%);
+  }
+  .top-6 {
+    top: calc(var(--spacing) * 6);
+  }
+  .top-full {
+    top: 100%;
+  }
+  .right-0 {
+    right: 0px;
+  }
+  .right-6 {
+    right: calc(var(--spacing) * 6);
+  }
+  .right-8 {
+    right: calc(var(--spacing) * 8);
+  }
+  .bottom-0 {
+    bottom: 0px;
+  }
+  .bottom-8 {
+    bottom: calc(var(--spacing) * 8);
+  }
+  .left-0 {
+    left: 0px;
+  }
+  .left-1\/2 {
+    left: calc(1 / 2 * 100%);
+  }
+  .left-\[-2px\] {
+    left: -2px;
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-20 {
+    z-index: 20;
+  }
+  .z-30 {
+    z-index: 30;
+  }
+  .z-40 {
+    z-index: 40;
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .z-\[100\] {
+    z-index: 100;
+  }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+  .col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+  .col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
+  .m-1 {
+    margin: var(--spacing);
+  }
+  .m-2 {
+    margin: calc(var(--spacing) * 2);
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-auto {
+    margin-top: auto;
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
+  }
+  .mb-24 {
+    margin-bottom: calc(var(--spacing) * 24);
+  }
+  .-ml-1 {
+    margin-left: calc(var(--spacing) * -1);
+  }
+  .ml-1 {
+    margin-left: var(--spacing);
+  }
+  .ml-4 {
+    margin-left: calc(var(--spacing) * 4);
+  }
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .block {
+    display: block;
+  }
+  .contents {
+    display: contents;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline {
+    display: inline;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .table {
+    display: table;
+  }
+  .aspect-\[4\/5\] {
+    aspect-ratio: 4/5;
+  }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
+  }
+  .h-1 {
+    height: var(--spacing);
+  }
+  .h-1\.5 {
+    height: calc(var(--spacing) * 1.5);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+  .h-48 {
+    height: calc(var(--spacing) * 48);
+  }
+  .h-\[2px\] {
+    height: 2px;
+  }
+  .h-\[3px\] {
+    height: 3px;
+  }
+  .h-\[48px\] {
+    height: 48px;
+  }
+  .h-\[60vh\] {
+    height: 60vh;
+  }
+  .h-\[80px\] {
+    height: 80px;
+  }
+  .h-\[96px\] {
+    height: 96px;
+  }
+  .h-\[100dvh\] {
+    height: 100dvh;
+  }
+  .h-\[110px\] {
+    height: 110px;
+  }
+  .h-\[250vh\] {
+    height: 250vh;
+  }
+  .h-\[400vh\] {
+    height: 400vh;
+  }
+  .h-auto {
+    height: auto;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .h-screen {
+    height: 100vh;
+  }
+  .min-h-\[400px\] {
+    min-height: 400px;
+  }
+  .min-h-\[500px\] {
+    min-height: 500px;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .w-1\.5 {
+    width: calc(var(--spacing) * 1.5);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-14 {
+    width: calc(var(--spacing) * 14);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
+  }
+  .w-36 {
+    width: calc(var(--spacing) * 36);
+  }
+  .w-48 {
+    width: calc(var(--spacing) * 48);
+  }
+  .w-\[2px\] {
+    width: 2px;
+  }
+  .w-\[6px\] {
+    width: 6px;
+  }
+  .w-\[85vw\] {
+    width: 85vw;
+  }
+  .w-auto {
+    width: auto;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-0 {
+    max-width: 0px;
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-3xl {
+    max-width: var(--container-3xl);
+  }
+  .max-w-5xl {
+    max-width: var(--container-5xl);
+  }
+  .max-w-7xl {
+    max-width: var(--container-7xl);
+  }
+  .max-w-\[1000px\] {
+    max-width: 1000px;
+  }
+  .max-w-\[1800px\] {
+    max-width: 1800px;
+  }
+  .max-w-md {
+    max-width: var(--container-md);
+  }
+  .max-w-sm {
+    max-width: var(--container-sm);
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
+  }
+  .min-w-max {
+    min-width: max-content;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-0 {
+    --tw-translate-y: 0px;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .scale-100 {
+    --tw-scale-x: 100%;
+    --tw-scale-y: 100%;
+    --tw-scale-z: 100%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .rotate-45 {
+    rotate: 45deg;
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-pulse {
+    animation: var(--animate-pulse);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .resize-none {
+    resize: none;
+  }
+  .snap-x {
+    scroll-snap-type: x var(--tw-scroll-snap-strictness);
+  }
+  .snap-mandatory {
+    --tw-scroll-snap-strictness: mandatory;
+  }
+  .snap-center {
+    scroll-snap-align: center;
+  }
+  .columns-12 {
+    columns: 12;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+  }
+  .gap-24 {
+    gap: calc(var(--spacing) * 24);
+  }
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-visible {
+    overflow: visible;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-\[2rem\] {
+    border-radius: 2rem;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-t-2 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
+  .border-r-2 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 2px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
+  .border-l-2 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 2px;
+  }
+  .border-\[\#083eeb\] {
+    border-color: #083eeb;
+  }
+  .border-transparent {
+    border-color: transparent;
+  }
+  .border-white {
+    border-color: var(--color-white);
+  }
+  .border-white\/5 {
+    border-color: color-mix(in srgb, #fff 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .border-white\/10 {
+    border-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .border-white\/20 {
+    border-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .border-white\/30 {
+    border-color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+  .bg-\[\#0D0D0D\] {
+    background-color: #0D0D0D;
+  }
+  .bg-\[\#0D0D0D\]\/90 {
+    background-color: color-mix(in oklab, #0D0D0D 90%, transparent);
+  }
+  .bg-\[\#083eeb\] {
+    background-color: #083eeb;
+  }
+  .bg-\[\#083eeb\]\/10 {
+    background-color: color-mix(in oklab, #083eeb 10%, transparent);
+  }
+  .bg-\[\#050505\] {
+    background-color: #050505;
+  }
+  .bg-\[\#111111\] {
+    background-color: #111111;
+  }
+  .bg-\[zinc-900\] {
+    background-color: zinc-900;
+  }
+  .bg-\[zinc-900\]\/50 {
+    background-color: color-mix(in oklab, zinc-900 50%, transparent);
+  }
+  .bg-black {
+    background-color: var(--color-black);
+  }
+  .bg-black\/40 {
+    background-color: color-mix(in srgb, #000 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 40%, transparent);
+    }
+  }
+  .bg-black\/95 {
+    background-color: color-mix(in srgb, #000 95%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 95%, transparent);
+    }
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-white\/5 {
+    background-color: color-mix(in srgb, #fff 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .bg-white\/10 {
+    background-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .bg-gradient-to-b {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-gradient-to-l {
+    --tw-gradient-position: to left in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-gradient-to-t {
+    --tw-gradient-position: to top in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .from-\[\#0D0D0D\] {
+    --tw-gradient-from: #0D0D0D;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-\[\#0D0D0D\]\/80 {
+    --tw-gradient-from: color-mix(in oklab, #0D0D0D 80%, transparent);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-\[\#083eeb\] {
+    --tw-gradient-from: #083eeb;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-black\/40 {
+    --tw-gradient-from: color-mix(in srgb, #000 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-black) 40%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-black\/80 {
+    --tw-gradient-from: color-mix(in srgb, #000 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-black) 80%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-white {
+    --tw-gradient-from: var(--color-white);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .via-\[\#0D0D0D\]\/40 {
+    --tw-gradient-via: color-mix(in oklab, #0D0D0D 40%, transparent);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-\[\#0D0D0D\]\/60 {
+    --tw-gradient-via: color-mix(in oklab, #0D0D0D 60%, transparent);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-black\/10 {
+    --tw-gradient-via: color-mix(in srgb, #000 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-via: color-mix(in oklab, var(--color-black) 10%, transparent);
+    }
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-black\/20 {
+    --tw-gradient-via: color-mix(in srgb, #000 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-via: color-mix(in oklab, var(--color-black) 20%, transparent);
+    }
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-white\/80 {
+    --tw-gradient-via: color-mix(in srgb, #fff 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-via: color-mix(in oklab, var(--color-white) 80%, transparent);
+    }
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .to-\[\#0D0D0D\] {
+    --tw-gradient-to: #0D0D0D;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-transparent {
+    --tw-gradient-to: transparent;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-white\/30 {
+    --tw-gradient-to: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-to: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-white\/40 {
+    --tw-gradient-to: color-mix(in srgb, #fff 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-to: color-mix(in oklab, var(--color-white) 40%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .bg-clip-text {
+    background-clip: text;
+  }
+  .object-contain {
+    object-fit: contain;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
+  }
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
+  .py-32 {
+    padding-block: calc(var(--spacing) * 32);
+  }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
+  }
+  .pt-24 {
+    padding-top: calc(var(--spacing) * 24);
+  }
+  .pt-\[120px\] {
+    padding-top: 120px;
+  }
+  .pt-\[150px\] {
+    padding-top: 150px;
+  }
+  .pr-8 {
+    padding-right: calc(var(--spacing) * 8);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
+  }
+  .pb-16 {
+    padding-bottom: calc(var(--spacing) * 16);
+  }
+  .pb-24 {
+    padding-bottom: calc(var(--spacing) * 24);
+  }
+  .pb-32 {
+    padding-bottom: calc(var(--spacing) * 32);
+  }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
+  .pl-6 {
+    padding-left: calc(var(--spacing) * 6);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[11px\] {
+    font-size: 11px;
+  }
+  .text-\[12vw\] {
+    font-size: 12vw;
+  }
+  .text-\[30vw\] {
+    font-size: 30vw;
+  }
+  .leading-\[0\.9\] {
+    --tw-leading: 0.9;
+    line-height: 0.9;
+  }
+  .leading-\[1\.1\] {
+    --tw-leading: 1.1;
+    line-height: 1.1;
+  }
+  .leading-\[1\.2\] {
+    --tw-leading: 1.2;
+    line-height: 1.2;
+  }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-\[0\.2em\] {
+    --tw-tracking: 0.2em;
+    letter-spacing: 0.2em;
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .tracking-tighter {
+    --tw-tracking: var(--tracking-tighter);
+    letter-spacing: var(--tracking-tighter);
+  }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
+  }
+  .tracking-wider {
+    --tw-tracking: var(--tracking-wider);
+    letter-spacing: var(--tracking-wider);
+  }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
+  }
+  .break-words {
+    overflow-wrap: break-word;
+  }
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
+  .text-\[\#083eeb\] {
+    color: #083eeb;
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-transparent {
+    color: transparent;
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .text-white\/30 {
+    color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+  .text-white\/40 {
+    color: color-mix(in srgb, #fff 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 40%, transparent);
+    }
+  }
+  .text-white\/50 {
+    color: color-mix(in srgb, #fff 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 50%, transparent);
+    }
+  }
+  .text-white\/60 {
+    color: color-mix(in srgb, #fff 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 60%, transparent);
+    }
+  }
+  .text-white\/70 {
+    color: color-mix(in srgb, #fff 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 70%, transparent);
+    }
+  }
+  .text-white\/90 {
+    color: color-mix(in srgb, #fff 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 90%, transparent);
+    }
+  }
+  .text-white\/\[0\.02\] {
+    color: color-mix(in srgb, #fff 2%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 2%, transparent);
+    }
+  }
+  .lowercase {
+    text-transform: lowercase;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .decoration-white\/30 {
+    text-decoration-color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      text-decoration-color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+  .decoration-2 {
+    text-decoration-thickness: 2px;
+  }
+  .underline-offset-4 {
+    text-underline-offset: 4px;
+  }
+  .underline-offset-\[6px\] {
+    text-underline-offset: 6px;
+  }
+  .underline-offset-\[8px\] {
+    text-underline-offset: 8px;
+  }
+  .placeholder-white\/20::placeholder {
+    color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .placeholder-white\/30::placeholder {
+    color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+  .opacity-0 {
+    opacity: 0%;
+  }
+  .opacity-30 {
+    opacity: 30%;
+  }
+  .opacity-40 {
+    opacity: 40%;
+  }
+  .opacity-50 {
+    opacity: 50%;
+  }
+  .opacity-60 {
+    opacity: 60%;
+  }
+  .opacity-80 {
+    opacity: 80%;
+  }
+  .opacity-90 {
+    opacity: 90%;
+  }
+  .opacity-100 {
+    opacity: 100%;
+  }
+  .mix-blend-screen {
+    mix-blend-mode: screen;
+  }
+  .shadow-2xl {
+    --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .brightness-0 {
+    --tw-brightness: brightness(0%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .brightness-90 {
+    --tw-brightness: brightness(90%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .drop-shadow-\[0_0_15px_rgba\(8\,62\,235\,0\.5\)\] {
+    --tw-drop-shadow-size: drop-shadow(0 0 15px var(--tw-drop-shadow-color, rgba(8,62,235,0.5)));
+    --tw-drop-shadow: var(--tw-drop-shadow-size);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .grayscale {
+    --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .invert {
+    --tw-invert: invert(100%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-blur-xl {
+    --tw-backdrop-blur: blur(var(--blur-xl));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-filter {
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+  }
+  .duration-700 {
+    --tw-duration: 700ms;
+    transition-duration: 700ms;
+  }
+  .duration-1000 {
+    --tw-duration: 1000ms;
+    transition-duration: 1000ms;
+  }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
+  }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  @media (hover: hover) {
+    .group-hover\:ml-3:is(:where(.group):hover *) {
+      margin-left: calc(var(--spacing) * 3);
+    }
+    .group-hover\:w-24:is(:where(.group):hover *) {
+      width: calc(var(--spacing) * 24);
+    }
+    .group-hover\:max-w-xs:is(:where(.group):hover *) {
+      max-width: var(--container-xs);
+    }
+    .group-hover\:scale-105:is(:where(.group):hover *) {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+    .group-hover\:scale-110:is(:where(.group):hover *) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+    .group-hover\:bg-\[\#083eeb\]:is(:where(.group):hover *) {
+      background-color: #083eeb;
+    }
+    .group-hover\:bg-white:is(:where(.group):hover *) {
+      background-color: var(--color-white);
+    }
+    .group-hover\:text-\[\#083eeb\]:is(:where(.group):hover *) {
+      color: #083eeb;
+    }
+    .group-hover\:text-black:is(:where(.group):hover *) {
+      color: var(--color-black);
+    }
+    .group-hover\:text-white:is(:where(.group):hover *) {
+      color: var(--color-white);
+    }
+    .group-hover\:text-white\/50:is(:where(.group):hover *) {
+      color: color-mix(in srgb, #fff 50%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .group-hover\:text-white\/50:is(:where(.group):hover *) {
+        color: color-mix(in oklab, var(--color-white) 50%, transparent);
+      }
+    }
+    .group-hover\:text-white\/60:is(:where(.group):hover *) {
+      color: color-mix(in srgb, #fff 60%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .group-hover\:text-white\/60:is(:where(.group):hover *) {
+        color: color-mix(in oklab, var(--color-white) 60%, transparent);
+      }
+    }
+    .group-hover\:decoration-\[\#083eeb\]:is(:where(.group):hover *) {
+      text-decoration-color: #083eeb;
+    }
+    .group-hover\:opacity-100:is(:where(.group):hover *) {
+      opacity: 100%;
+    }
+    .group-hover\:brightness-100:is(:where(.group):hover *) {
+      --tw-brightness: brightness(100%);
+      filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    }
+    .group-hover\:grayscale-0:is(:where(.group):hover *) {
+      --tw-grayscale: grayscale(0%);
+      filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    }
+  }
+  .selection\:bg-\[\#083eeb\] ::selection {
+    background-color: #083eeb;
+  }
+  .selection\:bg-\[\#083eeb\]::selection {
+    background-color: #083eeb;
+  }
+  .selection\:text-white ::selection {
+    color: var(--color-white);
+  }
+  .selection\:text-white::selection {
+    color: var(--color-white);
+  }
+  @media (hover: hover) {
+    .hover\:scale-110:hover {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+    .hover\:border-white:hover {
+      border-color: var(--color-white);
+    }
+    .hover\:border-white\/30:hover {
+      border-color: color-mix(in srgb, #fff 30%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:border-white\/30:hover {
+        border-color: color-mix(in oklab, var(--color-white) 30%, transparent);
+      }
+    }
+    .hover\:bg-\[\#083eeb\]:hover {
+      background-color: #083eeb;
+    }
+    .hover\:bg-\[\#F5A623\]:hover {
+      background-color: #F5A623;
+    }
+    .hover\:bg-\[zinc-900\]:hover {
+      background-color: zinc-900;
+    }
+    .hover\:bg-black\/60:hover {
+      background-color: color-mix(in srgb, #000 60%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-black\/60:hover {
+        background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
+      }
+    }
+    .hover\:bg-white:hover {
+      background-color: var(--color-white);
+    }
+    .hover\:bg-white\/5:hover {
+      background-color: color-mix(in srgb, #fff 5%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/5:hover {
+        background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+      }
+    }
+    .hover\:bg-white\/10:hover {
+      background-color: color-mix(in srgb, #fff 10%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/10:hover {
+        background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+      }
+    }
+    .hover\:bg-white\/20:hover {
+      background-color: color-mix(in srgb, #fff 20%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/20:hover {
+        background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+      }
+    }
+    .hover\:bg-white\/\[0\.02\]:hover {
+      background-color: color-mix(in srgb, #fff 2%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/\[0\.02\]:hover {
+        background-color: color-mix(in oklab, var(--color-white) 2%, transparent);
+      }
+    }
+    .hover\:text-\[\#083eeb\]:hover {
+      color: #083eeb;
+    }
+    .hover\:text-black:hover {
+      color: var(--color-black);
+    }
+    .hover\:text-white:hover {
+      color: var(--color-white);
+    }
+    .hover\:text-white\/60:hover {
+      color: color-mix(in srgb, #fff 60%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:text-white\/60:hover {
+        color: color-mix(in oklab, var(--color-white) 60%, transparent);
+      }
+    }
+    .hover\:opacity-70:hover {
+      opacity: 70%;
+    }
+    .hover\:opacity-100:hover {
+      opacity: 100%;
+    }
+  }
+  .focus\:border-\[\#083eeb\]:focus {
+    border-color: #083eeb;
+  }
+  .focus\:outline-none:focus {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  .disabled\:opacity-30:disabled {
+    opacity: 30%;
+  }
+  .disabled\:opacity-50:disabled {
+    opacity: 50%;
+  }
+  @media (hover: hover) {
+    .disabled\:hover\:bg-white:disabled:hover {
+      background-color: var(--color-white);
+    }
+    .disabled\:hover\:text-black:disabled:hover {
+      color: var(--color-black);
+    }
+  }
+  @media (width >= 40rem) {
+    .sm\:w-auto {
+      width: auto;
+    }
+    .sm\:flex-row {
+      flex-direction: row;
+    }
+    .sm\:text-5xl {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+    .sm\:text-6xl {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+    .sm\:text-7xl {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  @media (width >= 48rem) {
+    .md\:top-12 {
+      top: calc(var(--spacing) * 12);
+    }
+    .md\:right-12 {
+      right: calc(var(--spacing) * 12);
+    }
+    .md\:mt-0 {
+      margin-top: 0px;
+    }
+    .md\:mb-16 {
+      margin-bottom: calc(var(--spacing) * 16);
+    }
+    .md\:block {
+      display: block;
+    }
+    .md\:flex {
+      display: flex;
+    }
+    .md\:h-6 {
+      height: calc(var(--spacing) * 6);
+    }
+    .md\:h-12 {
+      height: calc(var(--spacing) * 12);
+    }
+    .md\:h-16 {
+      height: calc(var(--spacing) * 16);
+    }
+    .md\:h-20 {
+      height: calc(var(--spacing) * 20);
+    }
+    .md\:h-24 {
+      height: calc(var(--spacing) * 24);
+    }
+    .md\:h-56 {
+      height: calc(var(--spacing) * 56);
+    }
+    .md\:h-\[96px\] {
+      height: 96px;
+    }
+    .md\:h-\[110px\] {
+      height: 110px;
+    }
+    .md\:h-\[400vh\] {
+      height: 400vh;
+    }
+    .md\:w-6 {
+      width: calc(var(--spacing) * 6);
+    }
+    .md\:w-12 {
+      width: calc(var(--spacing) * 12);
+    }
+    .md\:w-24 {
+      width: calc(var(--spacing) * 24);
+    }
+    .md\:w-32 {
+      width: calc(var(--spacing) * 32);
+    }
+    .md\:w-48 {
+      width: calc(var(--spacing) * 48);
+    }
+    .md\:w-56 {
+      width: calc(var(--spacing) * 56);
+    }
+    .md\:w-\[60vw\] {
+      width: 60vw;
+    }
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .md\:flex-row {
+      flex-direction: row;
+    }
+    .md\:items-center {
+      align-items: center;
+    }
+    .md\:gap-12 {
+      gap: calc(var(--spacing) * 12);
+    }
+    .md\:gap-24 {
+      gap: calc(var(--spacing) * 24);
+    }
+    .md\:rounded-3xl {
+      border-radius: var(--radius-3xl);
+    }
+    .md\:p-6 {
+      padding: calc(var(--spacing) * 6);
+    }
+    .md\:p-10 {
+      padding: calc(var(--spacing) * 10);
+    }
+    .md\:p-12 {
+      padding: calc(var(--spacing) * 12);
+    }
+    .md\:p-16 {
+      padding: calc(var(--spacing) * 16);
+    }
+    .md\:px-12 {
+      padding-inline: calc(var(--spacing) * 12);
+    }
+    .md\:py-16 {
+      padding-block: calc(var(--spacing) * 16);
+    }
+    .md\:pt-0 {
+      padding-top: 0px;
+    }
+    .md\:pt-24 {
+      padding-top: calc(var(--spacing) * 24);
+    }
+    .md\:pb-32 {
+      padding-bottom: calc(var(--spacing) * 32);
+    }
+    .md\:text-2xl {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+    .md\:text-3xl {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+    .md\:text-4xl {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+    .md\:text-5xl {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+    .md\:text-7xl {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+    .md\:text-8xl {
+      font-size: var(--text-8xl);
+      line-height: var(--tw-leading, var(--text-8xl--line-height));
+    }
+    .md\:text-base {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+    .md\:text-lg {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+    .md\:text-sm {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+    .md\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+    .md\:text-xs {
+      font-size: var(--text-xs);
+      line-height: var(--tw-leading, var(--text-xs--line-height));
+    }
+    .md\:text-\[8vw\] {
+      font-size: 8vw;
+    }
+    .md\:text-\[14vw\] {
+      font-size: 14vw;
+    }
+    .md\:leading-\[1\.1\] {
+      --tw-leading: 1.1;
+      line-height: 1.1;
+    }
+  }
+  @media (width >= 64rem) {
+    .lg\:col-span-4 {
+      grid-column: span 4 / span 4;
+    }
+    .lg\:col-span-5 {
+      grid-column: span 5 / span 5;
+    }
+    .lg\:col-span-7 {
+      grid-column: span 7 / span 7;
+    }
+    .lg\:col-span-8 {
+      grid-column: span 8 / span 8;
+    }
+    .lg\:block {
+      display: block;
+    }
+    .lg\:flex {
+      display: flex;
+    }
+    .lg\:hidden {
+      display: none;
+    }
+    .lg\:aspect-\[21\/9\] {
+      aspect-ratio: 21/9;
+    }
+    .lg\:aspect-auto {
+      aspect-ratio: auto;
+    }
+    .lg\:min-h-\[600px\] {
+      min-height: 600px;
+    }
+    .lg\:w-\[45vw\] {
+      width: 45vw;
+    }
+    .lg\:w-auto {
+      width: auto;
+    }
+    .lg\:translate-y-4 {
+      --tw-translate-y: calc(var(--spacing) * 4);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .lg\:translate-y-6 {
+      --tw-translate-y: calc(var(--spacing) * 6);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .lg\:scale-75 {
+      --tw-scale-x: 75%;
+      --tw-scale-y: 75%;
+      --tw-scale-z: 75%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+    .lg\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+    .lg\:flex-row {
+      flex-direction: row;
+    }
+    .lg\:items-end {
+      align-items: flex-end;
+    }
+    .lg\:justify-end {
+      justify-content: flex-end;
+    }
+    .lg\:justify-start {
+      justify-content: flex-start;
+    }
+    .lg\:gap-0 {
+      gap: 0px;
+    }
+    .lg\:gap-8 {
+      gap: calc(var(--spacing) * 8);
+    }
+    .lg\:gap-12 {
+      gap: calc(var(--spacing) * 12);
+    }
+    .lg\:gap-16 {
+      gap: calc(var(--spacing) * 16);
+    }
+    .lg\:gap-24 {
+      gap: calc(var(--spacing) * 24);
+    }
+    .lg\:p-24 {
+      padding: calc(var(--spacing) * 24);
+    }
+    .lg\:text-4xl {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+    .lg\:text-6xl {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+    .lg\:text-8xl {
+      font-size: var(--text-8xl);
+      line-height: var(--tw-leading, var(--text-8xl--line-height));
+    }
+    .lg\:opacity-0 {
+      opacity: 0%;
+    }
+    .lg\:opacity-60 {
+      opacity: 60%;
+    }
+    @media (hover: hover) {
+      .lg\:group-hover\:translate-y-0:is(:where(.group):hover *) {
+        --tw-translate-y: 0px;
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+      .lg\:group-hover\:scale-100:is(:where(.group):hover *) {
+        --tw-scale-x: 100%;
+        --tw-scale-y: 100%;
+        --tw-scale-z: 100%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+      .lg\:group-hover\:opacity-90:is(:where(.group):hover *) {
+        opacity: 90%;
+      }
+      .lg\:group-hover\:opacity-100:is(:where(.group):hover *) {
+        opacity: 100%;
+      }
+    }
+  }
+  @media (width >= 80rem) {
+    .xl\:order-1 {
+      order: 1;
+    }
+    .xl\:order-2 {
+      order: 2;
+    }
+    .xl\:col-span-5 {
+      grid-column: span 5 / span 5;
+    }
+    .xl\:col-span-7 {
+      grid-column: span 7 / span 7;
+    }
+    .xl\:grid-cols-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+    .xl\:gap-8 {
+      gap: calc(var(--spacing) * 8);
+    }
+    .xl\:pl-24 {
+      padding-left: calc(var(--spacing) * 24);
+    }
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #050505;
+  color: #ffffff;
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-scroll-snap-strictness {
+  syntax: "*";
+  inherits: false;
+  initial-value: proximity;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+      --tw-ease: initial;
+    }
+  }
+}
+</style>
+<style>@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(assets/fonts/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_907NSg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU7NSg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_m07NSg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(assets/fonts/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_d0nNSg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(assets/fonts/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_TknNSg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(assets/fonts/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_KUnNSg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Syncopate';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/pe0sMIuPIYBCpEV5eFdyAg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Syncopate';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(assets/fonts/pe0pMIuPIYBCpEV5eFdKvtKaAw.ttf) format('truetype');
+}
+</style>
+<script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+<script type="module" src="/@vite/client"></script>
+</head>
+<body>
+
+    <script>
+      window.onerror = function(message, source, lineno, colno, error) {
+        var errDiv = document.createElement('div');
+        errDiv.style.position = 'fixed';
+        errDiv.style.top = '0';
+        errDiv.style.left = '0';
+        errDiv.style.background = 'red';
+        errDiv.style.color = 'white';
+        errDiv.style.padding = '20px';
+        errDiv.style.zIndex = '999999';
+        errDiv.innerHTML = '<h1>Error</h1><p>' + message + '</p><pre>' + (error ? error.stack : '') + '</pre>';
+        document.body.appendChild(errDiv);
+      };
+      window.addEventListener("unhandledrejection", function(event) {
+        var errDiv = document.createElement('div');
+        errDiv.style.position = 'fixed';
+        errDiv.style.top = '50%';
+        errDiv.style.left = '0';
+        errDiv.style.background = 'orange';
+        errDiv.style.color = 'white';
+        errDiv.style.padding = '20px';
+        errDiv.style.zIndex = '999999';
+        errDiv.innerHTML = '<h1>Promise Error</h1><p>' + event.reason + '</p>';
+        document.body.appendChild(errDiv);
+      });
+    </script>
+    <div id="root"><div class="min-h-screen bg-[#0D0D0D] text-white selection:bg-[#083eeb] selection:text-white overflow-x-hidden w-full"><nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent h-[80px] md:h-[110px] flex items-center" style=""><div class="w-full max-w-[1800px] mx-auto px-6 md:px-12 flex items-center justify-between"><a href="/" class="flex items-center"><img alt="Beemo Studio Logo" class="h-[48px] md:h-[96px] w-auto object-contain" src="http://localhost:3000/logo_header.png"></a><div class="hidden lg:flex items-center gap-6"><div class="flex gap-6 text-sm uppercase tracking-widest font-semibold text-white/60"><a href="/portafolio" class="hover:text-white transition-colors cursor-pointer">Trabajo</a><a href="/#services" class="hover:text-white transition-colors cursor-pointer">Servicios</a><a href="/#team" class="hover:text-white transition-colors cursor-pointer">Equipo</a></div><div class="text-xs uppercase font-bold tracking-widest text-white/40 ml-4"><span class="text-white cursor-pointer">EN</span> / ES</div><a href="/contacto" class="bg-[#083eeb] text-white px-8 py-3 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-[#F5A623] hover:text-black transition-all">Iniciar Proyecto</a></div><button class="lg:hidden text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div></nav><section class="relative w-full h-screen flex flex-col overflow-hidden bg-[#0D0D0D]"><div class="absolute inset-0 z-0"><div class="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/80 via-[#0D0D0D]/60 to-[#0D0D0D] z-10 transition-opacity duration-1000 opacity-100"></div><div class="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/40 to-transparent z-10 transition-opacity duration-1000 opacity-0"></div><video autoplay="" loop="" playsinline="" class="w-full h-full object-cover transition-opacity duration-1000 opacity-50" src="http://localhost:3000/hero-video.webm"></video></div><div class="relative z-20 w-full h-full w-full max-w-[1800px] mx-auto px-6 md:px-12 flex flex-col transition-all duration-700 ease-in-out pt-20 justify-center items-center"><div class="flex flex-col w-full max-w-5xl items-center text-center" style="opacity: 1; transform: none;"><div style="opacity: 1; height: auto; margin-bottom: 24px;"><div class="inline-flex items-center gap-2 bg-black/40 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10"><div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div><span class="text-[10px] font-bold uppercase tracking-widest text-white">Reel 2024</span></div></div><h1 class="font-black text-white tracking-tighter heading-font leading-[1.1] transition-all duration-700 text-4xl sm:text-5xl md:text-7xl lg:text-8xl mb-6">IMPACTO VISUAL <br class="hidden md:block"><span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/80 to-white/40">QUE DEFINE MARCAS.</span></h1><p class="text-white/70 font-light leading-relaxed text-lg md:text-xl max-w-2xl text-center" style="opacity: 1; height: auto; margin-bottom: 32px;">Producimos videos corporativos de alto impacto, comerciales y cobertura de eventos que elevan la narrativa de tu empresa al siguiente nivel.</p><div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto transition-all duration-700 justify-center items-center"><a href="/portafolio" class="bg-white text-black px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#F5A623] hover:text-black transition-colors flex items-center justify-center gap-2 whitespace-nowrap w-full sm:w-auto" style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>Ver Showreel</a><a href="/contacto" class="border border-white/20 hover:bg-white/5 px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-colors w-full sm:w-auto flex items-center justify-center whitespace-nowrap">Cotizar</a></div></div></div><button class="absolute bottom-8 right-8 z-30 group flex items-center bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/10 p-3 rounded-full transition-all duration-300" aria-label="Unmute video"><div class="text-white flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-volume-x" aria-hidden="true"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"></path><line x1="22" x2="16" y1="9" y2="15"></line><line x1="16" x2="22" y1="9" y2="15"></line></svg></div><span class="text-[10px] font-bold tracking-widest uppercase text-white overflow-hidden max-w-0 group-hover:max-w-xs group-hover:ml-3 transition-all duration-500 ease-in-out whitespace-nowrap opacity-0 group-hover:opacity-100">Unmute</span></button></section><section class="py-16 bg-[#0D0D0D] border-b border-white/5 overflow-hidden"><div class="w-full max-w-[1800px] mx-auto px-6 mb-12 text-center"><p class="text-[#083eeb] text-xs font-bold uppercase tracking-[0.2em]">Confiado por Líderes Empresariales</p></div><div class="relative w-full flex overflow-x-hidden"><div class="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-[#0D0D0D] to-transparent z-10 pointer-events-none"></div><div class="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-[#0D0D0D] to-transparent z-10 pointer-events-none"></div><div class="flex whitespace-nowrap" style="transform: translateX(-13.818%);"><div class="flex gap-16 md:gap-24 items-center px-8 md:px-12 min-w-max"><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/duragas.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/toyocosta.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/sambolon.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/ucg.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/renault_1.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/ciudad.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/ayn.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/ya.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/new_client.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/peigo.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/renault_2.webp"></div></div><div class="flex gap-16 md:gap-24 items-center px-8 md:px-12 min-w-max"><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/duragas.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/toyocosta.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/sambolon.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/ucg.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/renault_1.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/ciudad.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/ayn.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/ya.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/new_client.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/peigo.webp"></div><div class="shrink-0 flex items-center justify-center w-36 md:w-56 h-20 md:h-24"><img alt="Client Logo" class="w-full h-full object-contain transition-all duration-300 brightness-0 invert opacity-30 hover:opacity-100" src="http://localhost:3000/logos/renault_2.webp"></div></div></div></div></section><section id="work" class="py-32 bg-[#0D0D0D]"><div class="w-full max-w-[1800px] mx-auto px-6 md:px-12"><div class="flex flex-col gap-8 mb-16"><div class="flex flex-col gap-4"><p class="text-[#083eeb] text-xs font-bold uppercase tracking-[0.2em]">Nuestro Trabajo</p><h2 class="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase heading-font leading-none heading-font">Portafolio Destacado</h2></div><div class="flex flex-col md:flex-row md:items-center justify-between gap-6"><div class="flex flex-wrap gap-2"><button class="px-6 py-3 rounded-full text-[11px] uppercase font-bold tracking-widest transition-all bg-white text-black">Todos</button><button class="px-6 py-3 rounded-full text-[11px] uppercase font-bold tracking-widest transition-all bg-white/5 border border-white/5 text-white/60 hover:bg-white/10 hover:text-white">Comerciales</button><button class="px-6 py-3 rounded-full text-[11px] uppercase font-bold tracking-widest transition-all bg-white/5 border border-white/5 text-white/60 hover:bg-white/10 hover:text-white">Institucionales</button><button class="px-6 py-3 rounded-full text-[11px] uppercase font-bold tracking-widest transition-all bg-white/5 border border-white/5 text-white/60 hover:bg-white/10 hover:text-white">Coberturas</button></div><div class="hidden md:flex items-center gap-4"><button class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors focus:outline-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button><button class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors focus:outline-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button></div></div></div></div><div class="w-full relative"><div class="flex overflow-x-auto gap-6 px-6 md:px-12 pb-12 snap-x snap-mandatory hide-scrollbar"><div class="group relative w-[85vw] md:w-[60vw] lg:w-[45vw] shrink-0 snap-center aspect-video bg-white/5 rounded-3xl overflow-hidden cursor-pointer" style="opacity: 1; transform: none;"><video src="http://localhost:3000/portfolio/Comerciales/Orocash_TVC.mp4#t=0.001" loop="" playsinline="" preload="metadata" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></video><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-300 pointer-events-none"></div><div class="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none"><div class="translate-y-0 lg:translate-y-6 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out"><span class="text-xs uppercase font-bold text-[#083eeb] tracking-[0.2em] mb-3 block">Comerciales</span><h3 class="font-black text-2xl md:text-3xl text-white leading-tight mb-2 uppercase tracking-tighter heading-font">Orocash TVC</h3><p class="text-sm md:text-base text-white/60 line-clamp-2 max-w-xl opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">Comercial de televisión para Orocash.</p></div></div><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 scale-100 lg:scale-75 lg:group-hover:scale-100 border border-white/20 pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play text-white ml-1" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div></div><div class="group relative w-[85vw] md:w-[60vw] lg:w-[45vw] shrink-0 snap-center aspect-video bg-white/5 rounded-3xl overflow-hidden cursor-pointer" style="opacity: 1; transform: none;"><video src="http://localhost:3000/portfolio/Comerciales/Mazda_CX90.mp4#t=0.001" loop="" playsinline="" preload="metadata" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></video><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-300 pointer-events-none"></div><div class="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none"><div class="translate-y-0 lg:translate-y-6 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out"><span class="text-xs uppercase font-bold text-[#083eeb] tracking-[0.2em] mb-3 block">Comerciales</span><h3 class="font-black text-2xl md:text-3xl text-white leading-tight mb-2 uppercase tracking-tighter heading-font">Mazda CX90</h3><p class="text-sm md:text-base text-white/60 line-clamp-2 max-w-xl opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">Spot comercial para el nuevo Mazda CX90.</p></div></div><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 scale-100 lg:scale-75 lg:group-hover:scale-100 border border-white/20 pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play text-white ml-1" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div></div><div class="group relative w-[85vw] md:w-[60vw] lg:w-[45vw] shrink-0 snap-center aspect-video bg-white/5 rounded-3xl overflow-hidden cursor-pointer" style="opacity: 1; transform: none;"><video src="http://localhost:3000/portfolio/Comerciales/PedidosYa.mp4#t=0.001" loop="" playsinline="" preload="metadata" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></video><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-300 pointer-events-none"></div><div class="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none"><div class="translate-y-0 lg:translate-y-6 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out"><span class="text-xs uppercase font-bold text-[#083eeb] tracking-[0.2em] mb-3 block">Comerciales</span><h3 class="font-black text-2xl md:text-3xl text-white leading-tight mb-2 uppercase tracking-tighter heading-font">PedidosYa</h3><p class="text-sm md:text-base text-white/60 line-clamp-2 max-w-xl opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">Campaña digital para PedidosYa.</p></div></div><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 scale-100 lg:scale-75 lg:group-hover:scale-100 border border-white/20 pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play text-white ml-1" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div></div><div class="group relative w-[85vw] md:w-[60vw] lg:w-[45vw] shrink-0 snap-center aspect-video bg-white/5 rounded-3xl overflow-hidden cursor-pointer" style="opacity: 1; transform: none;"><video src="http://localhost:3000/portfolio/Comerciales/PeiGo_Madre.mp4#t=0.001" loop="" playsinline="" preload="metadata" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></video><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-300 pointer-events-none"></div><div class="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none"><div class="translate-y-0 lg:translate-y-6 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out"><span class="text-xs uppercase font-bold text-[#083eeb] tracking-[0.2em] mb-3 block">Comerciales</span><h3 class="font-black text-2xl md:text-3xl text-white leading-tight mb-2 uppercase tracking-tighter heading-font">PeiGo Madre</h3><p class="text-sm md:text-base text-white/60 line-clamp-2 max-w-xl opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">Spot del día de la madre para PeiGo.</p></div></div><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 scale-100 lg:scale-75 lg:group-hover:scale-100 border border-white/20 pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play text-white ml-1" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div></div><div class="group relative w-[85vw] md:w-[60vw] lg:w-[45vw] shrink-0 snap-center aspect-video bg-white/5 rounded-3xl overflow-hidden cursor-pointer" style="opacity: 1; transform: none;"><video src="http://localhost:3000/portfolio/Institucionales/Duragas_Oficina.mp4#t=0.001" loop="" playsinline="" preload="metadata" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></video><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-300 pointer-events-none"></div><div class="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none"><div class="translate-y-0 lg:translate-y-6 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out"><span class="text-xs uppercase font-bold text-[#083eeb] tracking-[0.2em] mb-3 block">Institucionales</span><h3 class="font-black text-2xl md:text-3xl text-white leading-tight mb-2 uppercase tracking-tighter heading-font">Duragas Express Oficina</h3><p class="text-sm md:text-base text-white/60 line-clamp-2 max-w-xl opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">Video institucional para Duragas Express.</p></div></div><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 scale-100 lg:scale-75 lg:group-hover:scale-100 border border-white/20 pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play text-white ml-1" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div></div><div class="group relative w-[85vw] md:w-[60vw] lg:w-[45vw] shrink-0 snap-center aspect-video bg-white/5 rounded-3xl overflow-hidden cursor-pointer" style="opacity: 1; transform: none;"><video src="http://localhost:3000/portfolio/Institucionales/Blinseg_Blindaje.mp4#t=0.001" loop="" playsinline="" preload="metadata" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></video><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-300 pointer-events-none"></div><div class="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none"><div class="translate-y-0 lg:translate-y-6 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out"><span class="text-xs uppercase font-bold text-[#083eeb] tracking-[0.2em] mb-3 block">Institucionales</span><h3 class="font-black text-2xl md:text-3xl text-white leading-tight mb-2 uppercase tracking-tighter heading-font">Blinseg</h3><p class="text-sm md:text-base text-white/60 line-clamp-2 max-w-xl opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">Video corporativo sobre procesos de blindaje.</p></div></div><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 scale-100 lg:scale-75 lg:group-hover:scale-100 border border-white/20 pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play text-white ml-1" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div></div><div class="group relative w-[85vw] md:w-[60vw] lg:w-[45vw] shrink-0 snap-center aspect-video bg-white/5 rounded-3xl overflow-hidden cursor-pointer" style="opacity: 1; transform: none;"><video src="http://localhost:3000/portfolio/Coberturas/Duragas_MakingOf.mp4#t=0.001" loop="" playsinline="" preload="metadata" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></video><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-300 pointer-events-none"></div><div class="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none"><div class="translate-y-0 lg:translate-y-6 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out"><span class="text-xs uppercase font-bold text-[#083eeb] tracking-[0.2em] mb-3 block">Coberturas</span><h3 class="font-black text-2xl md:text-3xl text-white leading-tight mb-2 uppercase tracking-tighter heading-font">Duragas Making Of</h3><p class="text-sm md:text-base text-white/60 line-clamp-2 max-w-xl opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">Detrás de cámaras de la campaña Duragas Express.</p></div></div><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 scale-100 lg:scale-75 lg:group-hover:scale-100 border border-white/20 pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play text-white ml-1" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div></div><div class="group relative w-[85vw] md:w-[60vw] lg:w-[45vw] shrink-0 snap-center aspect-video bg-white/5 rounded-3xl overflow-hidden cursor-pointer" style="opacity: 1; transform: none;"><video src="http://localhost:3000/portfolio/Coberturas/Sambolon.mp4#t=0.001" loop="" playsinline="" preload="metadata" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></video><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-300 pointer-events-none"></div><div class="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none"><div class="translate-y-0 lg:translate-y-6 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out"><span class="text-xs uppercase font-bold text-[#083eeb] tracking-[0.2em] mb-3 block">Coberturas</span><h3 class="font-black text-2xl md:text-3xl text-white leading-tight mb-2 uppercase tracking-tighter heading-font">Sambolón Event</h3><p class="text-sm md:text-base text-white/60 line-clamp-2 max-w-xl opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">Cobertura oficial del evento Sambolón.</p></div></div><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 scale-100 lg:scale-75 lg:group-hover:scale-100 border border-white/20 pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play text-white ml-1" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div></div><div class="w-[6px] shrink-0"></div></div></div></section><section id="services" class="py-32 bg-[#050505]"><div class="w-full max-w-[1800px] mx-auto px-6 md:px-12"><div class="mb-16"><p class="text-[#083eeb] text-xs font-bold uppercase tracking-[0.2em] mb-4">Nuestras Especialidades</p><h2 class="text-4xl sm:text-5xl md:text-7xl font-bold text-white uppercase leading-none heading-font break-words">Especialidades &amp; Disciplinas</h2></div><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start"><div class="lg:col-span-4 flex flex-col gap-4"><button class="text-left group w-full p-5 md:p-6 rounded-3xl border transition-all duration-500 flex items-center gap-4 bg-white/5 border-white/10"><div class="shrink-0 transition-colors duration-500 text-[#083eeb]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg></div><h3 class="text-xl md:text-2xl font-bold uppercase transition-colors duration-500 heading-font text-white">Institucionales &amp; Corporativos</h3></button><button class="text-left group w-full p-5 md:p-6 rounded-3xl border transition-all duration-500 flex items-center gap-4 bg-transparent border-transparent hover:bg-white/[0.02]"><div class="shrink-0 transition-colors duration-500 text-white/30 group-hover:text-white/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-megaphone" aria-hidden="true"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"></path><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"></path><path d="M8 6v8"></path></svg></div><h3 class="text-xl md:text-2xl font-bold uppercase transition-colors duration-500 heading-font text-white/30 group-hover:text-white/60">Comerciales &amp; Spots</h3></button><button class="text-left group w-full p-5 md:p-6 rounded-3xl border transition-all duration-500 flex items-center gap-4 bg-transparent border-transparent hover:bg-white/[0.02]"><div class="shrink-0 transition-colors duration-500 text-white/30 group-hover:text-white/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg></div><h3 class="text-xl md:text-2xl font-bold uppercase transition-colors duration-500 heading-font text-white/30 group-hover:text-white/60">Cobertura de Eventos</h3></button><button class="text-left group w-full p-5 md:p-6 rounded-3xl border transition-all duration-500 flex items-center gap-4 bg-transparent border-transparent hover:bg-white/[0.02]"><div class="shrink-0 transition-colors duration-500 text-white/30 group-hover:text-white/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg></div><h3 class="text-xl md:text-2xl font-bold uppercase transition-colors duration-500 heading-font text-white/30 group-hover:text-white/60">Casos de Éxito</h3></button></div><div class="lg:col-span-8"><div class="flex flex-col gap-6 lg:gap-8" style="opacity: 1; transform: none;"><div class="relative aspect-video lg:aspect-[21/9] w-full rounded-[2rem] overflow-hidden shadow-2xl border border-white/10"><img alt="Institucionales &amp; Corporativos" class="absolute inset-0 w-full h-full object-cover" src="http://localhost:3000/services/institucional.webp"><div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div></div><div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6"><div class="flex flex-col gap-3 max-w-2xl"><h3 class="text-3xl md:text-5xl font-bold text-white uppercase heading-font">Institucionales &amp; Corporativos</h3><p class="text-lg text-white/60 leading-relaxed">Historias de marca, manifiestos y comunicación interna diseñados para generar confianza y comunicar la escala empresarial.</p></div><div class="shrink-0 pb-2"><a href="#contact" class="inline-block bg-[#083eeb] text-white px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-[#F5A623] hover:text-black transition-all duration-500 ease-out shadow-lg">Cotizar Proyecto</a></div></div></div></div></div></div></section><section id="process" class="relative bg-[#0D0D0D] border-t border-white/5"><div class="lg:hidden py-24 px-6 md:px-12 w-full max-w-[1800px] mx-auto"><h2 class="text-4xl sm:text-5xl font-black text-white tracking-tighter uppercase heading-font mb-6 leading-[0.9] break-words">Nuestra<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/30">Metodología</span></h2><p class="text-white/50 text-lg mb-16">Un proceso riguroso diseñado para transformar una visión en realidad cinematográfica.</p><div class="flex flex-col gap-16"><div class="flex flex-col relative pl-6 border-l-2 border-white/10"><div class="absolute top-0 left-[-2px] h-full w-[2px] bg-gradient-to-b from-[#083eeb] to-transparent"></div><span class="text-[#083eeb] text-xl font-normal tracking-widest mb-4 block">PASO 01</span><h3 class="text-3xl font-black text-white uppercase tracking-tighter heading-font mb-4 leading-tight">Pre-producción</h3><p class="text-lg text-white/60 font-light leading-relaxed">Convertimos ideas en un plan sólido. Desarrollo de concepto, guion técnico, scouting de locaciones y casting. Preparamos cada detalle al milímetro.</p></div><div class="flex flex-col relative pl-6 border-l-2 border-white/10"><div class="absolute top-0 left-[-2px] h-full w-[2px] bg-gradient-to-b from-[#083eeb] to-transparent"></div><span class="text-[#083eeb] text-xl font-normal tracking-widest mb-4 block">PASO 02</span><h3 class="text-3xl font-black text-white uppercase tracking-tighter heading-font mb-4 leading-tight">Producción</h3><p class="text-lg text-white/60 font-light leading-relaxed">El momento de la acción. Dirigimos equipos técnicos y artísticos con cámaras de cine digital y óptica premium para capturar la esencia exacta de la marca.</p></div><div class="flex flex-col relative pl-6 border-l-2 border-white/10"><div class="absolute top-0 left-[-2px] h-full w-[2px] bg-gradient-to-b from-[#083eeb] to-transparent"></div><span class="text-[#083eeb] text-xl font-normal tracking-widest mb-4 block">PASO 03</span><h3 class="text-3xl font-black text-white uppercase tracking-tighter heading-font mb-4 leading-tight">Post-producción</h3><p class="text-lg text-white/60 font-light leading-relaxed">Donde surge la magia. Edición rítmica impecable, diseño sonoro envolvente, color grading cinematográfico y efectos visuales de alta gama.</p></div><div class="flex flex-col relative pl-6 border-l-2 border-white/10"><div class="absolute top-0 left-[-2px] h-full w-[2px] bg-gradient-to-b from-[#083eeb] to-transparent"></div><span class="text-[#083eeb] text-xl font-normal tracking-widest mb-4 block">PASO 04</span><h3 class="text-3xl font-black text-white uppercase tracking-tighter heading-font mb-4 leading-tight">Entrega</h3><p class="text-lg text-white/60 font-light leading-relaxed">Exportamos piezas maestras. Masterización y adaptación de formatos nativos para múltiples plataformas, asegurando el máximo impacto visual en todas las pantallas.</p></div></div></div><div class="hidden lg:block relative h-[400vh]"><div class="sticky top-0 h-screen w-full flex items-center max-w-[1800px] mx-auto px-12 overflow-hidden" style=""><div class="w-full grid grid-cols-12 gap-24 items-center"><div class="col-span-5 flex flex-col justify-center"><h2 class="text-7xl font-black text-white tracking-tighter uppercase heading-font mb-6 leading-[0.9]">Nuestra<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/30">Metodología</span></h2><p class="text-white/50 text-xl max-w-sm mb-12">Un proceso riguroso diseñado para transformar una visión en realidad cinematográfica.</p><div class="relative h-[2px] w-full max-w-md bg-white/10 rounded-full overflow-hidden"><div class="absolute top-0 left-0 bottom-0 bg-[#083eeb]" style="width: 0%;"></div></div><div class="flex gap-8 mt-6 max-w-md"><div class="relative text-xs font-bold font-mono text-white/30"><div class="absolute inset-0 text-white" style="opacity: 1;">01</div>01</div><div class="relative text-xs font-bold font-mono text-white/30"><div class="absolute inset-0 text-white" style="opacity: 0.3;">02</div>02</div><div class="relative text-xs font-bold font-mono text-white/30"><div class="absolute inset-0 text-white" style="opacity: 0.3;">03</div>03</div><div class="relative text-xs font-bold font-mono text-white/30"><div class="absolute inset-0 text-white" style="opacity: 0.3;">04</div>04</div></div></div><div class="col-span-7 relative h-[60vh] flex items-center justify-start"><div class="hidden lg:block absolute top-1/2 left-0 w-full -translate-y-1/2" style="opacity: 1; transform: none;"><span class="text-[#083eeb] text-2xl font-normal tracking-widest mb-6 block">PASO 01</span><h3 class="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter heading-font mb-6 leading-tight">Pre-producción</h3><p class="text-xl md:text-2xl text-white/60 font-light leading-relaxed max-w-xl">Convertimos ideas en un plan sólido. Desarrollo de concepto, guion técnico, scouting de locaciones y casting. Preparamos cada detalle al milímetro.</p></div><div class="hidden lg:block absolute top-1/2 left-0 w-full -translate-y-1/2" style="opacity: 0; transform: translateY(60px);"><span class="text-[#083eeb] text-2xl font-normal tracking-widest mb-6 block">PASO 02</span><h3 class="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter heading-font mb-6 leading-tight">Producción</h3><p class="text-xl md:text-2xl text-white/60 font-light leading-relaxed max-w-xl">El momento de la acción. Dirigimos equipos técnicos y artísticos con cámaras de cine digital y óptica premium para capturar la esencia exacta de la marca.</p></div><div class="hidden lg:block absolute top-1/2 left-0 w-full -translate-y-1/2" style="opacity: 0; transform: translateY(60px);"><span class="text-[#083eeb] text-2xl font-normal tracking-widest mb-6 block">PASO 03</span><h3 class="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter heading-font mb-6 leading-tight">Post-producción</h3><p class="text-xl md:text-2xl text-white/60 font-light leading-relaxed max-w-xl">Donde surge la magia. Edición rítmica impecable, diseño sonoro envolvente, color grading cinematográfico y efectos visuales de alta gama.</p></div><div class="hidden lg:block absolute top-1/2 left-0 w-full -translate-y-1/2" style="opacity: 0; transform: translateY(60px);"><span class="text-[#083eeb] text-2xl font-normal tracking-widest mb-6 block">PASO 04</span><h3 class="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter heading-font mb-6 leading-tight">Entrega</h3><p class="text-xl md:text-2xl text-white/60 font-light leading-relaxed max-w-xl">Exportamos piezas maestras. Masterización y adaptación de formatos nativos para múltiples plataformas, asegurando el máximo impacto visual en todas las pantallas.</p></div></div></div></div></div></section><section id="team" class="py-32 bg-[#050505] border-t border-white/5"><div class="w-full max-w-[1800px] mx-auto px-6 md:px-12"><div class="mb-20 max-w-3xl"><h2 class="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase heading-font mb-6 leading-[0.9]">El Equipo</h2><p class="text-xl md:text-2xl text-white/50 font-light leading-relaxed">Especialistas visuales obsesionados con la perfección técnica y la narrativa emocional.</p></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"><div class="group relative overflow-hidden rounded-3xl bg-[zinc-900] col-span-1 aspect-[4/5] lg:aspect-auto lg:min-h-[600px]" style="opacity: 1; transform: none;"><img alt="Colombia Cañarte" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 filter brightness-90 group-hover:brightness-100" src="http://localhost:3000/team/colombia.webp"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-500"></div><div class="absolute inset-0 p-8 md:p-10 flex flex-col justify-end"><div class="translate-y-0 lg:translate-y-4 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out"><span class="text-[#083eeb] text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-3 block">Fundador &amp; Productor General</span><h3 class="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter heading-font">Colombia Cañarte</h3></div></div></div><div class="group relative overflow-hidden rounded-3xl bg-[zinc-900] col-span-1 aspect-[4/5] lg:aspect-auto lg:min-h-[600px]" style="opacity: 1; transform: none;"><img alt="Jonathan Miranda" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 filter brightness-90 group-hover:brightness-100" src="http://localhost:3000/team/jonathan.webp"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-500"></div><div class="absolute inset-0 p-8 md:p-10 flex flex-col justify-end"><div class="translate-y-0 lg:translate-y-4 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out"><span class="text-[#083eeb] text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-3 block">Director Creativo</span><h3 class="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter heading-font">Jonathan Miranda</h3></div></div></div><div class="group relative overflow-hidden rounded-3xl bg-[zinc-900] col-span-1 aspect-[4/5] lg:aspect-auto lg:min-h-[600px]" style="opacity: 1; transform: none;"><img alt="Andrea Wong" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 filter brightness-90 group-hover:brightness-100" src="http://localhost:3000/team/andrea.webp"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80 lg:opacity-60 lg:group-hover:opacity-90 transition-opacity duration-500"></div><div class="absolute inset-0 p-8 md:p-10 flex flex-col justify-end"><div class="translate-y-0 lg:translate-y-4 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out"><span class="text-[#083eeb] text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-3 block">Camarógrafa</span><h3 class="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter heading-font">Andrea Wong</h3></div></div></div></div></div></section><section id="faq" class="py-32 bg-[#0D0D0D] border-t border-white/5"><div class="w-full max-w-[1000px] mx-auto px-6 md:px-12"><h2 class="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase heading-font mb-16 text-center">Preguntas Frecuentes</h2><div class="flex flex-col gap-4"><div class="border border-white/10 rounded-2xl overflow-hidden bg-[zinc-900]/50 hover:bg-[zinc-900] transition-colors"><button class="w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none"><span class="text-lg md:text-xl font-medium text-white pr-8">¿Cuál es el tiempo promedio de producción de un video comercial?</span><span class="text-[#083eeb] shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></span></button></div><div class="border border-white/10 rounded-2xl overflow-hidden bg-[zinc-900]/50 hover:bg-[zinc-900] transition-colors"><button class="w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none"><span class="text-lg md:text-xl font-medium text-white pr-8">¿Realizan filmaciones fuera de la ciudad o en el extranjero?</span><span class="text-[#083eeb] shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></span></button></div><div class="border border-white/10 rounded-2xl overflow-hidden bg-[zinc-900]/50 hover:bg-[zinc-900] transition-colors"><button class="w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none"><span class="text-lg md:text-xl font-medium text-white pr-8">¿Ofrecen servicios de fotografía además de video?</span><span class="text-[#083eeb] shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></span></button></div><div class="border border-white/10 rounded-2xl overflow-hidden bg-[zinc-900]/50 hover:bg-[zinc-900] transition-colors"><button class="w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none"><span class="text-lg md:text-xl font-medium text-white pr-8">¿En qué formatos entregan el material final?</span><span class="text-[#083eeb] shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></span></button></div></div></div></section><footer id="contact" class="bg-[#0D0D0D] text-white pt-24 pb-12 overflow-hidden"><div class="w-full max-w-[1800px] mx-auto px-6 md:px-12 flex flex-col"><div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24"><div class="rounded-3xl bg-[#083eeb] p-10 text-white flex flex-col justify-between h-full min-h-[400px]"><div><p class="text-[10px] font-normal uppercase tracking-[0.2em] mb-4 opacity-60">INICIA UNA CONVERSACION</p><h2 class="text-3xl md:text-5xl font-black tracking-tighter uppercase heading-font mb-6 leading-tight">TIENES UN PROYECTO<br>EN MENTE?<br>CONTACTANOS HOY.</h2></div><div class="flex flex-col gap-4 mt-auto"><a href="mailto:hello@beemostudio.com" class="flex justify-between items-end group"><div class="text-sm font-bold underline decoration-2 underline-offset-4">hello@beemostudio.com</div><div class="w-12 h-12 bg-black rounded-full flex items-center justify-center transition-transform group-hover:scale-110"><div class="w-3 h-3 border-t-2 border-r-2 border-white rotate-45 -ml-1"></div></div></a></div></div><div class="bg-[#111111] border border-white/5 p-8 md:p-12 rounded-3xl shadow-2xl flex flex-col h-full min-h-[400px] relative overflow-hidden"><div class="flex items-center gap-4 mb-10"><div class="flex-1 h-1 bg-white/10 rounded-full overflow-hidden"><div class="h-full bg-[#083eeb]" style="width: 33.3333%;"></div></div><span class="text-xs font-bold tracking-widest text-white/40">01/03</span></div><form class="flex-1 flex flex-col relative"><div class="flex-1 flex flex-col justify-center gap-6" style="opacity: 1; transform: none;"><h3 class="text-2xl font-black uppercase tracking-tight heading-font">QUÉ TIPO DE PROYECTO TIENES EN MENTE?</h3><div class="flex flex-col gap-3 mt-4"><button class="text-left px-6 py-4 rounded-xl border border-white/10 hover:border-white/30 transition-all text-sm font-bold tracking-wider uppercase">INSTITUCIONAL</button><button class="text-left px-6 py-4 rounded-xl border border-white/10 hover:border-white/30 transition-all text-sm font-bold tracking-wider uppercase">COMERCIAL / SPOT</button><button class="text-left px-6 py-4 rounded-xl border border-white/10 hover:border-white/30 transition-all text-sm font-bold tracking-wider uppercase">COBERTURA DE EVENTOS</button><button class="text-left px-6 py-4 rounded-xl border border-white/10 hover:border-white/30 transition-all text-sm font-bold tracking-wider uppercase">OTRO</button></div><div class="mt-auto pt-8 flex justify-end"><button disabled="" class="flex items-center gap-4 bg-white text-black px-6 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-[#083eeb] hover:text-white transition-colors disabled:opacity-50 disabled:hover:bg-white disabled:hover:text-black cursor-pointer">Siguiente <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div></div></form></div></div><div class="w-full flex items-center mb-16 overflow-hidden"><div class="flex whitespace-nowrap" style="transform: translateX(-35.4544%);"><h2 class="text-[12vw] md:text-[14vw] font-black uppercase tracking-tighter heading-font leading-none pr-8" style="-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6); color: transparent;">BEEMO STUDIO</h2><h2 class="text-[12vw] md:text-[14vw] font-black uppercase tracking-tighter heading-font leading-none pr-8" style="-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6); color: transparent;">BEEMO STUDIO</h2><h2 class="text-[12vw] md:text-[14vw] font-black uppercase tracking-tighter heading-font leading-none pr-8" style="-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6); color: transparent;">BEEMO STUDIO</h2><h2 class="text-[12vw] md:text-[14vw] font-black uppercase tracking-tighter heading-font leading-none pr-8" style="-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6); color: transparent;">BEEMO STUDIO</h2></div></div><div class="border-t border-white/30 py-8 flex justify-between items-center gap-8"><a href="/contacto" class="group"><h3 class="text-xl md:text-3xl lg:text-4xl font-medium tracking-tight text-white/90 underline decoration-white/30 underline-offset-[8px] group-hover:text-[#083eeb] group-hover:decoration-[#083eeb] transition-all">Hablemos de tu próximo proyecto audiovisual.</h3></a><div class="hidden md:flex relative w-20 h-20 items-center justify-center shrink-0"><div class="absolute inset-0" style="transform: rotate(45.816deg);"><svg viewBox="0 0 100 100" class="w-full h-full overflow-visible"><path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent"></path><text font-size="10" font-weight="bold" letter-spacing="3.5" fill="currentColor" class="text-white/60 uppercase"><textPath href="#circlePath" startOffset="0%">BEEMO STUDIO • AUDIOVISUAL •</textPath></text></svg></div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-[#083eeb]" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></div><div class="border-t border-white/30 pt-8 pb-16 flex flex-col lg:flex-row justify-between gap-12 lg:gap-0"><div class="grid grid-cols-2 gap-12 md:gap-24"><div class="flex flex-col gap-4"><a href="/portafolio" class="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Portafolio 2024</a><a href="/#services" class="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Servicios</a><a href="/#process" class="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Metodología</a><a href="/#team" class="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Conoce a nuestro equipo</a></div><div class="flex flex-col gap-4"><a href="/contacto" class="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Contacto</a><a href="#" class="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Instagram</a><a href="#" class="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">LinkedIn</a><a href="#" class="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Vimeo</a></div></div><div class="w-full lg:w-auto flex items-start lg:justify-end"><div class="w-48 h-48 md:w-56 md:h-56 flex items-center justify-center"><img alt="Beemo Studio Logo" class="w-full h-full object-contain" src="http://localhost:3000/logo.png"></div></div></div><div class="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/10 text-white/40 text-xs font-medium tracking-wide"><p>© 2026 Beemo Studio. Todos los derechos reservados.</p><p class="mt-4 md:mt-0">Made by the problem solvers at <a href="https://grupecu.com" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-[#083eeb] transition-colors underline underline-offset-4">Grupecu</a> ;)</p></div></div></footer></div></div>
+    <script type="module" src="/src/main.tsx?t=1787324381736"></script>
+  
+
+
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+[a] Servicios
+[a] Iniciar Proyecto
+[span] Reel 2024
+[h1] IMPACTO VISUAL
+[span] QUE DEFINE MARCAS.
+[p] Producimos videos corporativos de alto impacto, comerciales y cobertura de eventos que elevan la narrativa de tu empresa al siguiente nivel.
+[a] Ver Showreel
+[a] Cotizar
+[p] Confiado por Líderes Empresariales
+[p] Nuestro Trabajo
+[h2] Portafolio Destacado
+[button] Todos
+[button] Comerciales
+[button] Institucionales
+[button] Coberturas
+[span] Comerciales
+[h3] Orocash TVC
+[span] Comerciales
+[h3] Mazda CX90
+[span] Comerciales
+[h3] PedidosYa
+[span] Comerciales
+[h3] PeiGo Madre
+[span] Institucionales
+[h3] Duragas Express Oficina
+[span] Institucionales
+[h3] Blinseg
+[span] Coberturas
+[h3] Duragas Making Of
+[span] Coberturas
+[h3] Sambolón Event
+[p] Nuestras Especialidades
+[h2] Especialidades & Disciplinas
+[h3] Institucionales & Corporativos
+[h3] Comerciales & Spots
+[h3] Cobertura de Eventos
+[h3] Casos de Éxito
+[h3] Institucionales & Corporativos
+[p] Historias de marca, manifiestos y comunicación interna diseñados para generar confianza y comunicar la escala empresarial.
+[a] Cotizar Proyecto
+[h2] Nuestra
+[span] Metodología
+[p] Un proceso riguroso diseñado para transformar una visión en realidad cinematográfica.
+[span] PASO
+[h3] Pre-producción
+[p] Convertimos ideas en un plan sólido. Desarrollo de concepto, guion técnico, scouting de locaciones y casting. Preparamos cada detalle al milímetro.
+[span] PASO
+[h3] Producción
+[p] El momento de la acción. Dirigimos equipos técnicos y artísticos con cámaras de cine digital y óptica premium para capturar la esencia exacta de la marca.
+[span] PASO
+[h3] Post-producción
+[p] Donde surge la magia. Edición rítmica impecable, diseño sonoro envolvente, color grading cinematográfico y efectos visuales de alta gama.
+[span] PASO
+[h3] Entrega
+[p] Exportamos piezas maestras. Masterización y adaptación de formatos nativos para múltiples plataformas, asegurando el máximo impacto visual en todas las pantallas.
+[h2] Nuestra
+[span] Metodología
+[p] Un proceso riguroso diseñado para transformar una visión en realidad cinematográfica.
+[span] PASO
+[h3] Pre-producción
+[p] Convertimos ideas en un plan sólido. Desarrollo de concepto, guion técnico, scouting de locaciones y casting. Preparamos cada detalle al milímetro.
+[span] PASO
+[h3] Producción
+[p] El momento de la acción. Dirigimos equipos técnicos y artísticos con cámaras de cine digital y óptica premium para capturar la esencia exacta de la marca.
+[span] PASO
+[h3] Post-producción
+[p] Donde surge la magia. Edición rítmica impecable, diseño sonoro envolvente, color grading cinematográfico y efectos visuales de alta gama.
+[span] PASO
+[h3] Entrega
+[p] Exportamos piezas maestras. Masterización y adaptación de formatos nativos para múltiples plataformas, asegurando el máximo impacto visual en todas las pantallas.
+[h2] El Equipo
+[p] Especialistas visuales obsesionados con la perfección técnica y la narrativa emocional.
+[span] Fundador & Productor General
+[h3] Colombia Cañarte
+[span] Director Creativo
+[h3] Jonathan Miranda
+[span] Camarógrafa
+[h3] Andrea Wong
+[h2] Preguntas Frecuentes
+[span] ¿Cuál es el tiempo promedio de producción de un video comercial?
+[span] ¿Realizan filmaciones fuera de la ciudad o en el extranjero?
+[span] ¿Ofrecen servicios de fotografía además de video?
+[span] ¿En qué formatos entregan el material final?
+[p] INICIA UNA CONVERSACION
+[h2] TIENES UN PROYECTO
+[h2] EN MENTE?
+[h2] CONTACTANOS HOY.
+[div] hello@beemostudio.com
+[h3] QUÉ TIPO DE PROYECTO TIENES EN MENTE?
+[button] INSTITUCIONAL
+[button] COMERCIAL / SPOT
+[button] COBERTURA DE EVENTOS
+[button] Siguiente
+[h2] BEEMO STUDIO
+[h2] BEEMO STUDIO
+[h2] BEEMO STUDIO
+[h2] BEEMO STUDIO
+[h3] Hablemos de tu próximo proyecto audiovisual.
+[textpath] BEEMO STUDIO • AUDIOVISUAL •
+[a] Portafolio 2024
+[a] Servicios
+[a] Metodología
+[a] Conoce a nuestro equipo
+[a] Contacto
+[a] Instagram
+[a] LinkedIn
+[p] Beemo Studio. Todos los derechos reservados.
+[p] Made by the problem solvers at

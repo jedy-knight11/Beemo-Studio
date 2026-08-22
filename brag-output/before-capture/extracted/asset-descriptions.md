@@ -1,0 +1,122 @@
+# Asset Descriptions
+
+One line per file. Read this instead of opening every image individually.
+
+To find a specific brand or icon, **grep this file for the brand name in the description text** (e.g. `grep -i 'autodesk' asset-descriptions.md`). The Gemini Vision captions identify what's actually in each file — that's the agent's selector.
+
+The `logo-<hash>.svg` filename prefix is a cheap structural hint (DOM said this SVG was inside a `<header>`, home-link `<a>`, or had an aria-label matching the page brand). It is NOT a content claim — many `logo-*` files are nav icons or decorative shapes. Trust the captions, not the filename prefix.
+
+- 21jop-21.jpg — 58KB, An aerial view of a winding road through a mountainous landscape featuring muted earth tones and a light, misty sky.
+- ayn-mesa-de-trabajo-1-copia-5.png — 13KB, The logo for "Automotores & Anexos" is displayed in white outline text and graphics against a solid black background.
+- aynmesa-de-trabajo-1-copia-5png.png — 107KB, The image features white text reading "AUTOMOTORES & ANEXOS IIIIII" and a triangular logo against a solid black background.
+- beemo-reel.jpg — 305KB, A winding road cuts through a mountainous landscape featuring brown grasses, rocky terrain, and a light, overcast sky.
+- beemo.png — 146KB, A simple blue-lined illustration of a cartoon bee is shown against a plain white background.
+- ciudad-mesa-de-trabajo-1-copia-8.png — 16KB, This image shows a white logo featuring a stylized sun above the text "CIUDAD CELESTE SAMBORONDÓN" centered on a dark background.
+- ciudadmesa-de-trabajo-1-copia-8png.png — 140KB, The image features a white logo for "Ciudad Celeste Samborondón" centered against a solid black background.
+- duragas-mesa-de-trabajo-1-mesa-de-trabaj.png — 13KB, This image shows the white logo of Duragas Abastible against a solid black background.
+- duragasmesa-de-trabajo-1mesa-de-trabajo-.png — 61KB, This image shows the white logo of Duragas Abastible against a solid black background.
+- image-11.jpg — 85KB, A light-colored winding road stretches through a dark, mountainous landscape covered in brown vegetation and fog.
+- image-12.jpg — 122KB, An aerial view shows a winding road cutting through a brown, mountainous landscape under a light, cloudy sky.
+- image-13.jpg — 169KB, A winding mountain road cuts through a desolate, brownish-tan landscape under a light, overcast sky.
+- image-14.jpg — 269KB, A winding mountain road cuts through a dark, earthy landscape under a bright, overcast sky.
+- image-18.jpg — 41KB, A group of office coworkers wearing Christmas hats and scarves pose together for a festive photo in a brightly lit office with red and white color accents.
+- image-19.jpg — 75KB, A group of colleagues in white shirts and Santa hats celebrates Christmas in a brightly lit office, with red and green decor dominant.
+- image-20.jpg — 113KB, A group of office coworkers wearing Santa hats and festive attire celebrate around a desk filled with gifts and Christmas decorations in a brightly lit office.
+- image-21.jpg — 194KB, A group of office coworkers wearing Santa hats and festive attire celebrate around a desk with presents and decorations in a brightly lit office setting dominated by red and white tones.
+- image-22.jpg — 273KB, A group of smiling office colleagues wears Santa hats and holds gifts in a brightly lit office space dominated by white and red tones.
+- evento-rn.jpg — 246KB, evento rn
+- favicon.ico — 7KB, favicon
+- image-15.jpg — 305KB, image 15
+- image-24.jpg — 13KB, image 24
+- image-25.jpg — 31KB, image 25
+- image-26.jpg — 58KB, image 26
+- image-27.jpg — 85KB, image 27
+- image-28.jpg — 149KB, image 28
+- image-29.jpg — 204KB, image 29
+- image-3.jpg — 20KB, image 3
+- image-31.jpg — 15KB, image 31
+- image-32.jpg — 35KB, image 32
+- image-33.jpg — 63KB, image 33
+- image-34.jpg — 96KB, image 34
+- image-35.jpg — 170KB, image 35
+- image-36.jpg — 246KB, image 36
+- image-4.jpg — 37KB, image 4
+- image-40.png — 25KB, image 40
+- image-41.png — 38KB, image 41
+- image-42.png — 61KB, image 42
+- image-45.png — 20KB, image 45
+- image-46.png — 34KB, image 46
+- image-47.png — 61KB, image 47
+- image-5.jpg — 60KB, image 5
+- image-50.png — 16KB, image 50
+- image-51.png — 21KB, image 51
+- image-52.png — 34KB, image 52
+- image-53.png — 57KB, image 53
+- image-56.png — 24KB, image 56
+- image-57.png — 33KB, image 57
+- image-58.png — 50KB, image 58
+- image-59.png — 74KB, image 59
+- image-6.jpg — 120KB, image 6
+- image-62.png — 18KB, image 62
+- image-63.png — 24KB, image 63
+- image-64.png — 39KB, image 64
+- image-65.png — 61KB, image 65
+- image-67.png — 13KB, image 67
+- image-68.png — 23KB, image 68
+- image-69.png — 35KB, image 69
+- image-7.jpg — 312KB, image 7
+- image-70.png — 47KB, image 70
+- image-71.png — 71KB, image 71
+- image-72.png — 107KB, image 72
+- image-75.png — 24KB, image 75
+- image-76.png — 39KB, image 76
+- image-77.png — 53KB, image 77
+- image-78.png — 92KB, image 78
+- image-79.png — 107KB, image 79
+- image-82.png — 20KB, image 82
+- image-83.png — 26KB, image 83
+- image-84.png — 41KB, image 84
+- image-85.png — 68KB, image 85
+- image-88.png — 35KB, image 88
+- image-89.png — 55KB, image 89
+- image-90.png — 81KB, image 90
+- image-91.png — 118KB, image 91
+- image-92.png — 140KB, image 92
+- medec-institu.jpg — 19KB, medec institu
+- og-image.JPG — 96KB, og image
+- page-section-full-bleed-section.jpg — 67KB, page section full bleed section
+- page-section-gallery-section.png — 20KB, page section gallery section
+- page-section-layout-engine-section.jpg — 11KB, page section layout engine section
+- qu-hacemos.jpg — 273KB, qu hacemos
+- renault-final-mesa-de-trabajo-1-copia-2.png — 12KB, renault final mesa de trabajo 1 copia 2
+- renault-final-mesa-de-trabajo-1-copia.png — 15KB, renault final mesa de trabajo 1 copia
+- renault-finalmesa-de-trabajo-1-copia-2pn.png — 61KB, renault finalmesa de trabajo 1 copia 2pn
+- renault-finalmesa-de-trabajo-1-copiapng.png — 61KB, renault finalmesa de trabajo 1 copiapng
+- rn-captur.jpg — 204KB, rn captur
+- sin-ttulo-1mesa-de-trabajo-1-copia-4mesa.png — 107KB, sin ttulo 1mesa de trabajo 1 copia 4mesa
+- toyocosta-mesa-de-trabajo-1-copia-7.png — 13KB, toyocosta mesa de trabajo 1 copia 7
+- toyocostamesa-de-trabajo-1-copia-7png.png — 68KB, toyocostamesa de trabajo 1 copia 7png
+- ucg-mesa-de-trabajo-1-copia-3.png — 15KB, ucg mesa de trabajo 1 copia 3
+- ucgmesa-de-trabajo-1-copia-3png.png — 74KB, ucgmesa de trabajo 1 copia 3png
+- unsplash-image-kpoia9e2dni.jpg — 312KB, unsplash image kpoia9e2dni
+- ya-mesa-de-trabajo-1-copia-6.png — 11KB, ya mesa de trabajo 1 copia 6
+- yamesa-de-trabajo-1-copia-6png.png — 57KB, yamesa de trabajo 1 copia 6png
+- svgs/logo-26d554d6-2.svg — logo 26d554d6 2
+- svgs/logo-26d554d6.svg — logo 26d554d6
+- svgs/logo-2a5ebbaf.svg — logo 2a5ebbaf
+- svgs/logo-4acbb56a-2.svg — logo 4acbb56a 2
+- svgs/logo-4acbb56a.svg — logo 4acbb56a
+- svgs/logo-6aedc24b.svg — logo 6aedc24b
+- svgs/logo-9232dcd3-2.svg — logo 9232dcd3 2
+- svgs/logo-9232dcd3-3.svg — logo 9232dcd3 3
+- svgs/logo-9232dcd3.svg — logo 9232dcd3
+- svgs/logo-987a4cd3.svg — logo 987a4cd3
+- svgs/logo-99066d5c.svg — logo 99066d5c
+- svgs/logo-ec98dd36.svg — logo ec98dd36
+- svgs/logo-f2116cbc-2.svg — logo f2116cbc 2
+- svgs/logo-f2116cbc.svg — logo f2116cbc
+- fonts/devanagari.woff2 — font file
+- fonts/latin-ext.woff2 — font file
+- fonts/latin.woff2 — font file
+- fonts/squarespace-ui-font.ttf — font file
+- fonts/squarespace-ui-font.woff — font file

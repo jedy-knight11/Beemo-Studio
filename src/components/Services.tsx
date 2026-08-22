@@ -42,7 +42,7 @@ export const Services = () => {
       <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12">
         <div className="mb-16">
           <p className="text-[#083eeb] text-xs font-bold uppercase tracking-[0.2em] mb-4">Nuestras Especialidades</p>
-          <h2 className="text-5xl md:text-7xl font-bold text-white uppercase leading-none heading-font">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white uppercase leading-none heading-font break-words">
             Especialidades & Disciplinas
           </h2>
         </div>

@@ -17,20 +17,19 @@ export const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#0D0D0D]/90 backdrop-blur-md border-b border-white/10 h-[110px]' : 'bg-transparent h-[110px]'
+        isScrolled ? 'bg-[#0D0D0D]/90 backdrop-blur-md border-b border-white/10 h-[80px] md:h-[110px]' : 'bg-transparent h-[80px] md:h-[110px]'
       } flex items-center`}
     >
       <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a href="#" className="flex items-center">
-          <img src="/logo_header.png" alt="Beemo Studio Logo" className="h-[96px] w-auto object-contain" />
+        <a href="/" className="flex items-center">
+          <img src="/logo_header.png" alt="Beemo Studio Logo" className="h-[48px] md:h-[96px] w-auto object-contain" />
         </a>
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-6">
           <div className="flex gap-6 text-sm uppercase tracking-widest font-semibold text-white/60">
-            <a href="/#work" className="hover:text-white transition-colors cursor-pointer">Trabajo</a>
-            <a href="/#services" className="hover:text-white transition-colors cursor-pointer">Servicios</a>
-            <a href="/#team" className="hover:text-white transition-colors cursor-pointer">Equipo</a>
+            <a href="/portafolio" className="hover:text-white transition-colors cursor-pointer">Trabajo</a>
+            <a href="/servicios" className="hover:text-white transition-colors cursor-pointer">Servicios</a>
           </div>
           
           <div className="text-xs uppercase font-bold tracking-widest text-white/40 ml-4">
@@ -57,22 +56,45 @@ export const Navbar = () => {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 right-0 bg-[#0D0D0D] border-b border-white/10 p-6 flex flex-col gap-6 shadow-2xl lg:hidden"
+            initial={{ opacity: 0, clipPath: 'inset(0 0 100% 0)' }}
+            animate={{ opacity: 1, clipPath: 'inset(0 0 0% 0)' }}
+            exit={{ opacity: 0, clipPath: 'inset(0 0 100% 0)' }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            className="fixed inset-0 bg-[#0D0D0D] z-40 lg:hidden flex flex-col pt-[120px] pb-12 px-6 overflow-hidden"
           >
-            <a href="/#work" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium text-white/90">Trabajo</a>
-            <a href="/#services" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium text-white/90">Servicios</a>
-            <a href="/#team" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium text-white/90">Equipo</a>
-            <hr className="border-white/10" />
-            <a
-              href="/contacto"
-              onClick={() => setMobileMenuOpen(false)}
-              className="bg-[#083eeb] text-white text-center px-6 py-3 rounded-full text-base font-bold tracking-wide hover:bg-[#F5A623] hover:text-black transition-all"
+            <div className="flex-1 flex flex-col justify-center gap-6">
+              {['TRABAJO', 'SERVICIOS'].map((item, i) => (
+                <motion.a
+                  key={item}
+                  href={item === 'TRABAJO' ? '/portafolio' : '/servicios'}
+                  onClick={() => setMobileMenuOpen(false)}
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 + (i * 0.1), duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                  className="text-5xl sm:text-7xl font-black text-white uppercase tracking-tighter heading-font leading-none"
+                >
+                  {item}
+                </motion.a>
+              ))}
+            </div>
+            
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="w-full mt-auto"
             >
-              Iniciar Proyecto
-            </a>
+              <div className="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-white/40 mb-8">
+                <span className="text-white">EN</span> / ES
+              </div>
+              <a
+                href="/contacto"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block w-full bg-white text-black text-center py-5 rounded-full text-lg font-black uppercase tracking-tighter heading-font"
+              >
+                INICIAR PROYECTO
+              </a>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

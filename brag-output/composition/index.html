@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        margin: 0; width: 1920px; height: 1080px; overflow: hidden;
+        background: #ffffff;
+        color: #050505;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      .heading-font { font-family: "Syncopate", sans-serif; }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+      .clip { position: absolute; inset: 0; display: grid; place-items: center; }
+      #before-scene { background: #ffffff; }
+      #before-text { font-family: "Times New Roman", serif; font-size: 80px; color: #333; }
+      #after-container { background: #0D0D0D; color: #ffffff; position: absolute; inset: 0; overflow: hidden; width: 1920px; height: 1080px; }
+      #glitch-overlay { position: absolute; inset: 0; background: #6b8cff; opacity: 0; z-index: 100; pointer-events: none; }
+      .blue-flare { position: absolute; width: 1200px; height: 800px; background: radial-gradient(circle, rgba(8,62,235,0.15) 0%, rgba(0,0,0,0) 70%); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+      #reveal-heading { font-size: 110px; text-transform: uppercase; letter-spacing: -0.05em; text-align: center; line-height: 1;  }
+      .accent-tag { color: #6b8cff; font-size: 24px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 20px;  }
+      .cards-container { position: absolute; inset: 0; display: flex; justify-content: center; align-items: center; gap: 60px; transform: scale(0.9); width: 1920px; height: 1080px; }
+      .portfolio-card { width: 450px; height: 600px; background: rgba(255,255,255,0.05); border-radius: 30px; position: relative; overflow: hidden;  }
+      .card-bg { position: absolute; inset: 0; background: #222; }
+      .card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2), transparent); }
+      .card-content { position: absolute; bottom: 0; left: 0; padding: 40px; }
+      .card-tag { color: #6b8cff; font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 12px; display: block; }
+      .card-title { font-size: 36px; font-weight: 900; text-transform: uppercase; }
+      #outro-scene { background: #050505; color: #ffffff; }
+      #outro-logo { font-size: 96px; letter-spacing: -0.02em; margin-bottom: 30px; }
+      #outro-tagline { font-size: 32px; font-weight: 300; letter-spacing: 0.1em; color: rgba(255,255,255,0.6); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="19" data-width="1920" data-height="1080">
+      <audio id="bg-music" src="assets/track.mp3" data-start="0" data-track-index="0" data-volume="1"></audio>
+
+      <!-- Scene 1: The Before (0 - 3s) -->
+      <section id="before-scene" class="clip" data-start="0" data-duration="3" data-track-index="1">
+        <h1 id="before-text">Your brand before.</h1>
+      </section>
+
+      <!-- Scene 2: The After (3 - 16s) -->
+      <section id="after-scene" class="clip" data-start="3" data-duration="13" data-track-index="2">
+        <div id="after-container">
+          <div id="glitch-overlay"></div>
+          <div class="blue-flare" id="flare-1"></div>
+          
+          <div id="reveal-container" style="position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+            <div class="accent-tag heading-font" id="reveal-tag">Nuestro Trabajo</div>
+            <h2 class="heading-font" id="reveal-heading">PORTAFOLIO<br/>DESTACADO</h2>
+          </div>
+
+          <div class="cards-container" id="cards-container">
+            <div class="portfolio-card" id="card-1">
+              <div class="card-bg" style="background:#1a1a2e"></div>
+              <div class="card-overlay"></div>
+              <div class="card-content">
+                <span class="card-tag">Comerciales</span>
+                <h3 class="card-title heading-font">Blinseg</h3>
+              </div>
+            </div>
+            <div class="portfolio-card" id="card-2" style="z-index: 10;">
+              <div class="card-bg" style="background:#2e1a1a"></div>
+              <div class="card-overlay"></div>
+              <div class="card-content">
+                <span class="card-tag">Institucionales</span>
+                <h3 class="card-title heading-font">Duragas</h3>
+              </div>
+            </div>
+            <div class="portfolio-card" id="card-3">
+              <div class="card-bg" style="background:#1a2e1a"></div>
+              <div class="card-overlay"></div>
+              <div class="card-content">
+                <span class="card-tag">Coberturas</span>
+                <h3 class="card-title heading-font">Sambolón</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scene 3: Outro (16 - 19s) -->
+      <section id="outro-scene" class="clip" data-start="16" data-duration="3" data-track-index="3">
+        <div style="text-align:center">
+          <h2 class="heading-font" id="outro-logo">BEEMO STUDIO</h2>
+          <p id="outro-tagline">Your brand, cinematic.</p>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      
+      tl.from("#before-text", { opacity: 0, y: 20, duration: 1, ease: "power2.out" }, 0.5);
+      
+      tl.set("#glitch-overlay", { opacity: 1 }, 3);
+      tl.set("#glitch-overlay", { opacity: 0 }, 3.1);
+      tl.set("#glitch-overlay", { opacity: 0.5 }, 3.15);
+      tl.set("#glitch-overlay", { opacity: 0 }, 3.2);
+
+      // beat-locked
+      tl.from("#reveal-tag", { opacity: 0, y: 20, duration: 0.6, ease: "power3.out" }, 3.5); 
+      tl.from("#reveal-heading", { opacity: 0, scale: 0.9, duration: 0.8, ease: "expo.out" }, 3.7);
+      
+      tl.to(["#reveal-tag", "#reveal-heading"], { opacity: 0, scale: 1.1, duration: 0.5, ease: "power2.in" }, 7.5);
+
+      tl.from("#cards-container", { scale: 0.8, opacity: 0, duration: 1, ease: "power3.out" }, 8);
+      // beat-grid
+      tl.from("#card-1", { x: -100, opacity: 0, duration: 0.6, ease: "back.out(1.2)" }, 8.2);
+      tl.from("#card-2", { y: 50, opacity: 0, duration: 0.6, ease: "back.out(1.2)" }, 8.5);
+      tl.from("#card-3", { x: 100, opacity: 0, duration: 0.6, ease: "back.out(1.2)" }, 8.8);
+
+      tl.to("#card-2", { scale: 1.15, duration: 1, ease: "power2.out" }, 10);
+      tl.to("#card-2 .card-title", { color: "#6b8cff", duration: 0.5 }, 10);
+      
+      tl.from("#outro-logo", { opacity: 0, y: 30, duration: 1, ease: "power3.out" }, 16.2);
+      tl.from("#outro-tagline", { opacity: 0, duration: 1 }, 16.8);
+      
+      tl.to("#bg-music", { volume: 0, duration: 2 }, 17);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

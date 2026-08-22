@@ -1,0 +1,251 @@
+{
+  "typography": [
+    {
+      "role": "display",
+      "fontFamily": "Syncopate",
+      "fontSize": "96px",
+      "fontWeight": "900",
+      "lineHeight": "105.6px",
+      "letterSpacing": "-4.8px",
+      "color": "#FFFFFF",
+      "sampleText": "IMPACTO VISUAL QUE DEFINE MARCAS."
+    },
+    {
+      "role": "heading",
+      "fontFamily": "Syncopate",
+      "fontSize": "72px",
+      "fontWeight": "900",
+      "lineHeight": "72px",
+      "letterSpacing": "-3.6px",
+      "color": "#FFFFFF",
+      "sampleText": "Portafolio Destacado"
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "Syncopate",
+      "fontSize": "72px",
+      "fontWeight": "700",
+      "lineHeight": "72px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": "Especialidades & Disciplinas"
+    },
+    {
+      "role": "heading-3",
+      "fontFamily": "Syncopate",
+      "fontSize": "30px",
+      "fontWeight": "900",
+      "lineHeight": "37.5px",
+      "letterSpacing": "-1.5px",
+      "color": "#FFFFFF",
+      "sampleText": "Orocash TVC"
+    },
+    {
+      "role": "body",
+      "fontFamily": "Plus Jakarta Sans",
+      "fontSize": "20px",
+      "fontWeight": "300",
+      "lineHeight": "32.5px",
+      "letterSpacing": "normal",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+      "sampleText": "Producimos videos corporativos de alto impacto, comerciales "
+    },
+    {
+      "role": "link",
+      "fontFamily": "Plus Jakarta Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": ""
+    },
+    {
+      "role": "code",
+      "fontFamily": "ui-monospace",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "lineHeight": "16px",
+      "letterSpacing": "normal",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.3)",
+      "sampleText": "0101"
+    }
+  ],
+  "spacing": {
+    "observed": [
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      60,
+      64,
+      96,
+      128
+    ],
+    "baseUnit": 8
+  },
+  "radius": [
+    "12px",
+    "24px",
+    "3.35544e+07px"
+  ],
+  "shadows": [],
+  "buttons": [
+    {
+      "label": "Unmute",
+      "background": "oklab(0 0 0 / 0.4)",
+      "backgroundImage": "",
+      "backdropFilter": "blur(12px)",
+      "color": "#FFFFFF",
+      "padding": "12px",
+      "borderRadius": "3.35544e+07px",
+      "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "44px"
+    },
+    {
+      "label": "Todos",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#000000",
+      "padding": "12px 24px",
+      "borderRadius": "3.35544e+07px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "11px",
+      "fontWeight": "700",
+      "height": "42.5px"
+    },
+    {
+      "label": "Comerciales",
+      "background": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+      "padding": "12px 24px",
+      "borderRadius": "3.35544e+07px",
+      "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      "boxShadow": "none",
+      "fontSize": "11px",
+      "fontWeight": "700",
+      "height": "42.5px"
+    },
+    {
+      "label": "button",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "0px",
+      "borderRadius": "3.35544e+07px",
+      "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "56px"
+    },
+    {
+      "label": "Institucionales & Corporativos",
+      "background": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "24px",
+      "borderRadius": "24px",
+      "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "114px"
+    },
+    {
+      "label": "Comerciales & Spots",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "24px",
+      "borderRadius": "24px",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "82px"
+    }
+  ],
+  "cards": [],
+  "nav": {
+    "label": "navigation",
+    "background": "transparent",
+    "backgroundImage": "",
+    "backdropFilter": "",
+    "color": "#FFFFFF",
+    "padding": "0px",
+    "borderRadius": "0px",
+    "border": "0px solid rgb(255, 255, 255)",
+    "boxShadow": "none",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": "110px"
+  },
+  "chips": [
+    {
+      "label": "Ver Showreel",
+      "background": "#FFFFFF",
+      "color": "#000000",
+      "padding": "12px 32px",
+      "borderRadius": "3.35544e+07px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "height": "40px"
+    },
+    {
+      "label": "Cotizar",
+      "background": "transparent",
+      "color": "#FFFFFF",
+      "padding": "12px 32px",
+      "borderRadius": "3.35544e+07px",
+      "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+      "boxShadow": "none",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "height": "42px"
+    }
+  ],
+  "statCells": [],
+  "tabs": [],
+  "backgrounds": [
+    {
+      "value": "linear-gradient(to top, oklab(0 0 0 / 0.8) 0%, oklab(0 0 0 / 0.2) 50%, rgba(0, 0, 0, 0) 100%)",
+      "area": 3359232
+    },
+    {
+      "value": "linear-gradient(oklab(0.159065 0.00000723451 0.00000317395 / 0.8) 0%, oklab(0.159065 0.00000723451 0.00000317395 / 0.6) 50%, rgb(13, 13, 13) 100%)",
+      "area": 2073600
+    },
+    {
+      "value": "linear-gradient(to top, oklab(0 0 0 / 0.8) 0%, oklab(0 0 0 / 0.1) 50%, rgba(0, 0, 0, 0) 100%)",
+      "area": 1195381
+    },
+    {
+      "value": "linear-gradient(to top, oklab(0 0 0 / 0.4) 0%, rgba(0, 0, 0, 0) 100%)",
+      "area": 529301
+    },
+    {
+      "value": "linear-gradient(to right, rgb(255, 255, 255) 0%, oklab(0.999994 0.0000455677 0.0000200868 / 0.8) 50%, oklab(0.999994 0.0000455678 0.0000200868 / 0.4) 100%)",
+      "area": 146854
+    },
+    {
+      "value": "linear-gradient(to right, rgb(255, 255, 255) 0%, oklab(0.999994 0.0000455678 0.0000200868 / 0.3) 100%)",
+      "area": 47953
+    }
+  ],
+  "glass": []
+}

@@ -49,7 +49,7 @@ export const Loader = ({ onLoadingComplete }: { onLoadingComplete: () => void })
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
-      className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#0D0D0D]"
+      className="fixed inset-0 z-[100] flex flex-col items-center justify-center gap-8 bg-[#0D0D0D]"
     >
       <motion.div
         animate={{ 
@@ -61,7 +61,7 @@ export const Loader = ({ onLoadingComplete }: { onLoadingComplete: () => void })
           ease: "easeInOut",
           repeat: Infinity 
         }}
-        className="w-32 md:w-48 h-auto mb-12"
+        className="w-32 md:w-48 h-auto"
       >
         <img src="/logo.png" alt="Beemo Studio Loading" className="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(8,62,235,0.5)]" />
       </motion.div>
@@ -81,7 +81,7 @@ export const Loader = ({ onLoadingComplete }: { onLoadingComplete: () => void })
         </AnimatePresence>
       </div>
 
-      <div className="flex items-center gap-2 mt-8">
+      <div className="flex items-center gap-2">
         <motion.div animate={{ scale: [1, 1.5, 1], opacity: [0.3, 1, 0.3] }} transition={{ duration: 1, repeat: Infinity, delay: 0 }} className="w-1.5 h-1.5 rounded-full bg-[#083eeb]" />
         <motion.div animate={{ scale: [1, 1.5, 1], opacity: [0.3, 1, 0.3] }} transition={{ duration: 1, repeat: Infinity, delay: 0.2 }} className="w-1.5 h-1.5 rounded-full bg-[#083eeb]" />
         <motion.div animate={{ scale: [1, 1.5, 1], opacity: [0.3, 1, 0.3] }} transition={{ duration: 1, repeat: Infinity, delay: 0.4 }} className="w-1.5 h-1.5 rounded-full bg-[#083eeb]" />

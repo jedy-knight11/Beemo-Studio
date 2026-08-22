@@ -12,7 +12,7 @@ export const Footer = () => {
   const [budget, setBudget] = useState('');
 
   return (
-    <footer id="contact" className="bg-[#0D0D0D] text-white pt-24 pb-12 overflow-hidden">
+    <footer id="contact" className="bg-[#0D0D0D] text-white pt-16 md:pt-24 pb-12 overflow-hidden">
       <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 flex flex-col">
         
         {/* ORIGINAL CONTACT FORM */}
@@ -276,17 +276,18 @@ export const Footer = () => {
           {/* Links Grid */}
           <div className="grid grid-cols-2 gap-12 md:gap-24">
             <div className="flex flex-col gap-4">
-              <a href="/#work" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Portafolio 2024</a>
-              <a href="/#services" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Servicios</a>
-              <a href="/#process" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Metodología</a>
-              <a href="/#team" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Conoce a nuestro equipo</a>
-            </div>
-            
-            <div className="flex flex-col gap-4">
-              <a href="/contacto" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Contacto</a>
+              <p className="text-white/50 text-sm font-bold uppercase tracking-[0.2em] mb-2">Social</p>
               <a href="#" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Instagram</a>
               <a href="#" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">LinkedIn</a>
               <a href="#" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Vimeo</a>
+            </div>
+            
+            <div className="flex flex-col gap-4">
+              <p className="text-white/50 text-sm font-bold uppercase tracking-[0.2em] mb-2">Explora</p>
+              <a href="/portafolio" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Portafolio 2024</a>
+              <a href="/servicios" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Servicios</a>
+              <a href="/#process" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Metodologia</a>
+              <a href="/contacto" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Contacto</a>
             </div>
           </div>
 

@@ -13,35 +13,35 @@ const portfolioItems = [
   {
     id: '2',
     name: 'Mazda CX90',
-    category: 'Comerciales',
+    category: 'Redes',
     description: 'Spot comercial para el nuevo Mazda CX90.',
     video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/Mazda_CX90.mp4'.substring(1)
   },
   {
     id: '3',
     name: 'PedidosYa',
-    category: 'Comerciales',
+    category: 'Redes',
     description: 'Campaña digital para PedidosYa.',
     video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/PedidosYa.mp4'.substring(1)
   },
   {
     id: '4',
     name: 'PeiGo Madre',
-    category: 'Comerciales',
+    category: 'Post Producción',
     description: 'Spot del día de la madre para PeiGo.',
     video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/PeiGo_Madre.mp4'.substring(1)
   },
   {
     id: '5',
     name: 'Duragas Express Oficina',
-    category: 'Institucionales',
+    category: 'Video Casos',
     description: 'Video institucional para Duragas Express.',
     video: (import.meta as any).env.BASE_URL + '/portfolio/Institucionales/Duragas_Oficina.mp4'.substring(1)
   },
   {
     id: '6',
     name: 'Blinseg',
-    category: 'Institucionales',
+    category: 'Redes',
     description: 'Video corporativo sobre procesos de blindaje.',
     video: (import.meta as any).env.BASE_URL + '/portfolio/Institucionales/Blinseg_Blindaje.mp4'.substring(1)
   },
@@ -128,7 +128,7 @@ const ProjectCard = ({ file, onClick }: { file: any, onClick: (f: any) => void }
 export const Portfolio = () => {
   const [filter, setFilter] = useState('Todos');
   const [activeVideo, setActiveVideo] = useState<any | null>(null);
-  const categories = ['Todos', 'Comerciales', 'Institucionales', 'Coberturas'];
+  const categories = ['Todos', 'Comerciales', 'Redes', 'Post Producción', 'Coberturas', 'Video Casos'];
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const filteredFiles = portfolioItems.filter(f => filter === 'Todos' || f.category === filter);
@@ -153,9 +153,7 @@ export const Portfolio = () => {
           <div className="flex flex-col gap-8 mb-16">
             <div className="flex flex-col gap-4">
               <p className="text-[#083eeb] text-xs font-bold uppercase tracking-[0.2em]">Nuestro Trabajo</p>
-              <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase heading-font leading-none heading-font">
-                Portafolio Destacado
-              </h2>
+              
             </div>
             
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">

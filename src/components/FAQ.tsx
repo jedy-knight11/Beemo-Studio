@@ -7,20 +7,24 @@ export const FAQ = () => {
 
   const faqs = [
     {
-      question: "¿Cuál es el tiempo promedio de producción de un video comercial?",
-      answer: "El tiempo puede variar dependiendo de la complejidad del proyecto, pero en promedio, un comercial estándar toma de 3 a 5 semanas desde la etapa de pre-producción hasta la entrega final."
+      question: "¿Se encargan también del proceso creativo?",
+      answer: "Sí. Nos adaptamos a lo que cada proyecto necesite: desde ejecutar una idea ya definida hasta ayudarte a aterrizarla y encontrar la mejor manera de contarla visualmente."
     },
     {
-      question: "¿Realizan filmaciones fuera de la ciudad o en el extranjero?",
-      answer: "Sí, nuestro equipo tiene la capacidad y el equipo necesario para realizar producciones en cualquier parte del mundo. Evaluamos los costos logísticos en cada cotización."
+      question: "¿Cuál es el tiempo promedio de producción de un video para redes?",
+      answer: "Depende del alcance y las necesidades de cada proyecto. Como referencia, una producción puede tomar entre 3 y 5 semanas, aunque podemos adaptarnos a tiempos más cortos cuando la urgencia lo requiere."
     },
     {
-      question: "¿Ofrecen servicios de fotografía además de video?",
-      answer: "Absolutamente. Contamos con fotógrafos especializados en producto, corporativo y cobertura de eventos que pueden integrarse a las producciones de video o trabajar proyectos fotográficos independientes."
+      question: "¿Cómo conforman el equipo para cada proyecto?",
+      answer: "No trabajamos con un equipo cerrado para todos los proyectos. Seleccionamos a las personas y especialistas que mejor se ajustan a las necesidades de cada producción, buscando siempre el mejor resultado posible."
     },
     {
-      question: "¿En qué formatos entregan el material final?",
-      answer: "Entregamos piezas masterizadas en formatos de alta calidad (4K, ProRes) y realizamos adaptaciones nativas (9:16, 1:1, 4:5) optimizadas para todas las plataformas digitales y redes sociales."
+      question: "¿También realizan fotografía?",
+      answer: "Sí. Desarrollamos proyectos de fotografía publicitaria, corporativa, de producto y contenido para redes, adaptando la producción y el equipo a lo que cada proyecto necesita."
+    },
+    {
+      question: "¿Pueden trabajar con una idea que ya tenemos?",
+      answer: "Sí. Podemos partir desde una idea, un brief o incluso una necesidad concreta y trabajar desde ahí para convertirla en una propuesta audiovisual clara y bien ejecutada."
     }
   ];
 
@@ -39,7 +43,7 @@ export const FAQ = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index} 
-              className="border border-white/10 rounded-2xl overflow-hidden bg-[zinc-900]/50 hover:bg-[zinc-900] transition-colors"
+              className="border border-white/10 rounded-2xl overflow-hidden bg-white/5 hover:bg-white/10 transition-colors"
             >
               <button 
                 onClick={() => toggleFAQ(index)}

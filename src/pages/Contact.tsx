@@ -5,8 +5,7 @@ import { ArrowRight, ArrowLeft } from 'lucide-react';
 export const Contact = () => {
   const [formStep, setFormStep] = useState(1);
   const [projectType, setProjectType] = useState('');
-  const [budget, setBudget] = useState('');
-
+  
   return (
     <div className="min-h-screen bg-[#0D0D0D] pt-[150px] pb-24 relative overflow-hidden">
       {/* Giant Background text for texture */}
@@ -89,7 +88,7 @@ export const Contact = () => {
                     transition={{ duration: 0.3 }}
                     className="flex-1 flex flex-col justify-center gap-8"
                   >
-                    <h3 className="text-lg md:text-xl font-black uppercase tracking-tighter heading-font leading-[1.1]">QUE TIPO DE PROYECTO TIENES EN MENTE?</h3>
+                    <h3 className="text-lg md:text-xl font-black uppercase tracking-tighter heading-font leading-[1.1]">¿QUÉ TIPO DE PROYECTO TIENES EN MENTE?</h3>
                     <div className="flex flex-col gap-4 mt-4">
                       {['INSTITUCIONAL', 'COMERCIAL / SPOT', 'COBERTURA DE EVENTOS', 'OTRO'].map((type) => (
                         <button 
@@ -125,49 +124,7 @@ export const Contact = () => {
                     transition={{ duration: 0.3 }}
                     className="flex-1 flex flex-col justify-center gap-8"
                   >
-                    <h3 className="text-lg md:text-xl font-black uppercase tracking-tighter heading-font leading-[1.1]">CUAL ES TU PRESUPUESTO ESTIMADO?</h3>
-                    <div className="flex flex-col gap-4 mt-4">
-                      {['< $2,000', '$2,000 - $5,000', '$5,000+'].map((type) => (
-                        <button 
-                          key={type}
-                          onClick={() => setBudget(type)}
-                          className={`text-left px-6 py-4 rounded-2xl border-2 ${budget === type ? 'border-[#083eeb] bg-[#083eeb]/10 text-white' : 'border-white/10 hover:border-white/30 text-white/70 hover:text-white'} transition-all text-lg md:text-xl font-bold tracking-wider uppercase`}
-                        >
-                          {type}
-                        </button>
-                      ))}
-                    </div>
-                    <div className="mt-8 flex justify-between items-center">
-                      <button 
-                        onClick={() => setFormStep(1)}
-                        className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white/20 hover:border-white transition-colors text-white cursor-pointer"
-                      >
-                        <ArrowLeft className="w-5 h-5 md:w-6 md:h-6" />
-                      </button>
-                      <button 
-                        disabled={!budget}
-                        onClick={() => setFormStep(3)}
-                        className="flex items-center gap-6 group cursor-pointer disabled:opacity-30"
-                      >
-                        <span className="text-lg md:text-2xl font-black uppercase tracking-tighter heading-font text-white group-hover:text-[#083eeb] transition-colors">SIGUIENTE</span>
-                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-[#083eeb] group-hover:text-white transition-all group-hover:scale-110">
-                          <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
-                        </div>
-                      </button>
-                    </div>
-                  </motion.div>
-                )}
-
-                {formStep === 3 && (
-                  <motion.div 
-                    key="step3"
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -20 }}
-                    transition={{ duration: 0.3 }}
-                    className="flex-1 flex flex-col justify-center gap-8"
-                  >
-                    <h3 className="text-lg md:text-xl font-black uppercase tracking-tighter heading-font leading-[1.1]">CASI LISTO. CUENTANOS MAS.</h3>
+                    <h3 className="text-lg md:text-xl font-black uppercase tracking-tighter heading-font leading-[1.1]">CASI LISTO. CUÉNTANOS MÁS.</h3>
                     <div className="flex flex-col gap-12 mt-4">
                       <div className="flex flex-col relative group">
                         <input 
@@ -183,6 +140,14 @@ export const Contact = () => {
                           className="w-full bg-transparent border-b-2 border-white/20 pb-4 text-lg md:text-xl font-bold text-white placeholder-white/20 focus:outline-none focus:border-[#083eeb] transition-colors uppercase tracking-tight"
                         />
                       </div>
+                      
+                      <div className="flex flex-col relative">
+                        <input 
+                          type="text" 
+                          placeholder="¿PRESUPUESTO ESTIMADO? (OPCIONAL)"
+                          className="w-full bg-transparent border-b-2 border-white/20 pb-4 text-lg md:text-xl font-bold text-white placeholder-white/20 focus:outline-none focus:border-[#083eeb] transition-colors uppercase tracking-tight"
+                        />
+                      </div>
                       <div className="flex flex-col relative">
                         <textarea 
                           placeholder="CUENTANOS SOBRE TU PROYECTO..."
@@ -194,7 +159,7 @@ export const Contact = () => {
                     
                     <div className="mt-8 flex justify-between items-center">
                       <button 
-                        onClick={() => setFormStep(2)}
+                        onClick={() => setFormStep(1)}
                         className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white/20 hover:border-white transition-colors text-white cursor-pointer"
                       >
                         <ArrowLeft className="w-5 h-5 md:w-6 md:h-6" />

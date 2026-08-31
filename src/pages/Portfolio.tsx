@@ -19,7 +19,7 @@ const projects = [
   {
     id: 2,
     client: "MAZDA",
-    category: "Comerciales",
+    category: "Redes",
     title: "CX90",
     video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/Mazda_CX90.mp4'.substring(1),
     badge: "AUTOMOTRIZ",
@@ -32,7 +32,7 @@ const projects = [
   {
     id: 3,
     client: "PEDIDOSYA",
-    category: "Comerciales",
+    category: "Redes",
     title: "DIGITAL",
     video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/PedidosYa.mp4'.substring(1),
     badge: "CAMPANA DIGITAL",
@@ -45,7 +45,7 @@ const projects = [
   {
     id: 4,
     client: "PEIGO",
-    category: "Comerciales",
+    category: "Post Producción",
     title: "DIA DE LA MADRE",
     video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/PeiGo_Madre.mp4'.substring(1),
     badge: "STORYTELLING",
@@ -58,7 +58,7 @@ const projects = [
   {
     id: 5,
     client: "DURAGAS",
-    category: "Institucionales",
+    category: "Video Casos",
     title: "OFICINA",
     video: (import.meta as any).env.BASE_URL + '/portfolio/Institucionales/Duragas_Oficina.mp4'.substring(1),
     badge: "INSTITUCIONAL",
@@ -71,7 +71,7 @@ const projects = [
   {
     id: 6,
     client: "BLINSEG",
-    category: "Institucionales",
+    category: "Redes",
     title: "BLINDAJE",
     video: (import.meta as any).env.BASE_URL + '/portfolio/Institucionales/Blinseg_Blindaje.mp4'.substring(1),
     badge: "CORPORATIVO",
@@ -97,7 +97,7 @@ const projects = [
   {
     id: 8,
     client: "SAMBOLON",
-    category: "Coberturas",
+    category: "Redes",
     title: "EVENTO",
     video: (import.meta as any).env.BASE_URL + '/portfolio/Coberturas/Sambolon.mp4'.substring(1),
     badge: "EVENTOS",
@@ -109,7 +109,7 @@ const projects = [
   }
 ];
 
-const categories = ['Todos', 'Comerciales', 'Institucionales', 'Coberturas'];
+const categories = ['Todos', 'Comerciales', 'Redes', 'Post Producción', 'Coberturas', 'Video Casos'];
 
 export const PortfolioPage = () => {
   const [expandedId, setExpandedId] = useState<number | null>(null);

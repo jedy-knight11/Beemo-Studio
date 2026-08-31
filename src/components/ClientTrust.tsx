@@ -18,7 +18,7 @@ export const ClientTrust = () => {
   return (
     <section className="py-16 bg-[#0D0D0D] border-b border-white/5 overflow-hidden">
       <div className="w-full max-w-[1800px] mx-auto px-6 mb-12 text-center">
-        <p className="text-[#083eeb] text-xs font-bold uppercase tracking-[0.2em]">Confiado por Líderes Empresariales</p>
+        <p className="text-[#083eeb] text-xs font-bold uppercase tracking-[0.2em]">Confiados por Líderes Empresariales</p>
       </div>
       
       <div className="relative w-full flex overflow-x-hidden">

@@ -1,11 +1,10 @@
 import { useRef } from 'react';
-import { motion, useScroll, useTransform, MotionValue } from 'motion/react';
+import { motion, useScroll, useTransform } from 'motion/react';
 
 const steps = [
-  { num: "01", title: "Pre-producción", desc: "Convertimos ideas en un plan sólido. Desarrollo de concepto, guion técnico, scouting de locaciones y casting. Preparamos cada detalle al milímetro." },
-  { num: "02", title: "Producción", desc: "El momento de la acción. Dirigimos equipos técnicos y artísticos con cámaras de cine digital y óptica premium para capturar la esencia exacta de la marca." },
-  { num: "03", title: "Post-producción", desc: "Donde surge la magia. Edición rítmica impecable, diseño sonoro envolvente, color grading cinematográfico y efectos visuales de alta gama." },
-  { num: "04", title: "Entrega", desc: "Exportamos piezas maestras. Masterización y adaptación de formatos nativos para múltiples plataformas, asegurando el máximo impacto visual en todas las pantallas." },
+  { num: "01", title: "Entender", desc: "Primero interiorizamos lo que necesitas comunicar. Nos sumergimos en tu marca, tus objetivos y el mensaje que quieres transmitir para encontrar la manera más clara y poderosa de convertirlo en una historia visual." },
+  { num: "02", title: "Crear", desc: "Pasamos de la idea a la ejecución. Planificamos cada detalle y trabajamos con el equipo especializado que el proyecto necesita para construir tu historia." },
+  { num: "03", title: "Convertir", desc: "En postproducción, cada elemento encuentra su lugar. Editamos, afinamos y construimos la pieza final para que la historia se sienta clara, atractiva y coherente." }
 ];
 
 export const Process = () => {
@@ -17,9 +16,8 @@ export const Process = () => {
   });
 
   // Calculate the horizontal translation.
-  // 4 items, we want to slide them so the last item reaches the left edge of the viewport.
-  // Using -75% will slide a 400vw container to its end (since 400vw * 0.75 = 300vw moved left).
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]) as any;
+  // 3 items -> 300vw container. We slide it by -66.666% so the last 100vw is visible at the end.
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-66.6666%"]) as any;
 
   return (
     <section id="process" className="relative bg-[#0D0D0D] border-t border-white/5">
@@ -31,7 +29,7 @@ export const Process = () => {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/30">Metodología</span>
         </h2>
         <p className="text-white/50 text-lg mb-16">
-          Un proceso riguroso diseñado para transformar una visión en realidad cinematográfica.
+          Nuestra Metodología parte de una simple premisa. Cada proyecto es una construcción nueva y en todo el camino, priorizamos una comunicación clara y directa. Esa es nuestra fórmula para crear resultados que nos llenan de orgullo a todos.
         </p>
         
         <div className="flex flex-col gap-16">
@@ -53,9 +51,9 @@ export const Process = () => {
       </div>
 
       {/* DESKTOP LAYOUT (Horizontal Scroll Animation) */}
-      <div ref={containerRef} className="hidden lg:block relative h-[400vh]">
+      <div ref={containerRef} className="hidden lg:block relative h-[300vh]">
         <div className="sticky top-0 h-screen w-full flex items-center overflow-hidden">
-          <motion.div style={{ x }} className="flex w-[400vw] h-full">
+          <motion.div style={{ x }} className="flex w-[300vw] h-full">
             {steps.map((step, i) => (
               <div key={i} className="w-[100vw] h-full flex items-center justify-center px-24">
                 <div className="grid grid-cols-12 w-full max-w-[1800px] gap-24">
@@ -66,7 +64,7 @@ export const Process = () => {
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/30">Metodología</span>
                     </h2>
                     <p className="text-white/50 text-xl max-w-sm mb-12">
-                      Un proceso riguroso diseñado para transformar una visión en realidad cinematográfica.
+                      Nuestra Metodología parte de una simple premisa. Cada proyecto es una construcción nueva y en todo el camino, priorizamos una comunicación clara y directa. Esa es nuestra fórmula para crear resultados que nos llenan de orgullo a todos.
                     </p>
                     
                     <div className="relative h-[2px] w-full max-w-md bg-white/10 rounded-full overflow-hidden">

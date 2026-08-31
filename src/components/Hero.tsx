@@ -58,15 +58,15 @@ export const Hero = () => {
               >
                 <div className="inline-flex items-center gap-2 bg-black/40 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
                   <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-white">Reel 2024</span>
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-white">Reel 2026</span>
                 </div>
               </motion.div>
             )}
           </AnimatePresence>
           
           <motion.h1 layout className={`font-black text-white tracking-tighter heading-font leading-[1.1] transition-all duration-700 ${isMuted ? 'text-4xl sm:text-5xl md:text-7xl lg:text-8xl mb-6' : 'text-2xl md:text-3xl lg:text-4xl whitespace-nowrap mb-6'}`}>
-            IMPACTO VISUAL {isMuted && <br className="hidden md:block" />}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/80 to-white/40">QUE DEFINE MARCAS.</span>
+            HISTORIAS DE <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/80 to-white/40">ALTO IMPACTO</span>
           </motion.h1>
           
           <AnimatePresence>
@@ -77,7 +77,7 @@ export const Hero = () => {
                 exit={{ opacity: 0, height: 0, marginBottom: 0, overflow: 'hidden' }}
                 className="text-white/70 font-light leading-relaxed text-lg md:text-xl max-w-2xl text-center"
               >
-                Producimos videos corporativos de alto impacto, comerciales y cobertura de eventos que elevan la narrativa de tu empresa al siguiente nivel.
+                Sin restricciones creativas, entregamos contenido audiovisual de primera calidad, adaptable y eficiente para cualquier plataforma. Para una industria que busca personalización y optimización.
               </motion.p>
             )}
           </AnimatePresence>
@@ -93,7 +93,7 @@ export const Hero = () => {
                   className="bg-white text-black px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#F5A623] hover:text-black transition-colors flex items-center justify-center gap-2 whitespace-nowrap w-full sm:w-auto"
                 >
                   <Play size={14} fill="currentColor" />
-                  Ver Showreel
+                  Reel 2026
                 </motion.a>
               )}
             </AnimatePresence>

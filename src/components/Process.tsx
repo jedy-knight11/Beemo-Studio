@@ -119,7 +119,7 @@ export const Process = () => {
             
             {/* Left: Sticky Section Title & Progress */}
             <div className="col-span-5 flex flex-col justify-center">
-              <h2 className="text-7xl font-black text-white tracking-tighter uppercase heading-font mb-6 leading-[0.9] break-words">
+              <h2 className="text-5xl lg:text-6xl xl:text-7xl font-black text-white tracking-tighter uppercase heading-font mb-6 leading-[0.9]">
                 Nuestra<br/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/30">Metodología</span>
               </h2>

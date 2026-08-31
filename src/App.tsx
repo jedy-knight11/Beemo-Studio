@@ -27,7 +27,7 @@ export default function App() {
       <AnimatePresence mode="wait">
         {isLoading && <Loader key="loader" onLoadingComplete={() => setIsLoading(false)} />}
       </AnimatePresence>
-      <div className="min-h-screen bg-[#0D0D0D] text-white selection:bg-[#083eeb] selection:text-white overflow-x-hidden w-full">
+      <div className="min-h-screen bg-[#0D0D0D] text-white selection:bg-[#083eeb] selection:text-white overflow-x-clip w-full">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -115,11 +115,11 @@ export const Process = () => {
       <div ref={containerRef} className="hidden lg:block relative h-[300vh]">
         <div className="sticky top-0 h-screen w-full flex items-center overflow-hidden">
           
-          <div className="w-full max-w-[1800px] mx-auto px-12 xl:px-24 grid grid-cols-12 gap-12 xl:gap-24 items-center">
+          <div className="w-full max-w-[1800px] mx-auto px-12 xl:px-24 grid grid-cols-12 gap-8 lg:gap-16 xl:gap-24 items-center">
             
             {/* Left: Sticky Section Title & Progress */}
             <div className="col-span-5 flex flex-col justify-center">
-              <h2 className="text-7xl font-black text-white tracking-tighter uppercase heading-font mb-6 leading-[0.9]">
+              <h2 className="text-7xl font-black text-white tracking-tighter uppercase heading-font mb-6 leading-[0.9] break-words">
                 Nuestra<br/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/30">Metodología</span>
               </h2>
@@ -127,7 +127,7 @@ export const Process = () => {
                 Nuestra Metodología parte de una simple premisa. Cada proyecto es una construcción nueva y en todo el camino, priorizamos una comunicación clara y directa. Esa es nuestra fórmula para crear resultados que nos llenan de orgullo a todos.
               </p>
               
-              <div className="relative h-[2px] w-full max-w-md bg-white/10 rounded-full overflow-hidden">
+              <div className="relative h-[2px] w-full max-w-sm bg-white/10 rounded-full overflow-hidden">
                 <motion.div 
                   className="absolute top-0 left-0 bottom-0 bg-[#083eeb]"
                   style={{ width: useTransform(scrollYProgress, [0, 1], ["0%", "100%"]) }}
@@ -135,7 +135,7 @@ export const Process = () => {
               </div>
               
               {/* Step Indicators */}
-              <div className="flex gap-8 mt-6 max-w-md">
+              <div className="flex gap-8 mt-6 max-w-sm">
                 {steps.map((_, i) => (
                   <StepIndicator key={i} i={i} scrollYProgress={scrollYProgress} />
                 ))}
@@ -143,7 +143,7 @@ export const Process = () => {
             </div>
 
             {/* Right: Scrolling Steps Fading */}
-            <div className="col-span-7 relative h-[60vh] flex items-center justify-start">
+            <div className="col-span-6 col-start-7 relative h-[60vh] flex items-center justify-start">
                {steps.map((step, i) => (
                  <StepCardDesktop key={i} step={step} i={i} scrollYProgress={scrollYProgress} />
                ))}

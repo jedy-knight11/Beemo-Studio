@@ -15,7 +15,10 @@ export const Process = () => {
     offset: ["start start", "end end"]
   });
 
+  // Calculate the horizontal translation.
+  // We have a flex container that is 300% wide. To see the last item, we slide it by -66.6666%
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-66.6666%"]) as any;
+  const progressWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]) as any;
 
   return (
     <section id="process" className="relative bg-[#0D0D0D] border-t border-white/5">
@@ -51,30 +54,31 @@ export const Process = () => {
       {/* DESKTOP LAYOUT (Horizontal Scroll Animation) */}
       <div ref={containerRef} className="hidden lg:block relative h-[300vh]">
         <div className="sticky top-0 h-screen w-full flex items-center overflow-hidden">
-          <motion.div style={{ x }} className="flex w-[300vw] h-full">
-            {steps.map((step, i) => (
-              <div key={i} className="w-screen h-full shrink-0 flex items-center justify-center px-24">
-                <div className="grid grid-cols-12 w-full max-w-[1800px] gap-24">
-                  {/* Left: Sticky Section Title & Progress */}
-                  <div className="col-span-5 flex flex-col justify-center">
-                    <h2 className="text-7xl font-black text-white tracking-tighter uppercase heading-font mb-6 leading-[0.9]">
-                      Nuestra<br/>
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/30">Metodología</span>
-                    </h2>
-                    <p className="text-white/50 text-xl max-w-sm mb-12">
-                      Nuestra Metodología parte de una simple premisa. Cada proyecto es una construcción nueva y en todo el camino, priorizamos una comunicación clara y directa. Esa es nuestra fórmula para crear resultados que nos llenan de orgullo a todos.
-                    </p>
-                    
-                    <div className="relative h-[2px] w-full max-w-md bg-white/10 rounded-full overflow-hidden">
-                      <div 
-                        className="absolute top-0 left-0 bottom-0 bg-[#083eeb] transition-all duration-300"
-                        style={{ width: `${(i / (steps.length - 1)) * 100}%` }}
-                      />
-                    </div>
-                  </div>
+          <div className="w-full max-w-[1800px] mx-auto px-24 grid grid-cols-12 gap-24 items-center">
+            
+            {/* Left: True Sticky Section Title & Progress */}
+            <div className="col-span-5 flex flex-col justify-center">
+              <h2 className="text-7xl font-black text-white tracking-tighter uppercase heading-font mb-6 leading-[0.9]">
+                Nuestra<br/>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/30">Metodología</span>
+              </h2>
+              <p className="text-white/50 text-xl max-w-sm mb-12">
+                Nuestra Metodología parte de una simple premisa. Cada proyecto es una construcción nueva y en todo el camino, priorizamos una comunicación clara y directa. Esa es nuestra fórmula para crear resultados que nos llenan de orgullo a todos.
+              </p>
+              
+              <div className="relative h-[2px] w-full max-w-md bg-white/10 rounded-full overflow-hidden">
+                <motion.div 
+                  className="absolute top-0 left-0 bottom-0 bg-[#083eeb] transition-none"
+                  style={{ width: progressWidth }}
+                />
+              </div>
+            </div>
 
-                  {/* Right: The Step Content */}
-                  <div className="col-span-7 flex flex-col justify-center border-l-2 border-[#083eeb] pl-16">
+            {/* Right: Scrolling Steps Mask */}
+            <div className="col-span-7 overflow-hidden relative h-[60vh]">
+              <motion.div style={{ x }} className="flex h-full w-[300%]">
+                {steps.map((step, i) => (
+                  <div key={i} className="w-1/3 h-full shrink-0 flex flex-col justify-center border-l-2 border-[#083eeb] pl-16">
                     <span className="text-[#083eeb] text-2xl font-normal tracking-widest mb-6 block">
                       PASO {step.num}
                     </span>
@@ -85,10 +89,11 @@ export const Process = () => {
                       {step.desc}
                     </p>
                   </div>
-                </div>
-              </div>
-            ))}
-          </motion.div>
+                ))}
+              </motion.div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>

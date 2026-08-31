@@ -9,7 +9,7 @@ export const Footer = () => {
   
   const [formStep, setFormStep] = useState(1);
   const [projectType, setProjectType] = useState('');
-  
+
   return (
     <footer id="contact" className="bg-[#0D0D0D] text-white pt-16 md:pt-24 pb-12 overflow-hidden">
       <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 flex flex-col">
@@ -37,9 +37,9 @@ export const Footer = () => {
           ) : (
             <div className="rounded-3xl bg-[#083eeb] p-10 text-white flex flex-col justify-between h-full min-h-[400px]">
               <div>
-                <p className="text-[10px] font-normal uppercase tracking-[0.2em] mb-4 opacity-60">INICIA UNA CONVERSACION</p>
+                <p className="text-[10px] font-normal uppercase tracking-[0.2em] mb-4 opacity-60">INICIA UNA CONVERSACIÓN</p>
                 <h2 className="text-3xl md:text-5xl font-black tracking-tighter uppercase heading-font mb-6 leading-tight">
-                  TIENES UN PROYECTO<br/>EN MENTE?<br/>CONTACTANOS HOY.
+                  ¿TIENES UN PROYECTO<br/>EN MENTE?<br/>CONTÁCTANOS HOY.
                 </h2>
               </div>
               
@@ -57,35 +57,28 @@ export const Footer = () => {
           {/* Right Block */}
           {isContactPage ? (
             <div className="rounded-3xl bg-[#111111] border border-white/5 p-10 text-white flex flex-col justify-center h-full min-h-[400px]">
-              <p className="text-[10px] font-normal uppercase tracking-[0.2em] mb-8 opacity-60">NUESTRA METODOLOGIA</p>
+              <p className="text-[10px] font-normal uppercase tracking-[0.2em] mb-8 opacity-60">NUESTRA METODOLOGÍA</p>
               
               <div className="flex flex-col gap-8">
                 <div className="flex gap-6 items-start">
                   <span className="text-2xl font-black text-[#083eeb] heading-font leading-none">01</span>
                   <div>
-                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">PRE-PRODUCCIÓN</h4>
-                    <p className="text-white/50 text-sm">Concepto, guion y planificación detallada para asegurar el éxito del rodaje.</p>
+                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">ENTENDER</h4>
+                    <p className="text-white/50 text-sm">Primero interiorizamos lo que necesitas comunicar. Nos sumergimos en tu marca y objetivos para encontrar la historia visual.</p>
                   </div>
                 </div>
                 <div className="flex gap-6 items-start">
                   <span className="text-2xl font-black text-[#083eeb] heading-font leading-none">02</span>
                   <div>
-                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">PRODUCCIÓN</h4>
-                    <p className="text-white/50 text-sm">Ejecución impecable con equipos de última generacion y talento especializado.</p>
+                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">CREAR</h4>
+                    <p className="text-white/50 text-sm">Pasamos de la idea a la ejecución. Planificamos cada detalle y trabajamos con el equipo especializado necesario.</p>
                   </div>
                 </div>
                 <div className="flex gap-6 items-start">
                   <span className="text-2xl font-black text-[#083eeb] heading-font leading-none">03</span>
                   <div>
-                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">POST-PRODUCCIÓN</h4>
-                    <p className="text-white/50 text-sm">Edición, colorización y diseño sonoro para pulir la pieza hasta la perfección.</p>
-                  </div>
-                </div>
-                <div className="flex gap-6 items-start">
-                  <span className="text-2xl font-black text-[#083eeb] heading-font leading-none">04</span>
-                  <div>
-                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">ENTREGA</h4>
-                    <p className="text-white/50 text-sm">Masterizacion y adaptación para múltiples plataformas, asegurando el máximo impacto.</p>
+                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">CONVERTIR</h4>
+                    <p className="text-white/50 text-sm">En postproducción cada elemento encuentra su lugar. Editamos y afinamos la pieza final para que sea clara y coherente.</p>
                   </div>
                 </div>
               </div>
@@ -96,7 +89,7 @@ export const Footer = () => {
                 <div className="flex-1 h-1 bg-white/10 rounded-full overflow-hidden">
                   <motion.div 
                     className="h-full bg-[#083eeb]" 
-                    initial={{ width: '33%' }}
+                    initial={{ width: '50%' }}
                     animate={{ width: `${(formStep / 2) * 100}%` }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
                   />
@@ -116,9 +109,9 @@ export const Footer = () => {
                       transition={{ duration: 0.3 }}
                       className="flex-1 flex flex-col justify-center gap-6"
                     >
-                      <h3 className="text-2xl font-black uppercase tracking-tight heading-font">QUÉ TIPO DE PROYECTO TIENES EN MENTE?</h3>
+                      <h3 className="text-2xl font-black uppercase tracking-tight heading-font">¿QUÉ TIPO DE PROYECTO TIENES EN MENTE?</h3>
                       <div className="flex flex-col gap-3 mt-4">
-                        {['INSTITUCIONAL', 'COMERCIAL / SPOT', 'COBERTURA DE EVENTOS', 'OTRO'].map((type) => (
+                        {['VIDEO INSTITUCIONAL/CORPORATIVO', 'CONTENIDO PARA REDES', 'COBERTURA DE EVENTOS', 'FOTOGRAFÍA'].map((type) => (
                           <button 
                             key={type}
                             onClick={() => setProjectType(type)}
@@ -131,7 +124,7 @@ export const Footer = () => {
                       <div className="mt-auto pt-8 flex justify-end">
                         <button 
                           disabled={!projectType}
-                          onClick={() => setFormStep(1)}
+                          onClick={() => setFormStep(2)}
                           className="flex items-center gap-4 bg-white text-black px-6 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-[#083eeb] hover:text-white transition-colors disabled:opacity-50 disabled:hover:bg-white disabled:hover:text-black cursor-pointer"
                         >
                           Siguiente <ArrowRight size={16} />
@@ -157,7 +150,6 @@ export const Footer = () => {
                         <div className="flex flex-col relative">
                           <input type="email" placeholder="EMAIL" className="w-full bg-transparent border-b border-white/20 pb-3 text-lg font-bold text-white placeholder-white/30 focus:outline-none focus:border-[#083eeb] transition-colors uppercase tracking-tight" />
                         </div>
-                        
                         <div className="flex flex-col relative">
                           <input type="number" placeholder="¿PRESUPUESTO ESTIMADO? (OPCIONAL)" className="w-full bg-transparent border-b border-white/20 pb-3 text-lg font-bold text-white placeholder-white/30 focus:outline-none focus:border-[#083eeb] transition-colors uppercase tracking-tight" />
                         </div>
@@ -167,7 +159,7 @@ export const Footer = () => {
                       </div>
                       <div className="mt-auto pt-8 flex justify-between items-center">
                         <button 
-                          onClick={() => setFormStep(2)}
+                          onClick={() => setFormStep(1)}
                           className="flex items-center justify-center w-12 h-12 rounded-full border border-white/20 hover:border-white transition-colors text-white cursor-pointer"
                         >
                           <ArrowLeft size={16} />
@@ -258,7 +250,7 @@ export const Footer = () => {
           {/* Logo */}
           <div className="w-full lg:w-auto flex items-start lg:justify-end">
             <div className="w-48 h-48 md:w-56 md:h-56 flex items-center justify-center">
-              <img src={(import.meta as any).env.BASE_URL + '/logo.png'.substring(1)} alt="Beemo Studio Logo" className="w-full h-full object-contain" />
+              <img src={(import.meta as any).env.BASE_URL + 'logo.png'} alt="Beemo Studio Logo" className="w-full h-full object-contain" />
             </div>
           </div>
 

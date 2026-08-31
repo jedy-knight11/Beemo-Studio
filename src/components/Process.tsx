@@ -1,11 +1,76 @@
 import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'motion/react';
+import { motion, useScroll, useTransform, MotionValue } from 'motion/react';
 
 const steps = [
   { num: "01", title: "Entender", desc: "Primero interiorizamos lo que necesitas comunicar. Nos sumergimos en tu marca, tus objetivos y el mensaje que quieres transmitir para encontrar la manera más clara y poderosa de convertirlo en una historia visual." },
   { num: "02", title: "Crear", desc: "Pasamos de la idea a la ejecución. Planificamos cada detalle y trabajamos con el equipo especializado que el proyecto necesita para construir tu historia." },
   { num: "03", title: "Convertir", desc: "En postproducción, cada elemento encuentra su lugar. Editamos, afinamos y construimos la pieza final para que la historia se sienta clara, atractiva y coherente." }
 ];
+
+const StepIndicator = ({ i, scrollYProgress }: { i: number, scrollYProgress: MotionValue<number> }) => {
+  const p = i * (1 / (steps.length - 1));
+  const isActive = useTransform(scrollYProgress, 
+    [Math.max(0, p - 0.1), p, Math.min(1, p + 0.1)], 
+    [0, 1, 0]
+  );
+  
+  const indicatorOpacity = useTransform(scrollYProgress, 
+    [Math.max(0, p - 0.2), p, Math.min(1, p + 0.2)], 
+    [0.3, 1, 0.3]
+  );
+
+  return (
+    <div className="relative text-xs font-bold font-mono text-white/30">
+      <motion.div 
+        className="absolute inset-0 text-white"
+        style={{ opacity: indicatorOpacity }}
+      >
+        0{i + 1}
+      </motion.div>
+      0{i + 1}
+    </div>
+  );
+};
+
+const StepCardDesktop = ({ step, i, scrollYProgress }: { step: any, i: number, scrollYProgress: MotionValue<number> }) => {
+  const p = i * (1 / (steps.length - 1));
+  
+  let input, opacityOut, yOut;
+  
+  if (i === 0) {
+    input = [0, 0.15, 1];
+    opacityOut = [1, 0, 0];
+    yOut = [0, -60, -60];
+  } else if (i === steps.length - 1) {
+    input = [0, 0.85, 1];
+    opacityOut = [0, 0, 1];
+    yOut = [60, 60, 0];
+  } else {
+    input = [0, p - 0.15, p, p + 0.15, 1];
+    opacityOut = [0, 0, 1, 0, 0];
+    yOut = [60, 60, 0, -60, -60];
+  }
+
+  const opacity = useTransform(scrollYProgress, input, opacityOut) as any;
+  const y = useTransform(scrollYProgress, input, yOut) as any;
+
+  return (
+    <motion.div
+      className="hidden lg:block absolute top-1/2 left-0 w-full -translate-y-1/2"
+      style={{ opacity, y }}
+    >
+      <span className="text-[#083eeb] text-2xl font-normal tracking-widest mb-6 block">
+        PASO {step.num}
+      </span>
+      <h3 className="text-4xl md:text-5xl lg:text-7xl font-black text-white uppercase tracking-tighter heading-font mb-6 leading-tight">
+        {step.title}
+      </h3>
+      <p className="text-xl md:text-2xl text-white/60 font-light leading-relaxed max-w-xl">
+        {step.desc}
+      </p>
+    </motion.div>
+  );
+};
 
 export const Process = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -14,11 +79,6 @@ export const Process = () => {
     target: containerRef,
     offset: ["start start", "end end"]
   });
-
-  // Calculate the horizontal translation.
-  // We have a flex container that is 300% wide. To see the last item, we slide it by -66.6666%
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-66.6666%"]) as any;
-  const progressWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]) as any;
 
   return (
     <section id="process" className="relative bg-[#0D0D0D] border-t border-white/5">
@@ -51,12 +111,13 @@ export const Process = () => {
         </div>
       </div>
 
-      {/* DESKTOP LAYOUT (Horizontal Scroll Animation) */}
+      {/* DESKTOP LAYOUT (Sticky Scroll Fade Animation) */}
       <div ref={containerRef} className="hidden lg:block relative h-[300vh]">
         <div className="sticky top-0 h-screen w-full flex items-center overflow-hidden">
-          <div className="w-full max-w-[1800px] mx-auto px-24 grid grid-cols-12 gap-24 items-center">
+          
+          <div className="w-full max-w-[1800px] mx-auto px-12 xl:px-24 grid grid-cols-12 gap-12 xl:gap-24 items-center">
             
-            {/* Left: True Sticky Section Title & Progress */}
+            {/* Left: Sticky Section Title & Progress */}
             <div className="col-span-5 flex flex-col justify-center">
               <h2 className="text-7xl font-black text-white tracking-tighter uppercase heading-font mb-6 leading-[0.9]">
                 Nuestra<br/>
@@ -68,29 +129,24 @@ export const Process = () => {
               
               <div className="relative h-[2px] w-full max-w-md bg-white/10 rounded-full overflow-hidden">
                 <motion.div 
-                  className="absolute top-0 left-0 bottom-0 bg-[#083eeb] transition-none"
-                  style={{ width: progressWidth }}
+                  className="absolute top-0 left-0 bottom-0 bg-[#083eeb]"
+                  style={{ width: useTransform(scrollYProgress, [0, 1], ["0%", "100%"]) }}
                 />
+              </div>
+              
+              {/* Step Indicators */}
+              <div className="flex gap-8 mt-6 max-w-md">
+                {steps.map((_, i) => (
+                  <StepIndicator key={i} i={i} scrollYProgress={scrollYProgress} />
+                ))}
               </div>
             </div>
 
-            {/* Right: Scrolling Steps Mask */}
-            <div className="col-span-7 overflow-hidden relative h-[60vh]">
-              <motion.div style={{ x }} className="flex h-full w-[300%]">
-                {steps.map((step, i) => (
-                  <div key={i} className="w-1/3 h-full shrink-0 flex flex-col justify-center border-l-2 border-[#083eeb] pl-16">
-                    <span className="text-[#083eeb] text-2xl font-normal tracking-widest mb-6 block">
-                      PASO {step.num}
-                    </span>
-                    <h3 className="text-4xl md:text-5xl lg:text-7xl font-black text-white uppercase tracking-tighter heading-font mb-6 leading-tight">
-                      {step.title}
-                    </h3>
-                    <p className="text-xl md:text-2xl text-white/60 font-light leading-relaxed max-w-xl">
-                      {step.desc}
-                    </p>
-                  </div>
-                ))}
-              </motion.div>
+            {/* Right: Scrolling Steps Fading */}
+            <div className="col-span-7 relative h-[60vh] flex items-center justify-start">
+               {steps.map((step, i) => (
+                 <StepCardDesktop key={i} step={step} i={i} scrollYProgress={scrollYProgress} />
+               ))}
             </div>
 
           </div>

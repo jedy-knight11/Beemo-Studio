@@ -9,8 +9,7 @@ export const Footer = () => {
   
   const [formStep, setFormStep] = useState(1);
   const [projectType, setProjectType] = useState('');
-  const [budget, setBudget] = useState('');
-
+  
   return (
     <footer id="contact" className="bg-[#0D0D0D] text-white pt-16 md:pt-24 pb-12 overflow-hidden">
       <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 flex flex-col">
@@ -24,7 +23,7 @@ export const Footer = () => {
               <div>
                 <p className="text-[10px] font-normal uppercase tracking-[0.2em] mb-4 opacity-60">TESTIMONIO</p>
                 <h2 className="text-2xl md:text-4xl font-black tracking-tight uppercase heading-font mb-6 leading-[1.2]">
-                  "BEEMO STUDIO TRANSFORMO NUESTRA VISION EN UNA PIEZA AUDIOVISUAL QUE SUPERO TODAS NUESTRAS EXPECTATIVAS."
+                  "BEEMO STUDIO TRANSFORMÓ NUESTRA VISIÓN EN UNA PIEZA AUDIOVISUAL QUE SUPERÓ TODAS NUESTRAS EXPECTATIVAS."
                 </h2>
               </div>
               <div className="flex items-center gap-4 mt-auto">
@@ -64,29 +63,29 @@ export const Footer = () => {
                 <div className="flex gap-6 items-start">
                   <span className="text-2xl font-black text-[#083eeb] heading-font leading-none">01</span>
                   <div>
-                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">PRE-PRODUCCION</h4>
-                    <p className="text-white/50 text-sm">Concepto, guion y planificacion detallada para asegurar el exito del rodaje.</p>
+                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">PRE-PRODUCCIÓN</h4>
+                    <p className="text-white/50 text-sm">Concepto, guion y planificación detallada para asegurar el éxito del rodaje.</p>
                   </div>
                 </div>
                 <div className="flex gap-6 items-start">
                   <span className="text-2xl font-black text-[#083eeb] heading-font leading-none">02</span>
                   <div>
-                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">PRODUCCION</h4>
-                    <p className="text-white/50 text-sm">Ejecucion impecable con equipos de ultima generacion y talento especializado.</p>
+                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">PRODUCCIÓN</h4>
+                    <p className="text-white/50 text-sm">Ejecución impecable con equipos de última generacion y talento especializado.</p>
                   </div>
                 </div>
                 <div className="flex gap-6 items-start">
                   <span className="text-2xl font-black text-[#083eeb] heading-font leading-none">03</span>
                   <div>
-                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">POST-PRODUCCION</h4>
-                    <p className="text-white/50 text-sm">Edicion, colorizacion y diseno sonoro para pulir la pieza hasta la perfeccion.</p>
+                    <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">POST-PRODUCCIÓN</h4>
+                    <p className="text-white/50 text-sm">Edición, colorización y diseño sonoro para pulir la pieza hasta la perfección.</p>
                   </div>
                 </div>
                 <div className="flex gap-6 items-start">
                   <span className="text-2xl font-black text-[#083eeb] heading-font leading-none">04</span>
                   <div>
                     <h4 className="text-xl font-bold uppercase mb-2 tracking-tight">ENTREGA</h4>
-                    <p className="text-white/50 text-sm">Masterizacion y adaptacion para multiples plataformas, asegurando el maximo impacto.</p>
+                    <p className="text-white/50 text-sm">Masterizacion y adaptación para múltiples plataformas, asegurando el máximo impacto.</p>
                   </div>
                 </div>
               </div>
@@ -98,11 +97,11 @@ export const Footer = () => {
                   <motion.div 
                     className="h-full bg-[#083eeb]" 
                     initial={{ width: '33%' }}
-                    animate={{ width: `${(formStep / 3) * 100}%` }}
+                    animate={{ width: `${(formStep / 2) * 100}%` }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
                   />
                 </div>
-                <span className="text-xs font-bold tracking-widest text-white/40">0{formStep}/03</span>
+                <span className="text-xs font-bold tracking-widest text-white/40">0{formStep}/02</span>
               </div>
 
               <form className="flex-1 flex flex-col relative" onSubmit={(e) => e.preventDefault()}>
@@ -132,7 +131,7 @@ export const Footer = () => {
                       <div className="mt-auto pt-8 flex justify-end">
                         <button 
                           disabled={!projectType}
-                          onClick={() => setFormStep(2)}
+                          onClick={() => setFormStep(1)}
                           className="flex items-center gap-4 bg-white text-black px-6 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-[#083eeb] hover:text-white transition-colors disabled:opacity-50 disabled:hover:bg-white disabled:hover:text-black cursor-pointer"
                         >
                           Siguiente <ArrowRight size={16} />
@@ -150,45 +149,6 @@ export const Footer = () => {
                       transition={{ duration: 0.3 }}
                       className="flex-1 flex flex-col justify-center gap-6"
                     >
-                      <h3 className="text-2xl font-black uppercase tracking-tight heading-font">CUÁL ES TU PRESUPUESTO ESTIMADO?</h3>
-                      <div className="flex flex-col gap-3 mt-4">
-                        {['< $2,000', '$2,000 - $5,000', '$5,000+'].map((type) => (
-                          <button 
-                            key={type}
-                            onClick={() => setBudget(type)}
-                            className={`text-left px-6 py-4 rounded-xl border ${budget === type ? 'border-[#083eeb] bg-[#083eeb]/10' : 'border-white/10 hover:border-white/30'} transition-all text-sm font-bold tracking-wider uppercase`}
-                          >
-                            {type}
-                          </button>
-                        ))}
-                      </div>
-                      <div className="mt-auto pt-8 flex justify-between">
-                        <button 
-                          onClick={() => setFormStep(1)}
-                          className="flex items-center justify-center w-12 h-12 rounded-full border border-white/20 hover:border-white transition-colors text-white cursor-pointer"
-                        >
-                          <ArrowLeft size={16} />
-                        </button>
-                        <button 
-                          disabled={!budget}
-                          onClick={() => setFormStep(3)}
-                          className="flex items-center gap-4 bg-white text-black px-6 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-[#083eeb] hover:text-white transition-colors disabled:opacity-50 disabled:hover:bg-white disabled:hover:text-black cursor-pointer"
-                        >
-                          Siguiente <ArrowRight size={16} />
-                        </button>
-                      </div>
-                    </motion.div>
-                  )}
-
-                  {formStep === 3 && (
-                    <motion.div 
-                      key="step3"
-                      initial={{ opacity: 0, x: 20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      exit={{ opacity: 0, x: -20 }}
-                      transition={{ duration: 0.3 }}
-                      className="flex-1 flex flex-col justify-center gap-6"
-                    >
                       <h3 className="text-2xl font-black uppercase tracking-tight heading-font">CASI LISTO. CUÉNTANOS MÁS.</h3>
                       <div className="flex flex-col gap-4 mt-4">
                         <div className="flex flex-col relative">
@@ -196,6 +156,10 @@ export const Footer = () => {
                         </div>
                         <div className="flex flex-col relative">
                           <input type="email" placeholder="EMAIL" className="w-full bg-transparent border-b border-white/20 pb-3 text-lg font-bold text-white placeholder-white/30 focus:outline-none focus:border-[#083eeb] transition-colors uppercase tracking-tight" />
+                        </div>
+                        
+                        <div className="flex flex-col relative">
+                          <input type="number" placeholder="¿PRESUPUESTO ESTIMADO? (OPCIONAL)" className="w-full bg-transparent border-b border-white/20 pb-3 text-lg font-bold text-white placeholder-white/30 focus:outline-none focus:border-[#083eeb] transition-colors uppercase tracking-tight" />
                         </div>
                         <div className="flex flex-col relative">
                           <textarea rows={2} placeholder="DETALLES DEL PROYECTO..." className="w-full bg-transparent border-b border-white/20 pb-3 text-lg font-bold text-white placeholder-white/30 focus:outline-none focus:border-[#083eeb] transition-colors uppercase tracking-tight resize-none"></textarea>
@@ -286,7 +250,7 @@ export const Footer = () => {
               <p className="text-white/50 text-sm font-bold uppercase tracking-[0.2em] mb-2">Explora</p>
               <a href="/portafolio" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Portafolio 2024</a>
               <a href="/servicios" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Servicios</a>
-              <a href="/#process" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Metodologia</a>
+              <a href="/#process" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Metodología</a>
               <a href="/contacto" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Contacto</a>
             </div>
           </div>

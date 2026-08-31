@@ -5,12 +5,12 @@ export const Team = () => {
     {
       name: "Jonathan Miranda",
       role: "Fundador | Director Ejecutivo",
-      image: (import.meta as any).env.BASE_URL + 'team/jonathan.webp',
+      image: (import.meta as any).env.BASE_URL + 'team/jonathan.jpg',
     },
     {
       name: "Juan José",
       role: "Fundador | Productor Ejecutivo",
-      image: (import.meta as any).env.BASE_URL + 'team/juanjose.webp',
+      image: (import.meta as any).env.BASE_URL + 'team/juanjose.jpg',
     }
   ];
 

@@ -142,9 +142,7 @@ export const Contact = () => {
                       </div>
                       
                       <div className="flex flex-col relative">
-                        <input 
-                          type="text" 
-                          placeholder="¿PRESUPUESTO ESTIMADO? (OPCIONAL)"
+                        <input type="number" placeholder="¿PRESUPUESTO ESTIMADO? (OPCIONAL)"
                           className="w-full bg-transparent border-b-2 border-white/20 pb-4 text-lg md:text-xl font-bold text-white placeholder-white/20 focus:outline-none focus:border-[#083eeb] transition-colors uppercase tracking-tight"
                         />
                       </div>

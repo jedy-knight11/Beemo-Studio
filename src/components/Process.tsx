@@ -15,8 +15,6 @@ export const Process = () => {
     offset: ["start start", "end end"]
   });
 
-  // Calculate the horizontal translation.
-  // 3 items -> 300vw container. We slide it by -66.666% so the last 100vw is visible at the end.
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-66.6666%"]) as any;
 
   return (
@@ -55,9 +53,9 @@ export const Process = () => {
         <div className="sticky top-0 h-screen w-full flex items-center overflow-hidden">
           <motion.div style={{ x }} className="flex w-[300vw] h-full">
             {steps.map((step, i) => (
-              <div key={i} className="w-[100vw] h-full flex items-center justify-center px-24">
+              <div key={i} className="w-screen h-full shrink-0 flex items-center justify-center px-24">
                 <div className="grid grid-cols-12 w-full max-w-[1800px] gap-24">
-                  {/* Left: Sticky Section Title & Progress (duplicated visually per slide or split) */}
+                  {/* Left: Sticky Section Title & Progress */}
                   <div className="col-span-5 flex flex-col justify-center">
                     <h2 className="text-7xl font-black text-white tracking-tighter uppercase heading-font mb-6 leading-[0.9]">
                       Nuestra<br/>

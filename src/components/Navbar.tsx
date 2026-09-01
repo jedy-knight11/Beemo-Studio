@@ -1,6 +1,9 @@
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+
+const MotionLink = motion.create ? motion.create(Link) : motion(Link);
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,26 +24,26 @@ export const Navbar = () => {
       } flex items-center`}
     >
       <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a href="/" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img src={(import.meta as any).env.BASE_URL + '/logo_header.png'.substring(1)} alt="Beemo Studio Logo" className="h-[48px] md:h-[96px] w-auto object-contain" />
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-6">
           <div className="flex gap-6 text-sm uppercase tracking-widest font-semibold text-white/60">
-            <a href="/portafolio" className="hover:text-white transition-colors cursor-pointer">Trabajo</a>
-            <a href="/servicios" className="hover:text-white transition-colors cursor-pointer">Servicios</a>
+            <Link to="/portafolio" className="hover:text-white transition-colors cursor-pointer">Trabajo</Link>
+            <Link to="/servicios" className="hover:text-white transition-colors cursor-pointer">Servicios</Link>
           </div>
           
           <div className="text-xs uppercase font-bold tracking-widest text-white/40 ml-4">
             <span className="text-white cursor-pointer">EN</span> / ES
           </div>
-          <a
-            href="/contacto"
+          <Link
+            to="/contacto"
             className="bg-[#083eeb] text-white px-8 py-3 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-[#F5A623] hover:text-black transition-all"
           >
             Iniciar Proyecto
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -87,13 +90,13 @@ export const Navbar = () => {
               <div className="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-white/40 mb-8">
                 <span className="text-white">EN</span> / ES
               </div>
-              <a
-                href="/contacto"
+              <Link
+                to="/contacto"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block w-full bg-white text-black text-center py-5 rounded-full text-lg font-black uppercase tracking-tighter heading-font"
               >
                 INICIAR PROYECTO
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
         )}

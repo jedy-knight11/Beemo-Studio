@@ -1,63 +1,176 @@
+import { Link } from 'react-router-dom';
 import { useState, useRef } from 'react';
 import { Play, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 const portfolioItems = [
   {
-    id: '1',
-    name: 'Orocash TVC',
-    category: 'Comerciales',
-    description: 'Comercial de televisión para Orocash.',
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/Orocash_TVC.mp4'.substring(1)
+    "id": "1",
+    "name": "Orocash TVC",
+    "category": "Comerciales TV",
+    "description": "Comercial de televisión a nivel nacional para Orocash.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Comerciales TV/Orocash_TVC.mp4'
   },
   {
-    id: '2',
-    name: 'Mazda CX90',
-    category: 'Redes',
-    description: 'Spot comercial para el nuevo Mazda CX90.',
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/Mazda_CX90.mp4'.substring(1)
+    "id": "2",
+    "name": "Duragas Express - Cocina",
+    "category": "Comerciales TV",
+    "description": "Cápsula narrativa comercial: solución inmediata en la cocina.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Comerciales TV/Duragas_Express_Cocina.mp4'
   },
   {
-    id: '3',
-    name: 'PedidosYa',
-    category: 'Redes',
-    description: 'Campaña digital para PedidosYa.',
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/PedidosYa.mp4'.substring(1)
+    "id": "3",
+    "name": "Duragas Express - Home",
+    "category": "Comerciales TV",
+    "description": "Cápsula comercial en el hogar con estética cinematográfica.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Comerciales TV/Duragas_Express_Home.mp4'
   },
   {
-    id: '4',
-    name: 'PeiGo Madre',
-    category: 'Post Producción',
-    description: 'Spot del día de la madre para PeiGo.',
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/PeiGo_Madre.mp4'.substring(1)
+    "id": "4",
+    "name": "Duragas Express - Parrilla",
+    "category": "Comerciales TV",
+    "description": "Cápsula de fin de semana: el alivio de pedir tu gas al instante.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Comerciales TV/Duragas_Express_Parrilla.mp4'
   },
   {
-    id: '5',
-    name: 'Duragas Express Oficina',
-    category: 'Video Casos',
-    description: 'Video institucional para Duragas Express.',
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Institucionales/Duragas_Oficina.mp4'.substring(1)
+    "id": "5",
+    "name": "Duragas Institucional",
+    "category": "Comerciales TV",
+    "description": "Comunicando la trayectoria y modernidad de la marca líder.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Comerciales TV/Duragas_Oficina.mp4'
   },
   {
-    id: '6',
-    name: 'Blinseg',
-    category: 'Redes',
-    description: 'Video corporativo sobre procesos de blindaje.',
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Institucionales/Blinseg_Blindaje.mp4'.substring(1)
+    "id": "6",
+    "name": "Mazda CX90",
+    "category": "Redes",
+    "description": "Spot comercial y contenido dinámico para el nuevo Mazda CX90.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Redes/Mazda_CX90.mp4'
   },
   {
-    id: '7',
-    name: 'Duragas Making Of',
-    category: 'Coberturas',
-    description: 'Detrás de cámaras de la campaña Duragas Express.',
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Coberturas/Duragas_MakingOf.mp4'.substring(1)
+    "id": "7",
+    "name": "PedidosYa",
+    "category": "Redes",
+    "description": "Campaña digital dinámica diseñada para el algoritmo y scroll infinito.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Redes/PedidosYa.mp4'
   },
   {
-    id: '8',
-    name: 'Sambolón Event',
-    category: 'Coberturas',
-    description: 'Cobertura oficial del evento Sambolón.',
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Coberturas/Sambolon.mp4'.substring(1)
+    "id": "8",
+    "name": "PremierPet",
+    "category": "Redes",
+    "description": "Producción comercial de alta calidad para alimentos premium de mascotas.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Redes/PremierPet_Final.mp4'
+  },
+  {
+    "id": "9",
+    "name": "Ciudad Celeste",
+    "category": "Redes",
+    "description": "Cápsula audiovisual de estilo de vida y desarrollo inmobiliario.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Redes/CiudadCeleste_Capsula_1.mp4'
+  },
+  {
+    "id": "10",
+    "name": "Blinseg",
+    "category": "Redes",
+    "description": "Contenido dinámico para redes sobre blindaje y protección automotriz.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Redes/Blinseg_Blindaje.mp4'
+  },
+  {
+    "id": "11",
+    "name": "Sambolón",
+    "category": "Redes",
+    "description": "Contenido gastronómico dinámico y apetitoso para redes sociales.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Redes/Sambolon.mp4'
+  },
+  {
+    "id": "12",
+    "name": "PeiGo - Día de la Madre",
+    "category": "Post Producción",
+    "description": "Post-producción emotiva para campaña del Día de la Madre.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Madre.mp4'
+  },
+  {
+    "id": "13",
+    "name": "PeiGo - Pan M",
+    "category": "Post Producción",
+    "description": "Edición y motion graphics en formato vertical para PeiGo.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Panm.mp4'
+  },
+  {
+    "id": "14",
+    "name": "PeiGo - Interview",
+    "category": "Post Producción",
+    "description": "Edición de entrevistas dinámicas para canales digitales.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Interview.mp4'
+  },
+  {
+    "id": "15",
+    "name": "PeiGo - Supcine",
+    "category": "Post Producción",
+    "description": "Masterización y adaptación audiovisual para campañas digitales de PeiGo.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Supcine.mp4'
+  },
+  {
+    "id": "16",
+    "name": "PeiGo - Web Digital",
+    "category": "Post Producción",
+    "description": "Pieza de post-producción adaptada para web y aplicaciones móviles.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Web.mp4'
+  },
+  {
+    "id": "17",
+    "name": "Duragas - Making Of",
+    "category": "Video Casos",
+    "description": "Documentando el proceso creativo y la escala de la producción Duragas Express.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/Duragas_MakingOf.mp4'
+  },
+  {
+    "id": "18",
+    "name": "Banco Guayaquil - El Mejor Banco",
+    "category": "Video Casos",
+    "description": "Video caso de campaña estratégica para Banco Guayaquil.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/BG_El_Mejor_Banco_Para_Ti.mp4'
+  },
+  {
+    "id": "19",
+    "name": "Banco Guayaquil - Niño Moi",
+    "category": "Video Casos",
+    "description": "Video caso emotivo con el embajador de marca Moisés Caicedo.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/BG_Primero_Nino_Moi.mp4'
+  },
+  {
+    "id": "20",
+    "name": "Banco Guayaquil - Wrapped App",
+    "category": "Video Casos",
+    "description": "Video caso sobre la innovadora funcionalidad Wrapped de la app bancaria.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/BG_Wrapped_App.mp4'
+  },
+  {
+    "id": "21",
+    "name": "Toyocosta - Premio Pintado",
+    "category": "Coberturas",
+    "description": "Cobertura oficial y Aftermovie del evento Toyocosta.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Coberturas/Toyocosta_Premio_Pintado.mp4'
+  },
+  {
+    "id": "22",
+    "name": "Renault Kwid HD",
+    "category": "Coberturas",
+    "description": "Cobertura de lanzamiento del nuevo modelo Renault Kwid.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Coberturas/Renault_Kwid_HD.mp4'
+  },
+  {
+    "id": "23",
+    "name": "Renault Evento",
+    "category": "Coberturas",
+    "description": "Cápsula cinematográfica de la experiencia de marca Renault.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Coberturas/Renault.mp4'
+  },
+  {
+    "id": "24",
+    "name": "Mercado Municipal Vergeles",
+    "category": "Coberturas",
+    "description": "Cobertura institucional y documental de la inauguración del Mercado Vergeles.",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Coberturas/mercado_municpal_vergeles.mp4'
   }
 ];
 
@@ -126,12 +239,12 @@ const ProjectCard = ({ file, onClick }: { file: any, onClick: (f: any) => void }
 };
 
 export const Portfolio = () => {
-  const [filter, setFilter] = useState('Todos');
+  const [filter, setFilter] = useState('Comerciales TV');
   const [activeVideo, setActiveVideo] = useState<any | null>(null);
-  const categories = ['Todos', 'Comerciales', 'Redes', 'Post Producción', 'Coberturas', 'Video Casos'];
+  const categories = ['Comerciales TV', 'Redes', 'Post Producción', 'Coberturas', 'Video Casos'];
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-  const filteredFiles = portfolioItems.filter(f => filter === 'Todos' || f.category === filter);
+  const filteredFiles = portfolioItems.filter(f => f.category === filter).slice(0, 4);
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
@@ -201,6 +314,16 @@ export const Portfolio = () => {
             {/* Spacer for the end of scroll */}
             <div className="w-[6px] shrink-0" />
           </div>
+        </div>
+
+        {/* View Full Portfolio CTA */}
+        <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 mt-6 flex justify-end">
+          <Link
+            to="/portafolio"
+            className="inline-flex items-center gap-3 text-xs uppercase font-bold tracking-widest text-white/60 hover:text-white transition-colors border-b border-white/20 hover:border-white pb-1"
+          >
+            Ver portafolio completo ({portfolioItems.length} proyectos) →
+          </Link>
         </div>
       </section>
 

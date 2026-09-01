@@ -1,19 +1,20 @@
+import { Link } from 'react-router-dom';
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Play } from 'lucide-react';
+import { Play, Video, Smartphone, Calendar, Camera } from 'lucide-react';
 
 const casesData = [
   {
     id: 'duragas',
     title: 'Duragas Express',
     desc: 'El reto era hacer sentir la urgencia cotidiana de quedarse sin gas y posicionar la nueva app como la solución inmediata. Para Duragas Express, diseñamos un lenguaje visual que convirtiera el estrés diario en una historia con clímax y alivio. Con una planificación enfocada, logramos 5 cápsulas narrativas completas en un solo día de producción. Cada una, con una estética cinematográfica y un ritmo pensado para conectar al instante. El resultado fue una campaña lista para todos los medios.',
-    video: (import.meta as any).env.BASE_URL + 'portfolio/Institucionales/Duragas_Oficina.mp4'
+    video: (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/Duragas_MakingOf.mp4'
   },
   {
     id: 'orocash',
     title: 'Orocash TVC',
     desc: 'El desafío era emotivo: retratar los momentos especiales de la vida donde Orocash está presente, no como un producto, sino como parte de la memoria afectiva de las personas. Nuestro objetivo fue crear una conexión auténtica. Seleccionamos una locación con alma, un casting que reflejara verdaderas emociones y una colorización cuidadosa que acentuara la calidez y la nostalgia de cada instante. El resultado invita al espectador a reconocer sus propios momentos especiales en cada frame.',
-    video: (import.meta as any).env.BASE_URL + 'portfolio/Comerciales/Orocash_TVC.mp4'
+    video: (import.meta as any).env.BASE_URL + 'portfolio/Comerciales TV/Orocash_TVC.mp4'
   }
 ];
 
@@ -129,20 +130,29 @@ export const Services = () => {
             </h3>
             
             <div className="flex flex-wrap gap-4 md:gap-8 justify-start md:justify-end">
-              {['Video Institucional', 'Contenido para Redes', 'Cobertura de Eventos', 'Fotografía'].map((srv, i) => (
-                <div key={i} className="px-6 py-3 rounded-full border border-white/10 bg-white/5 text-white/80 font-bold uppercase tracking-widest text-xs">
-                  {srv}
-                </div>
-              ))}
+                            {[
+                { name: 'Video Institucional', icon: Video },
+                { name: 'Contenido para Redes', icon: Smartphone },
+                { name: 'Cobertura de Eventos', icon: Calendar },
+                { name: 'Fotografía', icon: Camera }
+              ].map((srv, i) => {
+                const Icon = srv.icon;
+                return (
+                  <div key={i} className="flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 bg-white/5 text-white/80 font-bold uppercase tracking-widest text-xs">
+                    <Icon size={16} />
+                    <span>{srv.name}</span>
+                  </div>
+                );
+              })}
             </div>
             
             <div className="shrink-0 mt-4 md:mt-0">
-              <a 
-                href="/contacto" 
+              <Link 
+                to="/contacto" 
                 className="inline-block bg-white text-black px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-[#F5A623] transition-colors"
               >
                 Cotizar
-              </a>
+              </Link>
             </div>
           </div>
         </div>

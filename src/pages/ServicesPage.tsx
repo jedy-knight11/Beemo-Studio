@@ -1,59 +1,59 @@
 import { useState, useRef } from 'react';
 import { motion } from 'motion/react';
-import { Video, Megaphone, CalendarDays, TrendingUp, ArrowRight } from 'lucide-react';
+import { Video, Smartphone, CalendarDays, Camera, ArrowRight } from 'lucide-react';
 
 const services = [
   {
     id: '01',
-    title: 'COMERCIALES & SPOTS',
-    icon: <Megaphone size={40} className="text-[#083eeb]" />,
-    description: 'Campanas visuales de alto impacto creadas para digital y television. Desde la conceptualizacion creativa hasta el master final, producimos piezas dinamicas enfocadas puramente en la retencion de audiencia y la conversion.',
-    deliverables: [
-      'Spots para TV (15s, 30s, 60s)',
-      'Campanas Digitales (Reels, TikTok)',
-      'Product Films',
-      'Branded Content'
-    ],
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/Mazda_CX90.mp4'.substring(1)
-  },
-  {
-    id: '02',
-    title: 'INSTITUCIONALES',
+    title: 'VIDEO INSTITUCIONAL / CORPORATIVO',
     icon: <Video size={40} className="text-[#083eeb]" />,
-    description: 'Historias de marca, manifiestos corporativos y comunicacion interna disenados para generar confianza. Mostramos la escala, la infraestructura y el factor humano detras de las grandes empresas.',
+    description: 'Historias de marca, manifiestos corporativos y comunicación interna diseñados para generar confianza. Mostramos la escala, la infraestructura y el factor humano detrás de las grandes empresas.',
     deliverables: [
       'Videos Corporativos',
-      'Videos de Induccion y Capacitacion',
+      'Videos de Inducción y Capacitación',
       'Manifiestos de Marca',
       'Recorridos Industriales (Dron & FPV)'
     ],
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Institucionales/Duragas_Oficina.mp4'.substring(1)
+    video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales TV/Duragas_Oficina.mp4'.substring(1)
+  },
+  {
+    id: '02',
+    title: 'CONTENIDO PARA REDES',
+    icon: <Smartphone size={40} className="text-[#083eeb]" />,
+    description: 'Piezas audiovisuales dinámicas creadas específicamente para digital y redes sociales. Desde la conceptualización creativa hasta el formato vertical, producimos contenido enfocado en la retención de audiencia y conversión.',
+    deliverables: [
+      'Campañas Digitales (Reels, TikTok)',
+      'Product Films',
+      'Branded Content',
+      'Anuncios para Meta y YouTube'
+    ],
+    video: (import.meta as any).env.BASE_URL + '/portfolio/Redes/Mazda_CX90.mp4'.substring(1)
   },
   {
     id: '03',
-    title: 'COBERTURA EVENTOS',
+    title: 'COBERTURA DE EVENTOS',
     icon: <CalendarDays size={40} className="text-[#083eeb]" />,
-    description: 'Resumenes cinematograficos y cobertura en vivo de cumbres corporativas, festivales y lanzamientos. Capturamos la energia del momento sin interrumpir la experiencia de los asistentes.',
+    description: 'Resúmenes cinematográficos y cobertura de cumbres corporativas, festivales y lanzamientos. Capturamos la energía del momento con agilidad para redes y piezas formales posteriores.',
     deliverables: [
-      'Aftermovies Cinematograficos',
-      'Resumenes para Redes Sociales (Mismo dia)',
+      'Aftermovies Cinematográficos',
+      'Resúmenes para Redes Sociales (Mismo día)',
       'Entrevistas en Sitio',
-      'Fotografia Corporativa de Eventos'
+      'Micro-cápsulas del Evento'
     ],
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Coberturas/Sambolon.mp4'.substring(1)
+    video: (import.meta as any).env.BASE_URL + '/portfolio/Redes/Sambolon.mp4'.substring(1)
   },
   {
     id: '04',
-    title: 'CASOS DE EXITO',
-    icon: <TrendingUp size={40} className="text-[#083eeb]" />,
-    description: 'Testimoniales estilo documental que ofrecen validacion social para marcas B2B y B2C. Entrevistas intimas con iluminacion cinematografica que elevan la percepcion de tus mejores clientes.',
+    title: 'FOTOGRAFÍA',
+    icon: <Camera size={40} className="text-[#083eeb]" />,
+    description: 'Desarrollamos proyectos de fotografía publicitaria, corporativa, de producto y contenido para redes, adaptando la producción y el equipo a lo que cada proyecto necesita.',
     deliverables: [
-      'Entrevistas Testimoniales',
-      'Documentales Cortos',
-      'Casos de Estudio B2B',
-      'Micro-capsulas de clientes'
+      'Fotografía Publicitaria y Comercial',
+      'Fotografía Corporativa y Retratos',
+      'Fotografía de Producto',
+      'Fotografía de Eventos'
     ],
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/Orocash_TVC.mp4'.substring(1)
+    video: (import.meta as any).env.BASE_URL + '/portfolio/Video Casos/Duragas_MakingOf.mp4'.substring(1)
   }
 ];
 
@@ -66,7 +66,7 @@ export const ServicesPage = () => {
         <div className="mb-24 md:mb-32">
           <p className="text-[#083eeb] text-xs font-bold uppercase tracking-[0.2em] mb-6">Nuestro Expertise</p>
           <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter uppercase heading-font leading-[0.9]">LO QUE HACEMOS.</h1>
-          <p className="text-white/60 text-lg md:text-xl max-w-2xl mt-8 leading-relaxed">No somos simplemente operadores de camara. Somos una agencia de produccion integral enfocada en resolver problemas de negocio a traves del lenguaje cinematografico.</p>
+          <p className="text-white/60 text-lg md:text-xl max-w-2xl mt-8 leading-relaxed">No somos simplemente operadores de cámara. Somos una agencia de producción integral enfocada en resolver problemas de negocio a través del lenguaje cinematografico.</p>
         </div>
 
         {/* Services List */}

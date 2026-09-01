@@ -4,112 +4,320 @@ import { X, Play, Volume2, VolumeX } from 'lucide-react';
 
 const projects = [
   {
-    id: 1,
-    client: "OROCASH",
-    category: "Comerciales",
-    title: "TVC",
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/Orocash_TVC.mp4'.substring(1),
-    badge: "COMERCIAL TV",
-    headlineLeft: "CONFIANZA A NIVEL NACIONAL",
-    headlineRight: "Una campana televisiva disenada para generar credibilidad inmediata y conectar con las familias ecuatorianas.",
-    challengeLeft: "COMO COMUNICAR TRANSPARENCIA EN 30 SEGUNDOS.",
-    challengeRight: `El mercado del oro y las joyas requiere un alto nivel de confianza. Orocash necesitaba un spot comercial que se sintiera cercano, seguro y sumamente profesional.\n\nUtilizamos iluminacion calida, talento local muy expresivo y un tono de voz familiar para transmitir el mensaje principal: tu inversion esta en buenas manos.\n\nEl comercial se emitio en cadena nacional durante horario prime.`,
-    quote: "\"Un resultado espectacular que consolido nuestra imagen de marca a nivel pais.\""
+    "id": 1,
+    "client": "OROCASH",
+    "category": "Comerciales TV",
+    "title": "TVC",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Comerciales TV/Orocash_TVC.mp4',
+    "badge": "COMERCIAL TV",
+    "headlineLeft": "CONEXIÓN AUTÉNTICA",
+    "headlineRight": "Retratar los momentos especiales de la vida donde Orocash está presente como parte de la memoria afectiva de las personas.",
+    "challengeLeft": "MOMENTOS QUE PERDURAN EN LA MEMORIA.",
+    "challengeRight": "Nuestro objetivo fue crear una conexión auténtica. Seleccionamos una locación con alma, un casting que reflejara verdaderas emociones y una colorización cuidadosa que acentuara la calidez y la nostalgia de cada instante.\n\nEl resultado invita al espectador a reconocer sus propios momentos especiales en cada frame.",
+    "quote": "\"Un resultado que invita al espectador a reconocer sus propios momentos especiales en cada frame.\""
   },
   {
-    id: 2,
-    client: "MAZDA",
-    category: "Redes",
-    title: "CX90",
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/Mazda_CX90.mp4'.substring(1),
-    badge: "AUTOMOTRIZ",
-    headlineLeft: "ELEGANCIA EN MOVIMIENTO",
-    headlineRight: "Asi es como se lanza el SUV mas premium de la marca nipona. Un balance perfecto entre poder y sofisticacion.",
-    challengeLeft: "RESALTAR EL DISENO JAPONES EN SU MAXIMA EXPRESION.",
-    challengeRight: `El nuevo Mazda CX-90 no es solo un auto, es una declaracion de principios de la marca buscando entrar al segmento de lujo. Necesitabamos que el video reflejara esa ambicion.\n\nNos enfocamos en el concepto del "Jinba Ittai" (jinete y caballo como uno solo). Combinamos tomas detalle en estudio con iluminacion dinamica para resaltar la pintura artesanal, y tomas de tracking a alta velocidad.\n\nLa pieza final respira lujo y minimalismo japones en cada fotograma.`,
-    quote: "\"Beemo logro capturar la esencia premium que el nuevo CX-90 demanda. Un trabajo de nivel internacional.\""
+    "id": 2,
+    "client": "DURAGAS EXPRESS",
+    "category": "Comerciales TV",
+    "title": "MAKING OF",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/Duragas_MakingOf.mp4',
+    "badge": "CASO DE ÉXITO",
+    "headlineLeft": "SOLUCIÓN INMEDIATA",
+    "headlineRight": "Hacer sentir la urgencia cotidiana de quedarse sin gas y posicionar la nueva app como la solución inmediata.",
+    "challengeLeft": "TRANSFORMAR EL ESTRÉS EN HISTORIA.",
+    "challengeRight": "Para Duragas Express, diseñamos un lenguaje visual que convirtiera el estrés diario en una historia con clímax y alivio.\n\nCon una planificación enfocada, logramos 5 cápsulas narrativas completas en un solo día de producción. Cada una, con una estética cinematográfica y un ritmo pensado para conectar al instante.\n\nEl resultado fue una campaña lista para todos los medios.",
+    "quote": "\"Una campaña lista para todos los medios con estética cinematográfica y ritmo pensado para conectar al instante.\""
   },
   {
-    id: 3,
-    client: "PEDIDOSYA",
-    category: "Redes",
-    title: "DIGITAL",
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/PedidosYa.mp4'.substring(1),
-    badge: "CAMPANA DIGITAL",
-    headlineLeft: "VIRALIDAD A LA VELOCIDAD DE UN DELIVERY",
-    headlineRight: "Contenido dinamico, colorido y directo disenado especificamente para el algoritmo y el scroll infinito.",
-    challengeLeft: "CAPTURAR LA ATENCION EN LOS PRIMEROS 3 SEGUNDOS.",
-    challengeRight: `En el mundo del delivery, la guerra se gana en redes sociales. PedidosYa buscaba una serie de videos que conectaran con la Gen-Z usando humor, ritmo rapido y sus caracteristicos colores vibrantes.\n\nImplementamos una edicion frenetica, transiciones invisibles y efectos de sonido exagerados. El rojo de la marca satura la pantalla, creando una identidad visual inconfundible.\n\nEl rendimiento de los anuncios (ROAS) supero las expectativas del cliente en un 150%.`,
-    quote: "\"Entienden perfectamente el lenguaje de redes. El contenido funciono increiblemente bien.\""
+    "id": 3,
+    "client": "DURAGAS EXPRESS",
+    "category": "Comerciales TV",
+    "title": "HOME",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Comerciales TV/Duragas_Express_Home.mp4',
+    "badge": "COMERCIAL",
+    "headlineLeft": "HISTORIAS COTIDIANAS",
+    "headlineRight": "Conectando al instante con situaciones del día a día en el hogar.",
+    "challengeLeft": "RITMO Y CONEXIÓN INMEDIATA.",
+    "challengeRight": "Una planificación enfocada con estética cinematográfica y un ritmo pensado para conectar al instante.",
+    "quote": "\"El resultado fue una campaña eficiente y de alto impacto.\""
   },
   {
-    id: 4,
-    client: "PEIGO",
-    category: "Post Producción",
-    title: "DIA DE LA MADRE",
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Comerciales/PeiGo_Madre.mp4'.substring(1),
-    badge: "STORYTELLING",
-    headlineLeft: "EMOCION QUE CONECTA",
-    headlineRight: "Una historia conmovedora sobre la maternidad moderna y la independencia financiera.",
-    challengeLeft: "MOSTRAR TECNOLOGIA A TRAVES DE LAS EMOCIONES.",
-    challengeRight: `Como una billetera digital, PeiGo necesitaba salir de los mensajes transaccionales y hablar desde el corazon por el Dia de la Madre.\n\nCreamos un guion emotivo centrado en el esfuerzo diario de una madre emprendedora. La camara sigue su dia a dia, usando una paleta de colores calida e intima.\n\nLa tecnologia se mostro como un facilitador silencioso, logrando que la audiencia se identificara profundamente con los personajes.`,
-    quote: "\"Nos hicieron llorar a todos en la presentacion. Un storytelling brillante.\""
+    "id": 4,
+    "client": "DURAGAS EXPRESS",
+    "category": "Comerciales TV",
+    "title": "PARRILLA",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Comerciales TV/Duragas_Express_Parrilla.mp4',
+    "badge": "COMERCIAL",
+    "headlineLeft": "MOMENTOS EN FAMILIA",
+    "headlineRight": "Resaltando la comodidad y rapidez del servicio durante reuniones sociales.",
+    "challengeLeft": "DINAMISMO Y FRESCURA VISUAL.",
+    "challengeRight": "Cinematografía cálida y dinámica para retratar reuniones familiares y el valor del servicio rápido.",
+    "quote": "\"Conexión instantánea con la audiencia.\""
   },
   {
-    id: 5,
-    client: "DURAGAS",
-    category: "Video Casos",
-    title: "OFICINA",
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Institucionales/Duragas_Oficina.mp4'.substring(1),
-    badge: "INSTITUCIONAL",
-    headlineLeft: "INNOVACION DETRAS DE LA LLAMA",
-    headlineRight: "Mostrando el motor corporativo de una de las empresas de energia mas grandes del pais.",
-    challengeLeft: "HUMANIZAR UNA EMPRESA INDUSTRIAL.",
-    challengeRight: `Duragas Express queria mostrar sus nuevas instalaciones y la cultura corporativa detras de su servicio. A menudo, las empresas industriales se perciben como frias y distantes.\n\nDecidimos hacer un recorrido fluido usando estabilizadores Ronin y drones de interiores, mostrando la energia de las oficinas y las sonrisas del equipo humano.\n\nEl video se utiliza como pieza principal de reclutamiento y en presentaciones a inversores.`,
-    quote: "\"Transmitieron exactamente la energia renovada y moderna que vivimos hoy en la empresa.\""
+    "id": 5,
+    "client": "DURAGAS",
+    "category": "Comerciales TV",
+    "title": "INSTITUCIONAL",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Comerciales TV/Duragas_Oficina.mp4',
+    "badge": "CORPORATIVO",
+    "headlineLeft": "TRADICIÓN Y EFICIENCIA",
+    "headlineRight": "Comunicando los valores de una marca histórica con una narrativa moderna y eficiente.",
+    "challengeLeft": "RENOVAR LA IMAGEN CORPORATIVA.",
+    "challengeRight": "Mostramos el interior de sus operaciones resaltando la tecnología y el compromiso de su equipo humano.",
+    "quote": "\"El balance perfecto entre escala industrial y factor humano.\""
   },
   {
-    id: 6,
-    client: "BLINSEG",
-    category: "Redes",
-    title: "BLINDAJE",
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Institucionales/Blinseg_Blindaje.mp4'.substring(1),
-    badge: "CORPORATIVO",
-    headlineLeft: "SEGURIDAD MILIMETRICA",
-    headlineRight: "Documentando los rigurosos procesos de ingenieria en blindaje automotriz de alta gama.",
-    challengeLeft: "MOSTRAR UN PROCESO INVISIBLE.",
-    challengeRight: `El buen blindaje no se nota. Blinseg necesitaba mostrar a sus clientes corporativos el nivel de ingenieria destructiva y reconstructiva que sufren los vehiculos en sus talleres.\n\nUtilizamos iluminacion dura e industrial para resaltar la resistencia de los materiales (Kevlar, acero balistico). Tomas macro evidencian la perfeccion de las costuras y los remaches.\n\nEl resultado es un video que transmite autoridad, seguridad y extrema precision tecnica.`,
-    quote: "\"Espectacular. Muestra nuestro trabajo pesado con un toque de elegancia industrial.\""
+    "id": 6,
+    "client": "MAZDA",
+    "category": "Redes",
+    "title": "CX90",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Redes/Mazda_CX90.mp4',
+    "badge": "AUTOMOTRIZ",
+    "headlineLeft": "ELEGANCIA EN MOVIMIENTO",
+    "headlineRight": "Lanzamiento del SUV más premium de la marca nipona.",
+    "challengeLeft": "RESALTAR EL DISEÑO JAPONÉS.",
+    "challengeRight": "Combinamos tomas detalle en estudio con iluminación dinámica para resaltar la pintura artesanal, y tomas de tracking a alta velocidad.",
+    "quote": "\"Beemo logró capturar la esencia premium que el nuevo CX-90 demanda.\""
   },
   {
-    id: 7,
-    client: "DURAGAS M-OF",
-    category: "Coberturas",
-    title: "MAKING OF",
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Coberturas/Duragas_MakingOf.mp4'.substring(1),
-    badge: "BEHIND THE SCENES",
-    headlineLeft: "LA MAGIA DETRAS DE CAMARAS",
-    headlineRight: "Un vistazo rapido a la logistica, el equipo humano y las luces de nuestro propio set de grabacion.",
-    challengeLeft: "MOSTRAR EL MUSCULO DE PRODUCCION.",
-    challengeRight: `Mas alla del comercial final, era importante documentar la magnitud de la produccion. Grabar a un equipo grabando siempre tiene su encanto caotico.\n\nUsamos una edicion muy picada, con musica upbeat, mostrando rieles, grandes luces, y el trabajo del director en accion.\n\nUna pieza excelente para redes sociales que valida el profesionalismo detras de cada produccion de Beemo.`,
-    quote: "\"Nos encanto ver el despliegue tecnico. Son unos verdaderos cracks en el set.\""
+    "id": 7,
+    "client": "PEDIDOSYA",
+    "category": "Redes",
+    "title": "DIGITAL",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Redes/PedidosYa.mp4',
+    "badge": "CAMPAÑA DIGITAL",
+    "headlineLeft": "VIRALIDAD A LA VELOCIDAD DE UN DELIVERY",
+    "headlineRight": "Contenido dinámico, colorido y directo diseñado específicamente para redes.",
+    "challengeLeft": "CAPTURAR LA ATENCIÓN EN 3 SEGUNDOS.",
+    "challengeRight": "Edición frenética, transiciones invisibles y efectos de sonido para saturar la pantalla con la identidad de la marca.",
+    "quote": "\"Entienden perfectamente el lenguaje de redes sociales.\""
   },
   {
-    id: 8,
-    client: "SAMBOLON",
-    category: "Redes",
-    title: "EVENTO",
-    video: (import.meta as any).env.BASE_URL + '/portfolio/Coberturas/Sambolon.mp4'.substring(1),
-    badge: "EVENTOS",
-    headlineLeft: "COBERTURA TOTAL",
-    headlineRight: "Capturando la energia en vivo de un evento gastronomico masivo.",
-    challengeLeft: "ESTAR EN TODAS PARTES AL MISMO TIEMPO.",
-    challengeRight: `La cobertura de eventos masivos no tiene toma 2. Si te pierdes el momento, se fue para siempre.\n\nDesplegamos un equipo de 3 camarografos y 1 operador de dron para cubrir el festival desde todos los angulos. Tomas cerradas de la comida humeante contrastando con grandes planos generales de la multitud.\n\nEl after-movie se entrego en tiempo record de 48 horas para aprovechar la conversacion en redes sociales.`,
-    quote: "\"Lograron capturar el sabor y la alegria del evento a la perfeccion.\""
+    "id": 8,
+    "client": "PREMIERPET",
+    "category": "Redes",
+    "title": "FINAL",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Redes/PremierPet_Final.mp4',
+    "badge": "PET CARE",
+    "headlineLeft": "NUTRICIÓN Y BIENESTAR",
+    "headlineRight": "Resaltando el cuidado y amor por las mascotas a través de cinematografía cálida.",
+    "challengeLeft": "CAPTURA DE TALENTO ANIMAL Y HUMANO.",
+    "challengeRight": "Dirección especializada para capturar la vitalidad de las mascotas y la confianza de sus dueños.",
+    "quote": "\"Una pieza conmovedora con un nivel visual insuperable.\""
+  },
+  {
+    "id": 9,
+    "client": "CIUDAD CELESTE",
+    "category": "Redes",
+    "title": "CÁPSULA",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Redes/CiudadCeleste_Capsula_1.mp4',
+    "badge": "INMOBILIARIO",
+    "headlineLeft": "ESTILO DE VIDA Y EXCLUSIVIDAD",
+    "headlineRight": "Proyectando la tranquilidad, seguridad y amenidades del proyecto residencial.",
+    "challengeLeft": "TRANSMITIR EL VALOR DE HOGAR.",
+    "challengeRight": "Tomas aéreas y tomas familiares que invitan a formar parte de una comunidad exclusiva.",
+    "quote": "\"Capturaron el valor aspiracional de la comunidad a la perfección.\""
+  },
+  {
+    "id": 10,
+    "client": "BLINSEG",
+    "category": "Redes",
+    "title": "BLINDAJE",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Redes/Blinseg_Blindaje.mp4',
+    "badge": "SEGURIDAD",
+    "headlineLeft": "FORTALEZA Y CONFIANZA",
+    "headlineRight": "Contenido robusto y profesional diseñado para transmitir máxima seguridad.",
+    "challengeLeft": "DEMOSTRAR SEGURIDAD EN REDES.",
+    "challengeRight": "Detalles técnicos, materiales y precisión del blindaje para comunicar ciencia y solidez.",
+    "quote": "\"El contenido transmitió la fortaleza y profesionalismo que nos define.\""
+  },
+  {
+    "id": 11,
+    "client": "SAMBOLÓN",
+    "category": "Redes",
+    "title": "EVENTO",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Redes/Sambolon.mp4',
+    "badge": "GASTRONOMÍA",
+    "headlineLeft": "SABOR EN MOVIMIENTO",
+    "headlineRight": "Capturando la esencia y textura de la cultura gastronómica local.",
+    "challengeLeft": "DESPERTAR EL APETITO EN SEGUNDOS.",
+    "challengeRight": "Iluminación enfocada en texturas y ritmo de edición acelerado con sonido hiperrealista.",
+    "quote": "\"La respuesta en redes fue inmediata y contundente.\""
+  },
+  {
+    "id": 12,
+    "client": "PEIGO",
+    "category": "Post Producción",
+    "title": "MADRE",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Madre.mp4',
+    "badge": "FINTECH",
+    "headlineLeft": "EMOCIÓN SIN FRICCIONES",
+    "headlineRight": "Un saludo emotivo que destaca la facilidad de transferir con PeiGo.",
+    "challengeLeft": "HUMANIZAR UNA APP FINANCIERA.",
+    "challengeRight": "Postproducción cuidada para integrar la interfaz dentro de una narrativa emotiva familiar.",
+    "quote": "\"Logramos una conexión genuina con nuestros usuarios.\""
+  },
+  {
+    "id": 13,
+    "client": "PEIGO",
+    "category": "Post Producción",
+    "title": "PAN M 9x16",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Panm.mp4',
+    "badge": "POST PRODUCCIÓN",
+    "headlineLeft": "MOTION Y RITMO VERTICAL",
+    "headlineRight": "Post-producción optimizada para formatos móviles y engagement rápido.",
+    "challengeLeft": "INTEGRACIÓN DINÁMICA DE ELEMENTOS UI.",
+    "challengeRight": "Composición de pantalla, micro-animaciones y corrección de color de alta gama.",
+    "quote": "\"Piezas ágiles que comunican la propuesta de valor sin rodeos.\""
+  },
+  {
+    "id": 14,
+    "client": "PEIGO",
+    "category": "Post Producción",
+    "title": "INTERVIEW 9x16",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Interview.mp4',
+    "badge": "POST PRODUCCIÓN",
+    "headlineLeft": "CLARIDAD TESTIMONIAL",
+    "headlineRight": "Narrativa concisa combinando testimonios y motion graphics.",
+    "challengeLeft": "MANTENER LA RETENCIÓN AUDITIVA Y VISUAL.",
+    "challengeRight": "Cortes limpios, diseño sonoro puntual y subtitulado dinámico de marca.",
+    "quote": "\"Máxima retención en plataformas de video corto.\""
+  },
+  {
+    "id": 15,
+    "client": "PEIGO",
+    "category": "Post Producción",
+    "title": "SUPCINE 9x16",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Supcine.mp4',
+    "badge": "POST PRODUCCIÓN",
+    "headlineLeft": "ACABADO CINEMATOGRÁFICO EN DIGITAL",
+    "headlineRight": "Grading de color y diseño sonoro envolvente.",
+    "challengeLeft": "COHERENCIA VISUAL DE MARCA.",
+    "challengeRight": "Post-producción integral que eleva la percepción del producto fintech.",
+    "quote": "\"La calidad visual destaca en el feed.\""
+  },
+  {
+    "id": 16,
+    "client": "PEIGO",
+    "category": "Post Producción",
+    "title": "WEB 9x16",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Web.mp4',
+    "badge": "POST PRODUCCIÓN",
+    "headlineLeft": "CONVERSIÓN DIGITAL",
+    "headlineRight": "Estructura orientada a presentar las funcionalidades clave de la app.",
+    "challengeLeft": "SÍNTESIS VISUAL.",
+    "challengeRight": "Integración estética entre material grabado y animaciones gráficas.",
+    "quote": "\"Excelente trabajo en post-producción.\""
+  },
+  {
+    "id": 17,
+    "client": "DURAGAS",
+    "category": "Video Casos",
+    "title": "MAKING OF",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/Duragas_MakingOf.mp4',
+    "badge": "VIDEO CASO",
+    "headlineLeft": "LA MAGIA DETRÁS DEL SET",
+    "headlineRight": "Documentando la dedicación y el trabajo en equipo de una producción de primer nivel.",
+    "challengeLeft": "DOCUMENTAR SIN INTERRUMPIR EL RODAJE.",
+    "challengeRight": "Pieza ágil que rinde homenaje a todo el equipo involucrado en la filmación.",
+    "quote": "\"Un trabajo documental que nos llenó de orgullo.\""
+  },
+  {
+    "id": 18,
+    "client": "BANCO GUAYAQUIL",
+    "category": "Video Casos",
+    "title": "EL MEJOR BANCO",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/BG_El_Mejor_Banco_Para_Ti.mp4',
+    "badge": "VIDEO CASO",
+    "headlineLeft": "CASO DE ÉXITO BANCARIO",
+    "headlineRight": "Estructurando los resultados y el impacto de la campaña en una historia cautivadora.",
+    "challengeLeft": "SINTETIZAR IMPACTO Y RESULTADOS.",
+    "challengeRight": "Montaje cinematográfico de caso de estudio para certámenes y comunicación institucional.",
+    "quote": "\"Un caso de éxito narrado con excelencia.\""
+  },
+  {
+    "id": 19,
+    "client": "BANCO GUAYAQUIL",
+    "category": "Video Casos",
+    "title": "NIÑO MOI",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/BG_Primero_Nino_Moi.mp4',
+    "badge": "VIDEO CASO",
+    "headlineLeft": "INSPIRACIÓN Y RESULTADOS",
+    "headlineRight": "Documentando el impacto cultural y de marca de la campaña con Niño Moi.",
+    "challengeLeft": "EMOCIÓN Y MÉTRICAS EN UN SOLO FORMATO.",
+    "challengeRight": "Relato ágil con testimonios, reacciones en medios y métricas de alcance nacional.",
+    "quote": "\"Impacto emocional y relevancia cultural inigualable.\""
+  },
+  {
+    "id": 20,
+    "client": "BANCO GUAYAQUIL",
+    "category": "Video Casos",
+    "title": "WRAPPED APP",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/BG_Wrapped_App.mp4',
+    "badge": "VIDEO CASO",
+    "headlineLeft": "INNOVACIÓN DIGITAL",
+    "headlineRight": "Presentación del caso de interacción y personalización para usuarios de la app.",
+    "challengeLeft": "EXPLICAR LA EXPERIENCIA DE USUARIO.",
+    "challengeRight": "Demostración visual de la interfaz combinada con testimoniales y resultados de adopción.",
+    "quote": "\"Gran dinamismo para comunicar un logro tecnológico.\""
+  },
+  {
+    "id": 21,
+    "client": "TOYOCOSTA",
+    "category": "Coberturas",
+    "title": "PREMIO PINTADO",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Coberturas/Toyocosta_Premio_Pintado.mp4',
+    "badge": "COBERTURA",
+    "headlineLeft": "COBERTURA DE PREMIACIÓN",
+    "headlineRight": "Capturando los momentos cumbre y la emoción de los galardonados.",
+    "challengeLeft": "AGILIDAD EN SITIO.",
+    "challengeRight": "Registro cinematográfico multicámara para entrega rápida de resumen de evento.",
+    "quote": "\"Capturaron la energía del evento de forma impecable.\""
+  },
+  {
+    "id": 22,
+    "client": "RENAULT",
+    "category": "Coberturas",
+    "title": "KWID HD",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Coberturas/Renault_Kwid_HD.mp4',
+    "badge": "COBERTURA",
+    "headlineLeft": "LANZAMIENTO AUTOMOTRIZ",
+    "headlineRight": "Registro visual del evento de presentación y pruebas de manejo.",
+    "challengeLeft": "DINAMISMO EN VIVO.",
+    "challengeRight": "Cobertura ágil que resalta el diseño del vehículo y la experiencia de los invitados.",
+    "quote": "\"Excelente cobertura de nuestro lanzamiento.\""
+  },
+  {
+    "id": 23,
+    "client": "RENAULT",
+    "category": "Coberturas",
+    "title": "EVENTO RENAULT",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Coberturas/Renault.mp4',
+    "badge": "COBERTURA",
+    "headlineLeft": "EXPERIENCIA DE MARCA",
+    "headlineRight": "Resumen enérgico del evento corporativo y exhibición.",
+    "challengeLeft": "RITMO Y CINEMATOGRAFÍA.",
+    "challengeRight": "Tomas dinámicas con estabilizadores y edición al ritmo de la música.",
+    "quote": "\"Un resumen que revive la emoción del momento.\""
+  },
+  {
+    "id": 24,
+    "client": "MUNICIPIO",
+    "category": "Coberturas",
+    "title": "VERGELES",
+    "video": (import.meta as any).env.BASE_URL + 'portfolio/Coberturas/mercado_municpal_vergeles.mp4',
+    "badge": "COBERTURA",
+    "headlineLeft": "OBRA COMUNITARIA",
+    "headlineRight": "Documentando el impacto social y la alegría ciudadana en la inauguración.",
+    "challengeLeft": "DOCUMENTAL URBANO.",
+    "challengeRight": "Tomas humanas y de infraestructura que reflejan el beneficio real para la comunidad.",
+    "quote": "\"Un registro fiel y emocionante de una obra histórica.\""
   }
 ];
 
-const categories = ['Todos', 'Comerciales', 'Redes', 'Post Producción', 'Coberturas', 'Video Casos'];
+const categories = ['Todos', 'Comerciales TV', 'Redes', 'Post Producción', 'Coberturas', 'Video Casos'];
 
 export const PortfolioPage = () => {
   const [expandedId, setExpandedId] = useState<number | null>(null);
@@ -119,15 +327,25 @@ export const PortfolioPage = () => {
 
   const filteredProjects = projects.filter(p => activeFilter === 'Todos' || p.category === activeFilter);
 
-  const handlePlayToggle = (e: React.MouseEvent) => {
+    const handlePlayToggle = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (expandedVideoRef.current) {
       if (isPlaying) {
         expandedVideoRef.current.pause();
+        setIsPlaying(false);
       } else {
-        expandedVideoRef.current.play();
+        const promise = expandedVideoRef.current.play();
+        if (promise !== undefined) {
+          promise
+            .then(() => {
+              setIsPlaying(true);
+            })
+            .catch(() => {
+              // Ignore AbortError / user interruption
+              setIsPlaying(false);
+            });
+        }
       }
-      setIsPlaying(!isPlaying);
     }
   };
 
@@ -193,12 +411,7 @@ export const PortfolioPage = () => {
                     
                     {/* Video Thumbnail */}
                     <div className="w-24 h-16 md:w-32 md:h-20 shrink-0 overflow-hidden rounded-lg bg-black relative">
-                      <video 
-                        src={project.video} 
-                        autoPlay 
-                        muted 
-                        loop 
-                        playsInline
+                      <video src={`${project.video}#t=0.001`} preload="metadata" muted loop playsInline
                         className="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" 
                       />
                     </div>
@@ -237,7 +450,7 @@ export const PortfolioPage = () => {
                           {/* Top Header inside Expanded */}
                           <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 pt-10 md:pt-0 pr-12 md:pr-0">
                             <div className="w-20 h-14 md:w-24 md:h-16 shrink-0 overflow-hidden rounded-lg bg-black">
-                              <video src={project.video} autoPlay muted loop playsInline className="w-full h-full object-cover" />
+                              <video src={`${project.video}#t=0.001`} preload="metadata" muted loop playsInline className="w-full h-full object-cover" />
                             </div>
                             <h3 className="text-3xl sm:text-5xl md:text-7xl font-black text-white uppercase tracking-tighter heading-font leading-none break-words w-full">
                               {project.client}
@@ -257,12 +470,14 @@ export const PortfolioPage = () => {
                           {/* Massive Video Player */}
                           <div className="w-full aspect-video rounded-2xl overflow-hidden bg-black relative cursor-pointer" onClick={handlePlayToggle}>
                             <video 
-                              ref={expandedVideoRef}
-                              src={project.video} 
-                              className="w-full h-full object-cover"
-                              loop
-                              playsInline
-                            />
+    ref={expandedVideoRef}
+    src={project.video} 
+    className="w-full h-full object-contain bg-black"
+    controls
+    playsInline
+    onPlay={() => setIsPlaying(true)}
+    onPause={() => setIsPlaying(false)}
+  />
                             
                             <AnimatePresence>
                               {!isPlaying && (

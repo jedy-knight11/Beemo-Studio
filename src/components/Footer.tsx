@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
-import { useLocation } from 'react-router-dom';
+import { useLocation , Link } from 'react-router-dom';
 
 export const Footer = () => {
   const location = useLocation();
@@ -200,11 +200,11 @@ export const Footer = () => {
 
         {/* TOP DIVIDER & HEADLINE */}
         <div className="border-t border-white/30 py-8 flex justify-between items-center gap-8">
-          <a href="/contacto" className="group">
+          <Link to="/contacto" className="group">
             <h3 className="text-xl md:text-3xl lg:text-4xl font-medium tracking-tight text-white/90 underline decoration-white/30 underline-offset-[8px] group-hover:text-[#083eeb] group-hover:decoration-[#083eeb] transition-all">
               Hablemos de tu próximo proyecto audiovisual.
             </h3>
-          </a>
+          </Link>
           
           {/* Spinning badge */}
           <div className="hidden md:flex relative w-20 h-20 items-center justify-center shrink-0">
@@ -240,10 +240,10 @@ export const Footer = () => {
             
             <div className="flex flex-col gap-4">
               <p className="text-white/50 text-sm font-bold uppercase tracking-[0.2em] mb-2">Explora</p>
-              <a href="/portafolio" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Portafolio 2024</a>
-              <a href="/servicios" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Servicios</a>
-              <a href="/#process" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Metodología</a>
-              <a href="/contacto" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Contacto</a>
+              <Link to="/portafolio" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Portafolio 2024</Link>
+              <Link to="/servicios" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Servicios</Link>
+              <Link to="/#process" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Metodología</Link>
+              <Link to="/contacto" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Contacto</Link>
             </div>
           </div>
 

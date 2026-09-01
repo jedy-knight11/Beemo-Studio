@@ -24,9 +24,7 @@ export const Team = () => {
             </h2>
           </div>
           <div className="max-w-xl">
-            <p className="text-white/60 text-lg md:text-xl font-light leading-relaxed">
-              Somos un equipo impulsado por la creatividad y la precisión. Nos dedicamos a encontrar la mejor forma de contar tu historia, asegurando resultados impecables de principio a fin.
-            </p>
+            <p className="text-white/60 text-lg md:text-xl font-light leading-relaxed">Beemo nació para agencias y marcas que buscan una solución a un dilema moderno: necesitan contenido inmediato, pero no están dispuestas a sacrificar la calidad, el cuidado y la visión personalizada que una verdadera historia amerita.</p>
           </div>
         </div>
 

@@ -25,7 +25,7 @@ export const Loader = ({ onLoadingComplete }: { onLoadingComplete: () => void })
     // Hide the loader either when the window fully loads (including videos/images)
     // or after a max timeout so users aren't stuck forever.
     const handleLoad = () => {
-      setTimeout(() => onLoadingComplete(), 800);
+      setTimeout(() => onLoadingComplete(), 300);
     };
 
     if (document.readyState === 'complete') {
@@ -36,7 +36,7 @@ export const Loader = ({ onLoadingComplete }: { onLoadingComplete: () => void })
 
     const maxTimeout = setTimeout(() => {
       onLoadingComplete();
-    }, 4500);
+    }, 3000);
 
     return () => {
       window.removeEventListener('load', handleLoad);

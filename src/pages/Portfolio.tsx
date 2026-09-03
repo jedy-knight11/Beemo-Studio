@@ -285,11 +285,12 @@ const ProjectRow = ({
         <div className="w-24 h-16 md:w-32 md:h-20 shrink-0 overflow-hidden rounded-lg bg-black relative border border-white/10">
           <video 
             ref={thumbnailRef}
-            src={`${project.video}#t=0.001`} 
-            preload="metadata" 
+            src={project.video} 
+            autoPlay
             muted 
             loop 
             playsInline
+            preload="auto"
             className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" 
           />
         </div>

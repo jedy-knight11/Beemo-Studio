@@ -256,7 +256,7 @@ export const Footer = () => {
         </div>
 
         {/* BOTTOM CREDITS */}
-        <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/10 text-white/40 text-xs font-medium tracking-wide">
+        <div className="flex flex-col md:flex-row items-center justify-between pt-8 pb-12 md:pb-8 border-t border-white/10 text-white/40 text-xs font-medium tracking-wide">
           <p>© {new Date().getFullYear()} Beemo Studio. Todos los derechos reservados.</p>
           <p className="mt-4 md:mt-0">
             Made by the problem solvers at <a href="https://grupecu.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-[#083eeb] transition-colors underline underline-offset-4">Grupecu</a> ;)

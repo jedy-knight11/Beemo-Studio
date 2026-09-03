@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Play, Volume2, VolumeX } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Link } from 'react-router-dom';
 
 export const Hero = () => {
   const [isMuted, setIsMuted] = useState(true);
@@ -85,25 +86,30 @@ export const Hero = () => {
           <motion.div layout className={`flex flex-col sm:flex-row gap-4 w-full sm:w-auto transition-all duration-700 ${isMuted ? 'justify-center items-center' : 'justify-start items-start'}`}>
             <AnimatePresence>
               {isMuted && (
-                <motion.a
+                <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.8, overflow: 'hidden' }}
-                  href="/portafolio"
-                  className="bg-white text-black px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#F5A623] hover:text-black transition-colors flex items-center justify-center gap-2 whitespace-nowrap w-full sm:w-auto"
+                  className="w-full sm:w-auto"
                 >
-                  <Play size={14} fill="currentColor" />
-                  Reel 2026
-                </motion.a>
+                  <Link
+                    to="/portafolio"
+                    className="bg-white text-black px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#F5A623] hover:text-black transition-colors flex items-center justify-center gap-2 whitespace-nowrap w-full sm:w-auto"
+                  >
+                    <Play size={14} fill="currentColor" />
+                    Reel 2026
+                  </Link>
+                </motion.div>
               )}
             </AnimatePresence>
-            <motion.a
-              layout
-              href="/contacto"
-              className="border border-white/20 hover:bg-white/5 px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-colors w-full sm:w-auto flex items-center justify-center whitespace-nowrap"
-            >
-              Cotizar
-            </motion.a>
+            <motion.div layout className="w-full sm:w-auto">
+              <Link
+                to="/contacto"
+                className="border border-white/20 hover:bg-white/5 px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-colors w-full sm:w-auto flex items-center justify-center whitespace-nowrap"
+              >
+                Cotizar
+              </Link>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>

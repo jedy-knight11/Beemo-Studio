@@ -19,7 +19,32 @@ function ScrollToTop() {
 }
 
 export default function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    // If document is already complete, never show loader
+    if (document.readyState === 'complete') {
+      return;
+    }
+
+    // Only show loader if initial resource loading takes longer than 600ms
+    const slowLoadTimer = setTimeout(() => {
+      if (document.readyState !== 'complete') {
+        setIsLoading(true);
+      }
+    }, 600);
+
+    const handleLoad = () => {
+      clearTimeout(slowLoadTimer);
+      setIsLoading(false);
+    };
+
+    window.addEventListener('load', handleLoad);
+    return () => {
+      clearTimeout(slowLoadTimer);
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);
 
   return (
     <Router basename="/Beemo-Studio">

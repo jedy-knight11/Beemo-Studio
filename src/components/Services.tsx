@@ -101,11 +101,11 @@ export const Services = () => {
                   <video
                     ref={videoRef}
                     src={`${activeCase.video}#t=0.001`}
+                    preload="metadata"
                     muted
                     loop
                     playsInline
-                    preload="metadata"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-contain bg-black"
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none" />
                   
@@ -124,32 +124,28 @@ export const Services = () => {
 
         {/* Condensed Services Section */}
         <div className="w-full border-t border-white/10 pt-16">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-white uppercase heading-font shrink-0">
-              Servicios <br className="hidden md:block"/>Adicionales
-            </h3>
-            
-            <div className="flex flex-wrap gap-4 md:gap-8 justify-start md:justify-end">
-                            {[
-                { name: 'Video Institucional', icon: Video },
-                { name: 'Contenido para Redes', icon: Smartphone },
-                { name: 'Cobertura de Eventos', icon: Calendar },
-                { name: 'Fotografía', icon: Camera }
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div className="flex flex-wrap gap-4 md:gap-6 justify-center md:justify-start items-center">
+              {[
+                { name: 'SPOTS PUBLICITARIOS', icon: Video },
+                { name: 'CONTENIDO REDES', icon: Smartphone },
+                { name: 'COBERTURA DE EVENTOS', icon: Calendar },
+                { name: 'POST PRODUCCIÓN', icon: Camera }
               ].map((srv, i) => {
                 const Icon = srv.icon;
                 return (
-                  <div key={i} className="flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 bg-white/5 text-white/80 font-bold uppercase tracking-widest text-xs">
-                    <Icon size={16} />
+                  <div key={i} className="flex items-center gap-2 px-6 py-3.5 rounded-full border border-white/10 bg-white/5 text-white/80 font-bold uppercase tracking-widest text-xs hover:border-white/30 transition-colors">
+                    <Icon size={16} className="text-[#083eeb]" />
                     <span>{srv.name}</span>
                   </div>
                 );
               })}
             </div>
             
-            <div className="shrink-0 mt-4 md:mt-0">
+            <div className="shrink-0">
               <Link 
                 to="/contacto" 
-                className="inline-block bg-white text-black px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-[#F5A623] transition-colors"
+                className="inline-block bg-white text-black px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-[#083eeb] hover:text-white transition-colors"
               >
                 Cotizar
               </Link>

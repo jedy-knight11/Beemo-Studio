@@ -6,7 +6,7 @@ export const Team = () => {
       image: (import.meta as any).env.BASE_URL + 'team/juanjose.jpg', // SWAPPED IMAGE
     },
     {
-      name: "Juan José",
+      name: "Juan José Cañarte",
       role: "Fundador | Productor Ejecutivo",
       image: (import.meta as any).env.BASE_URL + 'team/jonathan.jpg', // SWAPPED IMAGE
     }

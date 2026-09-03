@@ -35,8 +35,8 @@ export const Contact = () => {
           >
             <div>
               <p className="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-[#083eeb] mb-4">NUESTRO EMAIL</p>
-              <a href="mailto:hola@beemostudio.com" className="text-lg md:text-xl font-black text-white hover:text-white/60 transition-colors uppercase tracking-tighter heading-font leading-[1.1] md:leading-[1.1]">
-                HOLA@<br className="hidden md:block"/>BEEMOSTUDIO.COM
+              <a href="mailto:produccion@beemostudio.com" className="text-lg md:text-xl font-black text-white hover:text-white/60 transition-colors uppercase tracking-tighter heading-font leading-[1.1] md:leading-[1.1]">
+                PRODUCCION@<br className="hidden md:block"/>BEEMOSTUDIO.COM
               </a>
             </div>
             

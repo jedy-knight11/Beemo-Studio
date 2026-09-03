@@ -44,8 +44,8 @@ export const Footer = () => {
               </div>
               
               <div className="flex flex-col gap-4 mt-auto">
-                <a href="mailto:hello@beemostudio.com" className="flex justify-between items-end group">
-                  <div className="text-sm font-bold underline decoration-2 underline-offset-4">hello@beemostudio.com</div>
+                <a href="mailto:produccion@beemostudio.com" className="flex justify-between items-end group">
+                  <div className="text-sm font-bold underline decoration-2 underline-offset-4">produccion@beemostudio.com</div>
                   <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center transition-transform group-hover:scale-110">
                     <div className="w-3 h-3 border-t-2 border-r-2 border-white rotate-45 -ml-1"></div>
                   </div>
@@ -233,9 +233,8 @@ export const Footer = () => {
           <div className="grid grid-cols-2 gap-12 md:gap-24">
             <div className="flex flex-col gap-4">
               <p className="text-white/50 text-sm font-bold uppercase tracking-[0.2em] mb-2">Social</p>
-              <a href="#" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Instagram</a>
-              <a href="#" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">LinkedIn</a>
-              <a href="#" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Vimeo</a>
+              <a href="https://www.instagram.com/beemostudios/" target="_blank" rel="noopener noreferrer" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">Instagram</a>
+              <a href="https://www.linkedin.com/company/beemostudio/" target="_blank" rel="noopener noreferrer" className="text-lg font-medium hover:text-[#083eeb] transition-colors underline decoration-white/30 underline-offset-[6px]">LinkedIn</a>
             </div>
             
             <div className="flex flex-col gap-4">

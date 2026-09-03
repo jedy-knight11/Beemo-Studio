@@ -12,7 +12,8 @@ export const ClientTrust = () => {
     (import.meta as any).env.BASE_URL + 'logos/ya.webp',
     (import.meta as any).env.BASE_URL + 'logos/new_client.webp',
     (import.meta as any).env.BASE_URL + 'logos/peigo.webp',
-    (import.meta as any).env.BASE_URL + 'logos/renault_2.webp'
+    (import.meta as any).env.BASE_URL + 'logos/renault_2.webp',
+    (import.meta as any).env.BASE_URL + 'logos/medec.webp'
   ];
 
   return (

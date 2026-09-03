@@ -38,12 +38,7 @@ const projects = [
     category: "Comerciales TV",
     title: "CUMPLE DE TU HIJO",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Comerciales TV/Duragas_Express_Home.mp4',
-    badge: "DURAGAS EXPRESS",
-    headlineLeft: "HISTORIAS COTIDIANAS",
-    headlineRight: "Conectando al instante con situaciones del día a día en el hogar.",
-    challengeLeft: "RITMO Y CONEXIÓN INMEDIATA.",
-    challengeRight: "Una planificación enfocada con estética cinematográfica y un ritmo pensado para conectar al instante.",
-    quote: "\"El resultado fue una campaña eficiente y de alto impacto.\""
+    badge: "DURAGAS EXPRESS"
   },
   {
     id: 4,
@@ -51,12 +46,7 @@ const projects = [
     category: "Comerciales TV",
     title: "CILINDRO AMARILLO A UN CLICK",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Comerciales TV/Duragas_Express_Parrilla.mp4',
-    badge: "DURAGAS EXPRESS",
-    headlineLeft: "MOMENTOS EN FAMILIA",
-    headlineRight: "Resaltando la comodidad y rapidez del servicio durante reuniones sociales.",
-    challengeLeft: "DINAMISMO Y FRESCURA VISUAL.",
-    challengeRight: "Cinematografía cálida y dinámica para retratar reuniones familiares y el valor del servicio rápido.",
-    quote: "\"Conexión instantánea con la audiencia.\""
+    badge: "DURAGAS EXPRESS"
   },
 
   // --- Redes ---
@@ -66,12 +56,7 @@ const projects = [
     category: "Redes",
     title: "MAZDA CX-90",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Redes/Mazda_CX90.mp4',
-    badge: "Mazda",
-    headlineLeft: "ELEGANCIA EN MOVIMIENTO",
-    headlineRight: "Lanzamiento del SUV más premium de la marca nipona.",
-    challengeLeft: "RESALTAR EL DISEÑO JAPONÉS.",
-    challengeRight: "Combinamos tomas detalle en estudio con iluminación dinámica para resaltar la pintura artesanal, y tomas de tracking a alta velocidad.",
-    quote: "\"Beemo logró capturar la esencia premium que el nuevo CX-90 demanda.\""
+    badge: "Mazda"
   },
   {
     id: 6,
@@ -79,12 +64,7 @@ const projects = [
     category: "Redes",
     title: "CRÉDITO RUKITO",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Redes/PedidosYa.mp4',
-    badge: "PedidosYa",
-    headlineLeft: "VIRALIDAD A LA VELOCIDAD DE UN DELIVERY",
-    headlineRight: "Contenido dinámico, colorido y directo diseñado específicamente para redes.",
-    challengeLeft: "CAPTURAR LA ATENCIÓN EN 3 SEGUNDOS.",
-    challengeRight: "Edición frenética, transiciones invisibles y efectos de sonido para saturar la pantalla con la identidad de la marca.",
-    quote: "\"Entienden perfectamente el lenguaje de redes sociales.\""
+    badge: "PedidosYa"
   },
   {
     id: 7,
@@ -92,12 +72,7 @@ const projects = [
     category: "Redes",
     title: "VERDADERO BLINDAJE",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Redes/Blinseg_Blindaje.mp4',
-    badge: "BLINSEG",
-    headlineLeft: "FORTALEZA Y CONFIANZA",
-    headlineRight: "Contenido robusto y profesional diseñado para transmitir máxima seguridad.",
-    challengeLeft: "DEMOSTRAR SEGURIDAD EN REDES.",
-    challengeRight: "Detalles técnicos, materiales y precisión del blindaje para comunicar ciencia y solidez.",
-    quote: "\"El contenido transmitió la fortaleza y profesionalismo que nos define.\""
+    badge: "BLINSEG"
   },
   {
     id: 8,
@@ -105,12 +80,7 @@ const projects = [
     category: "Redes",
     title: "NO ES EL LUGAR",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Redes/Sambolon.mp4',
-    badge: "SAMBOLÓN",
-    headlineLeft: "SABOR EN MOVIMIENTO",
-    headlineRight: "Capturando la esencia y textura de la cultura gastronómica local.",
-    challengeLeft: "DESPERTAR EL APETITO EN SEGUNDOS.",
-    challengeRight: "Iluminación enfocada en texturas y ritmo de edición acelerado con sonido hiperrealista.",
-    quote: "\"La respuesta en redes fue inmediata y contundente.\""
+    badge: "SAMBOLÓN"
   },
   {
     id: 9,
@@ -118,12 +88,7 @@ const projects = [
     category: "Redes",
     title: "PREMIER PET",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Redes/PremierPet_Final.mp4',
-    badge: "PremierPet",
-    headlineLeft: "NUTRICIÓN Y BIENESTAR",
-    headlineRight: "Resaltando el cuidado y amor por las mascotas a través de cinematografía cálida.",
-    challengeLeft: "CAPTURA DE TALENTO ANIMAL Y HUMANO.",
-    challengeRight: "Dirección especializada para capturar la vitalidad de las mascotas y la confianza de sus dueños.",
-    quote: "\"Una pieza conmovedora con un nivel visual insuperable.\""
+    badge: "PremierPet"
   },
   {
     id: 10,
@@ -131,12 +96,7 @@ const projects = [
     category: "Redes",
     title: "CIUDAD CELESTE",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Redes/CiudadCeleste_Capsula_1.mp4',
-    badge: "Ciudad Celeste",
-    headlineLeft: "ESTILO DE VIDA Y EXCLUSIVIDAD",
-    headlineRight: "Proyectando la tranquilidad, seguridad y amenidades del proyecto residencial.",
-    challengeLeft: "TRANSMITIR EL VALOR DE HOGAR.",
-    challengeRight: "Tomas aéreas y tomas familiares que invitan a formar parte de una comunidad exclusiva.",
-    quote: "\"Capturaron el valor aspiracional de la comunidad a la perfección.\""
+    badge: "Ciudad Celeste"
   },
 
   // --- Post-Producción ---
@@ -146,12 +106,7 @@ const projects = [
     category: "Post Producción",
     title: "HISTORIAS DE CRÉDITO",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Madre.mp4',
-    badge: "PeiGo",
-    headlineLeft: "EMOCIÓN SIN FRICCIONES",
-    headlineRight: "Un saludo emotivo que destaca la facilidad de transferir con PeiGo.",
-    challengeLeft: "HUMANIZAR UNA APP FINANCIERA.",
-    challengeRight: "Postproducción cuidada para integrar la interfaz dentro de una narrativa emotiva familiar.",
-    quote: "\"Logramos una conexión genuina con nuestros usuarios.\""
+    badge: "PeiGo"
   },
   {
     id: 12,
@@ -159,12 +114,7 @@ const projects = [
     category: "Post Producción",
     title: "TARJETA QUE VA CONTIGO",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Panm.mp4',
-    badge: "PeiGo",
-    headlineLeft: "MOTION Y RITMO VERTICAL",
-    headlineRight: "Post-producción optimizada para formatos móviles y engagement rápido.",
-    challengeLeft: "INTEGRACIÓN DINÁMICA DE ELEMENTOS UI.",
-    challengeRight: "Composición de pantalla, micro-animaciones y corrección de color de alta gama.",
-    quote: "\"Piezas ágiles que comunican la propuesta de valor sin rodeos.\""
+    badge: "PeiGo"
   },
   {
     id: 13,
@@ -172,12 +122,7 @@ const projects = [
     category: "Post Producción",
     title: "¿TE ASUSTA UNA TARJETA?",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Interview.mp4',
-    badge: "PeiGo",
-    headlineLeft: "CLARIDAD TESTIMONIAL",
-    headlineRight: "Narrativa concisa combinando testimonios y motion graphics.",
-    challengeLeft: "MANTENER LA RETENCIÓN AUDITIVA Y VISUAL.",
-    challengeRight: "Cortes limpios, diseño sonoro puntual y subtitulado dinámico de marca.",
-    quote: "\"Máxima retención en plataformas de video corto.\""
+    badge: "PeiGo"
   },
   {
     id: 14,
@@ -185,12 +130,7 @@ const projects = [
     category: "Post Producción",
     title: "LA MEJOR OPCIÓN",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Supcine.mp4',
-    badge: "PeiGo",
-    headlineLeft: "ACABADO CINEMATOGRÁFICO EN DIGITAL",
-    headlineRight: "Grading de color y diseño sonoro envolvente.",
-    challengeLeft: "COHERENCIA VISUAL DE MARCA.",
-    challengeRight: "Post-producción integral que eleva la percepción del producto fintech.",
-    quote: "\"La calidad visual destaca en el feed.\""
+    badge: "PeiGo"
   },
   {
     id: 15,
@@ -198,12 +138,7 @@ const projects = [
     category: "Post Producción",
     title: "TARJETA PEIGO",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Post-Produccion/PeiGo_Web.mp4',
-    badge: "PeiGo",
-    headlineLeft: "CONVERSIÓN DIGITAL",
-    headlineRight: "Estructura orientada a presentar las funcionalidades clave de la app.",
-    challengeLeft: "SÍNTESIS VISUAL.",
-    challengeRight: "Integración estética entre material grabado y animaciones gráficas.",
-    quote: "\"Excelente trabajo en post-producción.\""
+    badge: "PeiGo"
   },
 
   // --- Coberturas ---
@@ -213,12 +148,7 @@ const projects = [
     category: "Coberturas",
     title: "GRAN PREMIO",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Coberturas/Toyocosta_Premio_Pintado.mp4',
-    badge: "Toyocosta",
-    headlineLeft: "COBERTURA DE PREMIACIÓN",
-    headlineRight: "Capturando los momentos cumbre y la emoción de los galardonados.",
-    challengeLeft: "AGILIDAD EN SITIO.",
-    challengeRight: "Registro cinematográfico multicámara para entrega rápida de resumen de evento.",
-    quote: "\"Capturaron la energía del evento de forma impecable.\""
+    badge: "Toyocosta"
   },
   {
     id: 17,
@@ -226,12 +156,7 @@ const projects = [
     category: "Coberturas",
     title: "LANZAMIENTO SUV",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Coberturas/Renault_Kwid_HD.mp4',
-    badge: "Renault",
-    headlineLeft: "LANZAMIENTO AUTOMOTRIZ",
-    headlineRight: "Registro visual del evento de presentación y pruebas de manejo.",
-    challengeLeft: "DINAMISMO EN VIVO.",
-    challengeRight: "Cobertura ágil que resalta el diseño del vehículo y la experiencia de los invitados.",
-    quote: "\"Excelente cobertura de nuestro lanzamiento.\""
+    badge: "Renault"
   },
   {
     id: 18,
@@ -239,12 +164,7 @@ const projects = [
     category: "Coberturas",
     title: "INAUGURACIÓN",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Coberturas/Renault.mp4',
-    badge: "Automotores y Nexos",
-    headlineLeft: "EXPERIENCIA DE MARCA",
-    headlineRight: "Resumen enérgico del evento corporativo y exhibición.",
-    challengeLeft: "RITMO Y CINEMATOGRAFÍA.",
-    challengeRight: "Tomas dinámicas con estabilizadores y edición al ritmo de la música.",
-    quote: "\"Un resumen que revive la emoción del momento.\""
+    badge: "Automotores y Nexos"
   },
   {
     id: 19,
@@ -252,12 +172,7 @@ const projects = [
     category: "Coberturas",
     title: "MERCADO VERGELES",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Coberturas/mercado_municpal_vergeles.mp4',
-    badge: "Grupo Luna",
-    headlineLeft: "OBRA COMUNITARIA",
-    headlineRight: "Documentando el impacto social y la alegría ciudadana en la inauguración.",
-    challengeLeft: "DOCUMENTAL URBANO.",
-    challengeRight: "Tomas humanas y de infraestructura que reflejan el beneficio real para la comunidad.",
-    quote: "\"Un registro fiel y emocionante de una obra histórica.\""
+    badge: "Grupo Luna"
   },
 
   // --- Video Casos ---
@@ -267,12 +182,7 @@ const projects = [
     category: "Video Casos",
     title: "UN COMPETIDOR INESPERADO",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/Duragas_Competidor_Inesperado.mp4',
-    badge: "DURAGAS",
-    headlineLeft: "UN CASO DE ÉXITO AUDIOVISUAL",
-    headlineRight: "Estructurando el caso de estudio comercial y operativo de Duragas.",
-    challengeLeft: "IMPACTO Y NARRATIVA ESTRATÉGICA.",
-    challengeRight: "Montaje cinematográfico del caso de estudio resaltando el desafío y la efectividad de la campaña.",
-    quote: "\"Un trabajo documental de alto impacto.\""
+    badge: "DURAGAS"
   },
   {
     id: 21,
@@ -280,12 +190,7 @@ const projects = [
     category: "Video Casos",
     title: "EL MEJOR BANCO PARA TI",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/BG_El_Mejor_Banco_Para_Ti.mp4',
-    badge: "Banco Guayaquil",
-    headlineLeft: "CASO DE ÉXITO BANCARIO",
-    headlineRight: "Estructurando los resultados y el impacto de la campaña en una historia cautivadora.",
-    challengeLeft: "SINTETIZAR IMPACTO Y RESULTADOS.",
-    challengeRight: "Montaje cinematográfico de caso de estudio para certámenes y comunicación institucional.",
-    quote: "\"Un caso de éxito narrado con excelencia.\""
+    badge: "Banco Guayaquil"
   },
   {
     id: 22,
@@ -293,12 +198,7 @@ const projects = [
     category: "Video Casos",
     title: "PRIMERO NIÑO MOI",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/BG_Primero_Nino_Moi.mp4',
-    badge: "Banco Guayaquil",
-    headlineLeft: "INSPIRACIÓN Y RESULTADOS",
-    headlineRight: "Documentando el impacto cultural y de marca de la campaña con Niño Moi.",
-    challengeLeft: "EMOCIÓN Y MÉTRICAS EN UN SOLO FORMATO.",
-    challengeRight: "Relato ágil con testimonios, reacciones en medios y métricas de alcance nacional.",
-    quote: "\"Impacto emocional y relevancia cultural inigualable.\""
+    badge: "Banco Guayaquil"
   },
   {
     id: 23,
@@ -306,31 +206,30 @@ const projects = [
     category: "Video Casos",
     title: "WRAPPED",
     video: (import.meta as any).env.BASE_URL + 'portfolio/Video Casos/BG_Wrapped_App.mp4',
-    badge: "Banco Guayaquil",
-    headlineLeft: "INNOVACIÓN DIGITAL",
-    headlineRight: "Presentación del caso de interacción y personalización para usuarios de la app.",
-    challengeLeft: "EXPLICAR LA EXPERIENCIA DE USUARIO.",
-    challengeRight: "Demostración visual de la interfaz combinada con testimoniales y resultados de adopción.",
-    quote: "\"Gran dinamismo para comunicar un logro tecnológico.\""
+    badge: "Banco Guayaquil"
   }
 ];
 
-// Expanded Player Component
+// Expanded Player Component with Immediate Autoplay
 const ExpandedPlayer = ({ videoSrc }: { videoSrc: string }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {});
+    }
+  }, [videoSrc]);
 
   return (
-    <div className="w-full aspect-video rounded-2xl overflow-hidden bg-black relative shadow-2xl">
+    <div className="w-full aspect-video rounded-2xl md:rounded-3xl overflow-hidden bg-black relative shadow-2xl">
       <video 
         ref={videoRef}
         src={videoSrc} 
         className="w-full h-full object-contain bg-black"
         controls
+        autoPlay
         playsInline
         preload="auto"
-        onPlay={() => setIsPlaying(true)}
-        onPause={() => setIsPlaying(false)}
       />
     </div>
   );
@@ -349,6 +248,7 @@ const ProjectRow = ({
   onToggle: () => void 
 }) => {
   const thumbnailRef = useRef<HTMLVideoElement>(null);
+  const hasCaseStudy = Boolean(project.headlineLeft && project.challengeRight);
 
   const handleMouseEnter = () => {
     if (thumbnailRef.current) {
@@ -415,7 +315,7 @@ const ProjectRow = ({
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="overflow-hidden"
           >
-            <div className="bg-[#083eeb] text-white p-6 sm:p-8 md:p-16 lg:p-24 rounded-2xl md:rounded-3xl mb-12 relative flex flex-col gap-12 md:gap-20">
+            <div className={`bg-[#083eeb] text-white p-6 sm:p-8 md:p-16 lg:p-24 rounded-2xl md:rounded-3xl mb-12 relative flex flex-col ${hasCaseStudy ? 'gap-12 md:gap-20' : 'gap-8 md:gap-12'}`}>
               
               {/* Close Button */}
               <button 
@@ -438,39 +338,46 @@ const ProjectRow = ({
                 </div>
               </div>
 
-              {/* Intro 2-column */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
-                <h4 className="text-2xl md:text-4xl font-black uppercase tracking-tight heading-font leading-tight">
-                  {project.headlineLeft}
-                </h4>
-                <p className="text-lg md:text-2xl font-medium leading-relaxed opacity-90">
-                  {project.headlineRight}
-                </p>
-              </div>
+              {/* Optional Case Study: Intro 2-column */}
+              {hasCaseStudy && (
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
+                  <h4 className="text-2xl md:text-4xl font-black uppercase tracking-tight heading-font leading-tight">
+                    {project.headlineLeft}
+                  </h4>
+                  <p className="text-lg md:text-2xl font-medium leading-relaxed opacity-90">
+                    {project.headlineRight}
+                  </p>
+                </div>
+              )}
 
-              {/* Massive Dedicated Video Player */}
+              {/* Massive Dedicated Video Player with Immediate Autoplay */}
               <ExpandedPlayer videoSrc={project.video} />
 
-              {/* Detail 2-column */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
-                <h4 className="text-3xl md:text-5xl font-black uppercase tracking-tighter heading-font leading-tight">
-                  {project.challengeLeft}
-                </h4>
-                <div className="flex flex-col gap-6">
-                  {project.challengeRight.split('\n\n').map((paragraph: string, pIdx: number) => (
-                    <p key={pIdx} className="text-base md:text-lg opacity-80 leading-relaxed font-medium">
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-              </div>
+              {/* Optional Case Study: Detail 2-column & Quote */}
+              {hasCaseStudy && (
+                <>
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+                    <h4 className="text-3xl md:text-5xl font-black uppercase tracking-tighter heading-font leading-tight">
+                      {project.challengeLeft}
+                    </h4>
+                    <div className="flex flex-col gap-6">
+                      {project.challengeRight.split('\n\n').map((paragraph: string, pIdx: number) => (
+                        <p key={pIdx} className="text-base md:text-lg opacity-80 leading-relaxed font-medium">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
 
-              {/* Quote */}
-              <div className="pt-8 md:pt-16 pb-8 text-center max-w-5xl mx-auto w-full">
-                <h3 className="text-center text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight heading-font leading-tight text-white">
-                  {project.quote}
-                </h3>
-              </div>
+                  {project.quote && (
+                    <div className="pt-8 md:pt-16 pb-8 text-center max-w-5xl mx-auto w-full">
+                      <h3 className="text-center text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight heading-font leading-tight text-white">
+                        {project.quote}
+                      </h3>
+                    </div>
+                  )}
+                </>
+              )}
 
             </div>
           </motion.div>
@@ -540,4 +447,3 @@ export const Portfolio = () => {
 };
 
 export const PortfolioPage = Portfolio;
-
